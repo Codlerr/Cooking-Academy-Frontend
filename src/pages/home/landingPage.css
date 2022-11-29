@@ -1,0 +1,279 @@
+
+:root {
+    --thm-font: "Roboto", sans-serif;
+    --thm-font2: Arial;
+    --thm-clr1: #FFBB00;
+    --thm-clr2: #CBA135;
+    --thm-clr3: #FFBD07;
+    --thm-clr4: #000000B0;
+    --text-clr: rgba(255, 255, 255, 0.863);
+    
+    
+  }
+
+body{
+  font-family: var(--thm-font);
+  background: black;
+  color: white;
+}
+
+.banner{
+  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669633119/Cooking%20Academy%20Assets/bannn_jfj2kq.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+/* slider */
+.slick-slide > div {
+  margin: 0 20px;
+
+}
+.slick-list {
+  margin: 0 -10px;
+}
+
+.arrow {
+  color: #DA29E0;
+  font-weight: 500;
+}
+
+
+.slick-dots button:before{
+  color:rgb(216, 206, 206)  !important;
+
+}
+.slick-dots li.slick-active button:before {
+  color:White !important;
+}
+
+
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,250%);
+}
+.card-img{
+  filter: brightness(0.6);
+}
+
+.arroww2{
+  font-size: 30px;
+  padding: 8px 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.479);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+
+  z-index: 300;
+  cursor: pointer;
+}
+.arroww-right2{
+  right:120px;
+}
+
+/* slider */
+
+
+/* workshop */
+.workshop{
+  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/Rectangle_48_jfcl2k.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* workshop */
+
+
+/* slider 2 */
+
+.slide2, .slide2 img{
+  cursor: pointer;
+}
+.slide2{
+  /* opacity: .5; */
+  transform: scale(.9);
+  transition: .5s;
+  filter: blur(2px);
+}
+
+.slide2-active{
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1.1);
+}
+.arrow2{
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--thm-clr1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 150px;
+  z-index: 300;
+  cursor: pointer;
+}
+.arrow2:hover{
+    color: var(--thm-clr2);
+}
+.arrow-right2{
+  right:0px;
+}
+.arrow-left2{
+  left:0px;
+}
+
+/*  */
+
+
+/* Services */
+.zoom-card{
+  overflow: hidden;
+  /* -- Prevent flicker -- */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.zoom-card img{
+  display: block;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.zoom-card img:hover{
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+
+/* enquire */
+.enquire{
+  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621450/Cooking%20Academy%20Assets/Group_105_nr9xef.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+/* enquire */
+
+
+/* recipe */
+.dishes{
+  overflow: hidden;
+  /* -- Prevent flicker -- */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.dishes img{
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.dishes img:hover{
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+/* recipe */
+
+/* feedback */
+.feedback{
+  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/Rectangle_48_jfcl2k.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* feedback */
+
+
+/* Accordian */
+
+
+
+.accordion-simple > .active {
+  display: block;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.accordion__faq .inactive{
+  display: none;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.acco-m > h3{
+  background: transparent;
+  border: none;
+}
+.acco-m > p{
+  background: transparent;
+  border: none;
+  
+}
+
+
+.accordion__faq > div{
+  background-color: rgb(37, 37, 37);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin-bottom: 15px;
+  
+}
+
+.accordion__title{
+  color: white;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.accordion__faq-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.accordion__faq-heading .active{
+  color: white;
+  
+}
+
+.accordion__faq-heading h3{
+  color: white;
+
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.accordion__faq p {
+  margin: 0px;
+  font-size: 15px;
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255, 0.507);
+  line-height: 1.4;
+  
+}
+
+

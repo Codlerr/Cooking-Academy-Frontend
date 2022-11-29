@@ -4,14 +4,14 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
-import LandingPage from '../src/pages/landing/landingPage';
-import Navbar from './components/Navbar/Navbar';
+import Home from './pages/home/landingPage';
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 const Layout = () => {
   return(
     <div className='app'>
-      <Navbar/>
+      <Header/>
       <Outlet/>
       <Footer/>
     </div>
@@ -25,12 +25,20 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<div>Home Page</div>
+        element:<Home/>
       },
       {
-        path:"/landing",
-        element:<LandingPage/>
-      }
+        path:"/about-us",
+        element:<div>about Page</div>
+      },
+      {
+        path:"/cooking-class",
+        element:<div>cooking Page</div>
+      },
+      {
+        path:"/services",
+        element:<div>service Page</div>
+      },
     ]
   }
 ]);
