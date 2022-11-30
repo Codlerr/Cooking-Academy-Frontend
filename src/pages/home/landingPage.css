@@ -57,6 +57,11 @@ body{
   left: 50%;
   transform: translate(-50%,250%);
 }
+@media (200px <= width <= 600px){
+  .centered{
+    transform: translate(-50%,300%);
+  }
+}
 .card-img{
   filter: brightness(0.6);
 }
@@ -79,7 +84,12 @@ body{
 .arroww-right2{
   right:120px;
 }
+@media (200px <= width <= 600px){
 
+  .arroww-right2{
+    right: 60px;
+  }
+}
 /* slider */
 
 
@@ -169,6 +179,13 @@ body{
   background-size: cover;
   border-radius: 30px;
 }
+
+.enquire-form{
+  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669787511/Cooking%20Academy%20Assets/123123ewqeqweqe_o6e311.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
 /* enquire */
 
 
@@ -203,7 +220,22 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* feedback */
+
+.scroll-main {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  overflow-y: scroll; 
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+.scroll-main::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+
 
 
 /* Accordian */
@@ -276,4 +308,19 @@ body{
   
 }
 
+
+/* insta-bg */
+
+.insta-bg{
+  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786014/Cooking%20Academy%20Assets/Downloader.la_-62cfbdaa564c8_yqvbhj.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.insta .slick-slide > div{
+  margin: 0;
+}
+.insta .slick-list{
+margin: 0;
+}
 

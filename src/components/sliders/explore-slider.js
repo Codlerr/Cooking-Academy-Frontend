@@ -70,8 +70,8 @@ function Exploreslider() {
         };
   return (
     <>
-    <section className='text-white lg:pl-32'>
-    <Slider {...settings} className='w-[97%] py-5 bg-[#131212]'>
+    <section className='text-white lg:pl-14'>
+    <Slider {...settings} className='w-full py-5 bg-[#131212]'>
        <div className='relative'>
         <LazyLoadImage className='rounded-xl card-img' src={Image1}/>
             <div className='centered'>

@@ -9,11 +9,11 @@ function Navbar() {
   return (
     <>
     <nav className=' bg-black border-b-2 border-[#383838]'>
-      <div className='lg:w-10/12 mx-auto flex justify-between pt-8 pb-3 '>
+      <div className='w-11/12 mx-auto flex justify-between pt-8 pb-3 '>
           <div>
-            <img src={Logo} className='h-20'></img>
+            <img src={Logo} className='h-16 md:h-20'></img>
           </div>
-          <div className='grid place-items-center'>
+          <div className='grid place-items-center hidden md:block'>
             <ul className='flex  gap-10 text-[#ffffffcc] font-medium tracking-wide'>
               <li><NavLink exact to="/" >Home</NavLink></li>
               <li><NavLink to="/about-us" >About Us</NavLink></li>
