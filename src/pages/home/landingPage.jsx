@@ -38,6 +38,16 @@ let  User5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cook
 let  User6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_2x_bxvjqo.png';
 let  User7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179a7d9dfc_vnafio.png';
 
+let Chef1= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669886573/Cooking%20Academy%20Assets/4_kkde8z.webp';
+let Chef2= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669886572/Cooking%20Academy%20Assets/5_zrgcc9.webp';
+let Chef3= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669887904/Cooking%20Academy%20Assets/7_as7x3q.webp';
+let Chef4= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669887980/Cooking%20Academy%20Assets/10_fcvuao.webp';
+let Chef5= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669888044/Cooking%20Academy%20Assets/8_wo25wz.webp';
+let Chef6= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669886574/Cooking%20Academy%20Assets/1_tlahly.webp';
+let Chef7= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669886573/Cooking%20Academy%20Assets/3_kjadid.webp';
+let Chef8= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669886573/Cooking%20Academy%20Assets/2_y9zuty.webp';
+let Chef9= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669886572/Cooking%20Academy%20Assets/6_bthe0s.webp';
+
 
 function LandingPage() {
     useEffect(() => {
@@ -110,7 +120,7 @@ function LandingPage() {
     {/* =================================About us================================= */}
       <section className='w-11/12 mx-auto py-10'>
               <div data-aos="fade-right">
-                  <h2 className='text-center font-bold text-5xl'>About Us</h2>
+                  <h2 className='text-center font-bold xs:text-4xl md:text-5xl'>About Us</h2>
                   <p className='xs:w-[90%] md:w-[80%] mx-auto text-center text-[#ffffffcb] xs:text-lg md:text-xl py-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quas nam fuga itaque expedita distinctio totam dolore, consequuntur ullam dolorum est consectetur eos, maxime enim dolorem nihil illo minus, reprehenderit aliquid delectus dignissimos maiores dicta sunt quasi! Harum, magnam doloribus?</p>
                   <h2 className='text-center font-bold text-4xl text-[color:var(--thm-clr2)] pt-5'>Last year achievemrnt</h2>
                   <p className='xs:w-[90%] md:w-[60%] mx-auto text-center text-[#ffffffcb] xs:text-lg md:text-xl py-5'>we are a culinary startup based in qatar with the aim of bringing people together, to leam and enjoy the art of cooking.</p>
@@ -128,9 +138,9 @@ function LandingPage() {
      {/* =================================Workshop================================= */}
      <section className='workshop'>
        <div className='xs:w-11/12 lg:w-10/12 mx-auto xs:pt-10 lg:pt-20'>
-          <h2 className='font-bold text-5xl' data-aos="fade-right">Workshop</h2>
+          <h2 className='font-bold xs:text-4xl md:text-5xl' data-aos="fade-right">Workshop</h2>
           <div className='flex flex-col md:flex-row justify-between pt-5' data-aos="fade-right">
-            <p className='text-[#ffffffcb] lg:w-[60%] text-xl '>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+            <p className='text-[#ffffffcb] lg:w-[60%] text-xl xs:pb-5 md:pb-0'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
             <a href='#' className='bg-white hover:bg-[#f0eeee] text-black h-fit w-fit  py-2 px-5 rounded-lg lg:text-xl font-medium'>See all<i class="fa-solid fa-arrow-right pl-5"></i></a>
           </div>
           <div data-aos="fade-right">
@@ -146,7 +156,67 @@ function LandingPage() {
      {/* =================================Workshop================================= */}
 
      {/* =================================Meet Our Chefs================================= */}
-      <section className='w-11/12 mx-auto my-20'>
+      <section className='w-11/12 mx-auto my-20 overflow-hidden'>
+            {/* Chefs imaegs */}
+          {/* <div className='relative grid place-items-center pt-20' data-aos="fade-right">
+              <div className='flex relative'>
+                <img className='pt-20 -mr-14 md:h-[500px] z-20 hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' src={Chef1} alt='img'/>
+                <img className='pt-10 -mr-24 md:h-[500px] z-10 hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' src={Chef2} alt='img'/>
+                <img className='md:h-[500px] z-0 hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' src={Chef3} alt='img'/>
+                <img className='pt-16 -ml-24  md:h-[500px] z-10 hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' src={Chef4} alt='img'/>
+                <img className='pt-20 -ml-36 md:h-[500px] z-20 hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' src={Chef5} alt='img'/>
+              </div>
+              <div className='flex relative -mt-60 z-50'>
+                <img className='pt-10 -mr-20 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' src={Chef6} alt='img'/>
+                <img className='-mr-7 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' src={Chef7} alt='img'/>
+                <img className='-ml-7 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' src={Chef8} alt='img'/>
+                <img className='pt-10 -ml-20 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' src={Chef9} alt='img'/>
+              </div>
+          </div> */}
+
+          <div id='chefs' className='relative grid place-items-center pt-20'>
+              <div className='flex relative'>
+                  <div id='cheftip1' className='relative'>
+                    <img src={Chef1} className='relative pt-24 -right-28  z-10 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel1' className='absolute top-10 left-10 '>Chef Claudio Trovato<br></br><p>Italian Cuisine</p></span>
+                  </div>
+                  <div id='cheftip2' className='relative'>
+                    <img src={Chef2} className='relative pt-16 -right-20  z-20 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel2' className='absolute top-5 left-10 '>Chef Dala<br></br><p>Pastry Chef</p></span>
+                  </div>
+                  <div id='cheftip3' className='relative'>
+                    <img src={Chef3} className='relative  z-0 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel3' className='absolute top-0 left-0 '>Chef Landry Hatlas<br></br><p>Head Baker</p></span>
+                  </div>
+                  <div id='cheftip4' className='relative'>
+                    <img src={Chef4} className='relative pt-16 -left-20  z-20 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel4' className='absolute top-0 left-10 '>Chef Stephanie<br></br><p>Mediterranean cuisine</p></span>
+                  </div>
+                  <div id='cheftip5' className='relative'>
+                    <img src={Chef5} className='relative pt-24 -left-40  z-10 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel5' className='absolute top-20 right-5 '>Chef VJ<br></br><p>Modern viennoiserie and pastry</p></span>
+                  </div>
+              </div>
+              <div className='flex relative -mt-52 z-50'>
+                  <div id='cheftip6' className='relative'>
+                    <img src={Chef6} className='relative pt-14 -right-32  z-10 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel6' className='absolute top-20 left-20'>Chef Suzy Aly<br></br><p>Kids Master Chef</p></span>
+                  </div>
+                  <div id='cheftip7' className='relative'>
+                    <img src={Chef7} className='relative -right-16  z-20 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel7' className='absolute top-5 left-10 '>Chef Manuel<br></br><p>Executive Chef</p></span>
+                  </div>
+                  <div id='cheftip8' className='relative'>
+                    <img src={Chef8} className='relative   z-0 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel8' className='absolute top-5 left-0 '>Chef Airo<br></br><p>Executive Chef</p></span>
+                  </div>
+                  <div id='cheftip9' className='relative'>
+                    <img src={Chef9} className='relative pt-14 -left-24  z-20 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel9' className='absolute top-20 right-20 '>Chef Aisha Al Tamimi<br></br><p>Qatari Chef</p></span>
+                  </div>
+              </div>
+          </div>
+
           <div className='text-center' data-aos="fade-right">
             <h2 className='text-4xl font-bold'>Meet our chefs</h2>
             <p className='text-xl pt-3 md:w-[70%] mx-auto text-[#ffffffcb]'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -167,15 +237,15 @@ function LandingPage() {
 
       <div class="grid grid-rows-4 grid-flow-row md:grid-flow-col overflow-hidden" >
             <div class="relative zoom-card row-span-4 md:col-span-2">
-              <img className='h-full object-cover brightness-75'  src={zomImg1}/>
+              <img alt='img' className='h-full object-cover brightness-75'  src={zomImg1}/>
               <h3 className='absolute bottom-5 left-10 text-4xl font-bold' data-aos="fade-right">Kitchen Studio</h3>
             </div>
             <div class="relative zoom-card row-span-2">
-            <img className='h-full object-cover brightness-75' src={zomImg2}/>
+            <img alt='img' className='h-full object-cover brightness-75' src={zomImg2}/>
             <h3 className='absolute bottom-5 left-10 text-4xl font-bold' data-aos="fade-right">Consultancy</h3>
             </div>
             <div class="relative zoom-card row-span-2">
-            <img className='h-full object-cover brightness-75' src={zomImg3}/>
+            <img alt='img' className='h-full object-cover brightness-75' src={zomImg3}/>
             <h3 className='absolute bottom-5 left-10 text-4xl font-bold' data-aos="fade-right">Kitchen</h3>
             </div>
           </div>
@@ -217,7 +287,7 @@ function LandingPage() {
 
               <div className='dishes grid grid-cols-1 md:grid-cols-4 gap-5 gap-y-10 xs:p-5 md:p-10 '>
                     <div className='relative' data-aos="fade-right">
-                      <img className=' rounded-3xl' src={Item1}/>
+                      <img alt='img' className=' rounded-3xl' src={Item1}/>
                         <p className='text-lg  font-semibold py-3 '>Chicken Yakitori</p>
                       <span className='flex justify-between text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
@@ -225,7 +295,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img className=' rounded-3xl' src={Item2}/>
+                      <img alt='img' className=' rounded-3xl' src={Item2}/>
                         <p className='text-lg  font-semibold py-3 '>Cassoulet Today</p>
                       <span className='flex justify-between text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
@@ -233,7 +303,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img className=' rounded-3xl' src={Item3}/>
+                      <img alt='img' className=' rounded-3xl' src={Item3}/>
                         <p className='text-lg  font-semibold py-3 '>Nana's Italian Roulade</p>
                       <span className='flex justify-between text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
@@ -241,7 +311,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img className=' rounded-3xl' src={Item4}/>
+                      <img alt='img' className=' rounded-3xl' src={Item4}/>
                         <p className='text-lg  font-semibold py-3 '>Beef Paprikash with Fire-Roated Tomatoes</p>
                       <span className='flex justify-between text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
@@ -249,7 +319,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img className=' rounded-3xl' src={Item5}/>
+                      <img alt='img' className=' rounded-3xl' src={Item5}/>
                         <p className='text-lg  font-semibold py-3 '>Vannila chololava icecream</p>
                       <span className='flex justify-between text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
@@ -257,7 +327,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img className=' rounded-3xl' src={Item6}/>
+                      <img alt='img' className=' rounded-3xl' src={Item6}/>
                         <p className='text-lg  font-semibold py-3 '>Oma's Apfelkuchen (Grandma's Apple cake)</p>
                       <span className='flex justify-between text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
@@ -265,7 +335,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img className=' rounded-3xl' src={Item7}/>
+                      <img alt='img' className=' rounded-3xl' src={Item7}/>
                         <p className='text-lg  font-semibold py-3 '>Cuccidati</p>
                       <span className='flex justify-between text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
@@ -273,7 +343,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img className=' rounded-3xl' src={Item8}/>
+                      <img alt='img' className=' rounded-3xl' src={Item8}/>
                         <p className='text-lg  font-semibold py-3 '>Irish Spiced Beef</p>
                       <span className='flex justify-between text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
@@ -294,16 +364,16 @@ function LandingPage() {
     <section className='feedback xs:my-10 lg:my-28 xs:h-screen md:h-[600px] overflow-hidden'>
       <div className='w-10/12 mx-auto grid grid-cols-1 md:grid-cols-5'>
           <div className='md:col-span-2 flex justify-center flex-col xs:py-10 md:py-0' data-aos="fade-right">
-                <h1 className='text-4xl font-medium'>Feedbacks</h1>
+                <h1 className='xs:text-3xl md:text-4xl font-medium'>Feedbacks</h1>
                 <p className='text-[#ffffffc7] text-lg lg:w-[60%] py-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates id inventore fugiat!</p>
                 <a className='bg-white text-black px-4 py-2 text-xl rounded-lg w-fit h-fit' href="#">Read all <i class="fa-solid fa-arrow-right pl-4"></i></a>
           </div>
 
-          <div className='md:col-span-3 grid grid-cols-1 gap-3 md:grid-cols-3 overflow-y-scroll xs:h-screen md:h-[600px] scroll-main'>
+          <div className='xs:w-10/12 md:w-full mx-auto md:col-span-3 grid grid-cols-1 gap-3 md:grid-cols-3 overflow-y-scroll xs:h-screen md:h-[600px] scroll-main'>
                 <div className='bg-white p-5  rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
                   <div className='flex pt-3'>
-                    <img className='h-14' src={User1} />
+                    <img alt='img' className='h-14' src={User1} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
@@ -312,7 +382,7 @@ function LandingPage() {
                 </div>
                 <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669705586/Cooking%20Academy%20Assets/Downloader.la_-62d179a7d9dfc_dl2d8z.webp)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img className='h-14' src={User7} />
+                        <img alt='img' className='h-14' src={User7} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
@@ -322,7 +392,7 @@ function LandingPage() {
                 <div className='bg-white p-5 rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
                   <div className='flex pt-3'>
-                    <img className='h-14' src={User2} />
+                    <img alt='img' className='h-14' src={User2} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
@@ -331,7 +401,7 @@ function LandingPage() {
                 </div>
                 <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706361/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_zo60xv.webp)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img className='h-14' src={User6} />
+                        <img alt='img' className='h-14' src={User6} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
@@ -341,7 +411,7 @@ function LandingPage() {
                 <div className='bg-white p-5 rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
                   <div className='flex pt-3'>
-                    <img className='h-14' src={User4} />
+                    <img alt='img' className='h-14' src={User4} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
@@ -350,7 +420,7 @@ function LandingPage() {
                 </div>
                 <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706433/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_pgh3it.webp)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img className='h-14' src={User5} />
+                        <img alt='img' className='h-14' src={User5} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
@@ -360,7 +430,7 @@ function LandingPage() {
                 <div className='bg-white p-5 rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
                   <div className='flex pt-3'>
-                    <img className='h-14' src={User3} />
+                    <img alt='img' className='h-14' src={User3} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
@@ -369,7 +439,7 @@ function LandingPage() {
                 </div>
                 <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706522/Cooking%20Academy%20Assets/avatar-8aae058a0f5df7ef941fe5ef9577bc3c_shlfy1.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img className='h-14' src={User2} />
+                        <img alt='img' className='h-14' src={User2} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
@@ -379,7 +449,7 @@ function LandingPage() {
                 <div className='bg-white p-5 rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
                   <div className='flex pt-3'>
-                    <img className='h-14' src={User4} />
+                    <img alt='img' className='h-14' src={User4} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
@@ -389,45 +459,7 @@ function LandingPage() {
                 <div className='bg-white p-5 rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
                   <div className='flex pt-3'>
-                    <img className='h-14' src={User1} />
-                    <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
-                    </span>
-                  </div>
-                </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669705586/Cooking%20Academy%20Assets/Downloader.la_-62d179a7d9dfc_dl2d8z.webp)]'>
-                    <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img className='h-14' src={User7} />
-                        <span className='text-white pl-3'>
-                          <p className='font-medium'>Alex</p>
-                          <p className='font-semibold'>Joseph</p>
-                        </span>
-                      </div>
-                </div>
-                <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
-                  <div className='flex pt-3'>
-                    <img className='h-14' src={User2} />
-                    <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
-                    </span>
-                  </div>
-                </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706361/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_zo60xv.webp)]'>
-                    <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img className='h-14' src={User6} />
-                        <span className='text-white pl-3'>
-                          <p className='font-medium'>Alex</p>
-                          <p className='font-semibold'>Joseph</p>
-                        </span>
-                      </div>
-                </div>
-                <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
-                  <div className='flex pt-3'>
-                    <img className='h-14' src={User1} />
+                    <img alt='img' className='h-14' src={User1} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
@@ -436,7 +468,7 @@ function LandingPage() {
                 </div>
                 <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669705586/Cooking%20Academy%20Assets/Downloader.la_-62d179a7d9dfc_dl2d8z.webp)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img className='h-14' src={User7} />
+                        <img alt='img' className='h-14' src={User7} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
@@ -446,7 +478,7 @@ function LandingPage() {
                 <div className='bg-white p-5 rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
                   <div className='flex pt-3'>
-                    <img className='h-14' src={User2} />
+                    <img alt='img' className='h-14' src={User2} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
@@ -455,7 +487,7 @@ function LandingPage() {
                 </div>
                 <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706361/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_zo60xv.webp)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img className='h-14' src={User6} />
+                        <img alt='img' className='h-14' src={User6} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
@@ -465,7 +497,45 @@ function LandingPage() {
                 <div className='bg-white p-5 rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
                   <div className='flex pt-3'>
-                    <img className='h-14' src={User2} />
+                    <img alt='img' className='h-14' src={User1} />
+                    <span className='text-black pl-3'>
+                      <p className='font-medium'>Alex</p>
+                      <p className='font-semibold'>Joseph</p>
+                    </span>
+                  </div>
+                </div>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669705586/Cooking%20Academy%20Assets/Downloader.la_-62d179a7d9dfc_dl2d8z.webp)]'>
+                    <div className='absolute bottom-2 left-2 flex pt-3'>
+                        <img alt='img' className='h-14' src={User7} />
+                        <span className='text-white pl-3'>
+                          <p className='font-medium'>Alex</p>
+                          <p className='font-semibold'>Joseph</p>
+                        </span>
+                      </div>
+                </div>
+                <div className='bg-white p-5 rounded-[2rem]'>
+                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
+                  <div className='flex pt-3'>
+                    <img alt='img' className='h-14' src={User2} />
+                    <span className='text-black pl-3'>
+                      <p className='font-medium'>Alex</p>
+                      <p className='font-semibold'>Joseph</p>
+                    </span>
+                  </div>
+                </div>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706361/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_zo60xv.webp)]'>
+                    <div className='absolute bottom-2 left-2 flex pt-3'>
+                        <img alt='img' className='h-14' src={User6} />
+                        <span className='text-white pl-3'>
+                          <p className='font-medium'>Alex</p>
+                          <p className='font-semibold'>Joseph</p>
+                        </span>
+                      </div>
+                </div>
+                <div className='bg-white p-5 rounded-[2rem]'>
+                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
+                  <div className='flex pt-3'>
+                    <img alt='img' className='h-14' src={User2} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
@@ -479,19 +549,19 @@ function LandingPage() {
     {/* ==================================Feedback================================ */}
 
     {/* ==================================Instagram================================ */}
-    <section className='py-20 insta-bg'>
-         <div className='text-center text-[#ffffffcb]' data-aos="fade-right">
-            <h2 className='text-3xl '>Check out@cookingacademy on instagram</h2>
-            <p className='text-base py-3 md:w-[30%] mx-auto'>Lorem ipsurn dolor sit amet, consetetur sadipscing elitr, sed diam
+    <section className='xs:py-10 md:py-20 insta-bg'>
+         <div className='xs:w-11/12 md:w-full mx-auto text-center text-[#ffffffcb]' data-aos="fade-right">
+            <h2 className='xs:text-xl md:text-3xl '>Check out@cookingacademy on instagram</h2>
+            <p className='xs:text-sm md:text-base py-3 md:w-[30%] mx-auto'>Lorem ipsurn dolor sit amet, consetetur sadipscing elitr, sed diam
                 nonumy eirmod tempor invidunt ut I</p>
           </div>
 
           {/* scroll */}
-          <div className='pb-10'>
+          <div className='pb-10 relative'>
             <InstaSlider/>
           </div>
-          <div className='grid place-items-center mt-28'>
-            <a className='bg-white hover:bg-slate-100 rounded-lg px-3 py-2 text-black text-xl' href="#">Visit Our Instgram<i class="fa-brands fa-instagram font-medium text-2xl pl-2"></i></a>
+          <div className='grid place-items-center xs:mt-16 md:mt-28'>
+            <a className='bg-white hover:bg-[#FFBB00] rounded-lg px-3 py-2 text-black hover:text-white xs:text-lg md:text-xl' href="#">Visit Our Instgram<i class="fa-brands fa-instagram font-medium text-2xl pl-2"></i></a>
           </div>
     </section>
     {/* ==================================Instagram================================ */}

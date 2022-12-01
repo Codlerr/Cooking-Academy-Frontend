@@ -4,12 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-
-let Image1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_vjmgsi.jpg';
-let Image2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_1_cxnvhp.jpg';
-let Image3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_2_gnkpms.jpg';
-let Image4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_3_gzyv5c.jpg';
+import {ExploreData} from '../constant/data'
 
 
 function SampleNextArrow({onClick}) {
@@ -72,52 +67,91 @@ function Exploreslider() {
     <>
     <section className='text-white lg:pl-14'>
     <Slider {...settings} className='w-full py-5 bg-[#131212]'>
-       <div className='relative'>
-        <LazyLoadImage className='rounded-xl card-img' src={Image1}/>
+      {
+        ExploreData.map((item,index) => (
+          <div className='relative ui-card' key={index}>
+            <LazyLoadImage className='rounded-2xl card-img' src={item.image}/>
+                <div className='centered'>
+                <p className='text-xl font-bold text-center'>{item.Title}</p>
+                    <p className='text-3xl font-bold text-center'>{item.Title2}</p>
+                    <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
+                      <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
+                      <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
+                    </div>
+                </div>
+       </div>
+        ))
+      }
+       {/* <div className='relative ui-card'>
+        <LazyLoadImage className='rounded-2xl card-img' src={Image1}/>
             <div className='centered'>
             <p className='text-xl font-bold text-center'>FUNDAMENTAL</p>
                 <p className='text-3xl font-bold text-center'>CUISINE</p>
+                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
+                </div>
             </div>
        </div>
 
-       <div className='relative'>
-        <LazyLoadImage className='rounded-xl card-img' src={Image2}/>
+       <div className='relative ui-card'>
+        <LazyLoadImage className='rounded-2xl card-img' src={Image2}/>
             <div className='centered'>
                 <p className='text-xl font-bold text-center'>WORLDWIDE</p>
                 <p className='text-3xl font-bold text-center'>CUISINE</p>
+                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
+                </div>
             </div>
        </div>
 
-       <div className='relative'>
-        <LazyLoadImage className='rounded-xl card-img' src={Image3}/>
+       <div className='relative ui-card'>
+        <LazyLoadImage className='rounded-2xl card-img' src={Image3}/>
             <div className='centered'>
             <p className='text-xl font-bold text-center'>FUNDAMENTAL</p>
                 <p className='text-3xl font-bold text-center'>PASTRY</p>
+                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
+                </div>
             </div>
        </div>
 
-       <div className='relative'>
-        <LazyLoadImage className='rounded-xl card-img' src={Image4}/>
+       <div className='relative ui-card'>
+        <LazyLoadImage className='rounded-2xl card-img' src={Image4}/>
             <div className='centered'>
             <p className='text-xl font-bold text-center'>WORLDWIDE</p>
                 <p className='text-3xl font-bold text-center'>CUISINE</p>
+                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
+                </div>
             </div>
        </div>
-       <div className='relative'>
-        <LazyLoadImage className='rounded-xl card-img' src={Image1}/>
+       <div className='relative ui-card'>
+        <LazyLoadImage className='rounded-2xl card-img' src={Image1}/>
             <div className='centered'>
             <p className='text-xl font-bold text-center'>FUNDAMENTAL</p>
                 <p className='text-3xl font-bold text-center'>CUISINE</p>
+                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
+                </div>
             </div>
        </div>
 
-       <div className='relative'>
-        <LazyLoadImage className='rounded-xl card-img' src={Image2}/>
-            <div className='centered'>
+       <div className='relative ui-card'>
+        <LazyLoadImage className='rounded-2xl card-img' src={Image2}/>
+            <div className='centered '>
                 <p className='text-xl font-bold text-center'>WORLDWIDE</p>
                 <p className='text-3xl font-bold text-center'>CUISINE</p>
+                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
+                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
+                </div>
             </div>
-       </div>
+       </div> */}
       
     </Slider>
 

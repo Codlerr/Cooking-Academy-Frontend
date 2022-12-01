@@ -51,19 +51,51 @@ body{
 
 
 
-.centered{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,250%);
+/* @media (200px <= width <= 600px){
+
+}  */
+
+
+.ui-card{
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
 }
-@media (200px <= width <= 600px){
-  .centered{
-    transform: translate(-50%,300%);
-  }
+
+
+.ui-card .centered{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
 }
+
+.ui-card .centered p{
+	transform: translateY(80px);
+
+	transition: all 0.3s ease-out 0.2s;
+}
+.ui-card .centered a{
+
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.4s;
+}
+
+.ui-card:hover .centered p{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .centered a{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+
 .card-img{
   filter: brightness(0.6);
+  cursor: pointer;
 }
 
 .arroww2{
@@ -324,3 +356,110 @@ body{
 margin: 0;
 }
 
+
+
+.instta{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -58%);
+}
+
+
+
+/* CHEFS SECTION */
+#chefs span{
+  width: max-content;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgba(65, 64, 64, 0.603);
+  padding: 8px 15px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+#chefs span p{
+  font-size: 15px;
+}
+#cheflabel1{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#cheftip1:hover #cheflabel1{
+  visibility: visible;
+  opacity: 1;
+}
+#cheflabel2{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#cheftip2:hover #cheflabel2{
+  visibility: visible;
+  opacity: 1;
+}
+#cheflabel3{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#cheftip3:hover #cheflabel3{
+  visibility: visible;
+  opacity: 1;
+}
+#cheflabel4{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#cheftip4:hover #cheflabel4{
+  visibility: visible;
+  opacity: 1;
+}
+#cheflabel5{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#cheftip5:hover #cheflabel5{
+  visibility: visible;
+  opacity: 1;
+}
+#cheflabel6{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#cheftip6:hover #cheflabel6{
+  visibility: visible;
+  opacity: 1;
+}
+#cheflabel7{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#cheftip7:hover #cheflabel7{
+  visibility: visible;
+  opacity: 1;
+}
+#cheflabel8{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#cheftip8:hover #cheflabel8{
+  visibility: visible;
+  opacity: 1;
+}
+#cheflabel9{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#cheftip9:hover #cheflabel9{
+  visibility: visible;
+  opacity: 1;
+}

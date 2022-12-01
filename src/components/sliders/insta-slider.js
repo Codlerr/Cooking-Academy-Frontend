@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import {InstaData} from '../constant/data'
 
 
 let instabox = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786014/Cooking%20Academy%20Assets/Instagram_mockup_4_htobcw.png';
@@ -50,19 +51,26 @@ function Instaslider() {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 3,
               slidesToScroll: 1
             }
           }
         ]
       };
   return (
-    <div className='insta relative'>
-        <div className='grid place-items-center'>
-            <img className='h-[480px]' src={instabox} />
+    <div className='insta relative xs:mt-32 md:mt-44'>
+        <div className=' instta'>
+            <img className='xs:h-[300px] md:h-[480px]' src={instabox} />
         </div>
-        <Slider {...settings} className='-mt-[320px]'>
-            <div>
+        <Slider {...settings} className=' '>
+            {
+                InstaData.map((item,index) => (
+                    <div>
+                        <img src={item.image} key={index}/>
+                    </div>
+                ))
+            }
+            {/* <div>
                 <img src={instapic1}/>
             </div>
             <div>
@@ -103,7 +111,7 @@ function Instaslider() {
             </div>
             <div>
                 <img src={instapic4}/>
-            </div>
+            </div> */}
         </Slider>
     </div>
   )
