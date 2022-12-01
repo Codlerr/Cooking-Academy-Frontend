@@ -72,8 +72,8 @@ function Exploreslider() {
           <div className='relative ui-card' key={index}>
             <LazyLoadImage className='rounded-2xl card-img' src={item.image}/>
                 <div className='centered'>
-                <p className='text-xl font-bold text-center'>{item.Title}</p>
-                    <p className='text-3xl font-bold text-center'>{item.Title2}</p>
+                <p className='text-2xl font-bold text-center'>{item.Title}</p>
+                    <p className='text-4xl font-extrabold text-center'>{item.Title2}</p>
                     <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
                       <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
                       <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
