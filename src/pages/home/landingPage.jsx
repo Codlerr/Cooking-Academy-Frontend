@@ -160,7 +160,7 @@ function LandingPage() {
           {/* Chefs imaegs */}
           {/* Large Device */}
           <div id='chefs' className='xs:hidden md:block relative grid place-items-center pt-20'>
-              <div className='flex relative'>
+              <div className='flex justify-center relative'>
                   <div id='cheftip1' className='relative'>
                     <img src={Chef1} className='relative pt-24 -right-28  z-10 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
                     <span id='cheflabel1' className='absolute top-10 left-10 '>Chef Claudio Trovato<br></br><p>Italian Cuisine</p></span>
@@ -182,7 +182,7 @@ function LandingPage() {
                     <span id='cheflabel5' className='absolute top-20 right-5 '>Chef VJ<br></br><p>Modern viennoiserie and pastry</p></span>
                   </div>
               </div>
-              <div className='md:flex relative -mt-52 z-50'>
+              <div className='flex justify-center relative -mt-52 z-50'>
                   <div id='cheftip6' className='relative'>
                     <img src={Chef6} className='relative pt-14 -right-32  z-10 md:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
                     <span id='cheflabel6' className='absolute top-20 left-20'>Chef Suzy Aly<br></br><p>Kids Master Chef</p></span>
@@ -205,23 +205,23 @@ function LandingPage() {
           {/* Small Device */}
 
           <div id='chefs' className='xs:block md:hidden relative grid place-items-center pt-10'>
-              <div className='flex relative'>
+              <div className='flex justify-center relative'>
                   <div id='cheftip4' className='relative'>
-                    <img src={Chef4} className='relative h-32 -right-10  z-0   hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <img src={Chef4} className='relative h-32 -right-8  z-0   hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
                     <span id='cheflabel4' className='absolute top-16 left-0 '>Chef Stephanie<br></br><p>Mediterranean cuisine</p></span>
                   </div>
                   <div id='cheftip2' className='relative'>
-                    <img src={Chef2} className='relative h-40   z-10  hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <img src={Chef2} className='relative h-40 right-3  z-10  hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
                     <span id='cheflabel2' className='absolute top-16 left-5 '>Chef Dala<br></br><p>Pastry Chef</p></span>
                   </div>
                   <div id='cheftip3' className='relative'>
-                    <img src={Chef3} className='relative h-32 -left-8  z-0  hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <img src={Chef3} className='relative h-32 -left-10  z-0  hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
                     <span id='cheflabel3' className='absolute top-10 left-0 '>Chef Landry Hatlas<br></br><p>Head Baker</p></span>
                   </div>
                   
               </div>
 
-              <div className='flex relative -mt-24'>
+              <div className='flex justify-center relative -mt-24'>
                   <div id='cheftip1' className='relative'>
                     <img src={Chef1} className='relative h-40 -right-3 z-10  hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
                     <span id='cheflabel1' className='absolute top-16 left-0 '>Chef Claudio Trovato<br></br><p>Italian Cuisine</p></span>
@@ -235,7 +235,7 @@ function LandingPage() {
                     <span id='cheflabel5' className='absolute top-16 right-0 '>Chef VJ<br></br><p>Modern viennoiserie and pastry</p></span>
                   </div>
               </div>
-              <div className='flex relative -mt-20'>
+              <div className='flex justify-center relative -mt-20'>
                   <div id='cheftip6' className='relative'>
                     <img src={Chef6} className='relative h-40 z-20 -right-3   hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
                     <span id='cheflabel6' className='absolute top-20 left-0'>Chef Suzy Aly<br></br><p>Kids Master Chef</p></span>

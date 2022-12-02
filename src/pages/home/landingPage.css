@@ -143,7 +143,7 @@ body{
   /* opacity: .5; */
   transform: scale(.9);
   transition: .5s;
-  filter: blur(2px);
+  filter: blur(1.5px);
 }
 
 .slide2-active{
@@ -217,6 +217,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   
+}
+.enquire-form input[type=checkbox]{
+  accent-color: #FFBD07;
 }
 /* enquire */
 
@@ -356,6 +359,17 @@ body{
 margin: 0;
 }
 
+.slide3, .slide3 img{
+  cursor: pointer;
+}
+.slide3{
+  opacity: .7;
+
+}
+
+.slide3-active{
+  opacity: 1;
+}
 
 
 .instta{

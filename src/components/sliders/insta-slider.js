@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import '../../pages/home/landingPage.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
@@ -19,6 +19,8 @@ let instapic6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786013/C
 
 function Instaslider() {
 
+    const [slideIndex, setSlideIndex] = useState(0);
+
     var settings = {
         dots: false,
         infinite: true,
@@ -27,6 +29,7 @@ function Instaslider() {
         autoplay: true,
         slidesToShow: 7,
         slidesToScroll: 1,
+        beforeChange: (current, next)=>setSlideIndex(next),
         initialSlide: 0,
         centerMode: true,
         centerPadding: "0px",
@@ -65,8 +68,8 @@ function Instaslider() {
         <Slider {...settings} className=' '>
             {
                 InstaData.map((item,index) => (
-                    <div>
-                        <img src={item.image} key={index}/>
+                    <div className={index === slideIndex ? 'slide3 slide3-active': 'slide3'} key={index}>
+                        <img src={item.image} />
                     </div>
                 ))
             }
