@@ -13,14 +13,14 @@ function Navbar() {
           <div>
             <img src={Logo} className='h-16 md:h-20'></img>
           </div>
-          <div className='grid place-items-center hidden md:block'>
-            <ul className='flex  gap-10 text-[#ffffffcc] font-medium tracking-wide'>
+          <div className='hidden md:block '>
+            <ul className='flex gap-10 text-[#ffffffcc] font-medium tracking-wide'>
               <li><NavLink exact to="/" >Home</NavLink></li>
               <li><NavLink to="/about-us" >About Us</NavLink></li>
               <li><NavLink to="/cooking-class" >Cooking Class</NavLink></li>
               <li><NavLink to="/services" >Services</NavLink></li>
               <li><i class="fa-solid fa-magnifying-glass text-xl"></i></li>
-              <li><img src={Logo2} className='h-14 rounded-full bg-yellow-300'></img></li>
+              <li><img src={Logo2} className='h-14 rounded-full '></img></li>
             
             </ul>
           </div>

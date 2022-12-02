@@ -374,14 +374,36 @@ margin: 0;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  background-color: rgba(65, 64, 64, 0.603);
-  padding: 8px 15px;
+  background-color: rgba(43, 42, 42, 0.603);
+  padding: 8px 25px;
   border-radius: 5px;
   z-index: 9999;
 }
+
+/* #chefs span::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #CBA135;
+} */
 #chefs span p{
   font-size: 15px;
 }
+
+@media (200px <= width <= 600px){
+  #chefs span{
+      font-size: 10px;
+      padding: 5px 15px;
+  }
+  #chefs span p{
+    font-size: 7px;
+  }
+}
+
 #cheflabel1{
   visibility: hidden;
   opacity: 0;
