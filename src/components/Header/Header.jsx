@@ -14,7 +14,7 @@ function Navbar() {
           <div className='flex justify-between'>
             <img src={Logo} className='h-12 md:h-20'></img>
             {/* menu */}
-            <i onClick={() => setOpen(!open)} class={`${open ? "fa-solid fa-xmark" : "fa-solid fa-bars"} text-3xl xs:block lg:hidden grid place-items-center`}></i>
+            <i onClick={() => setOpen(!open)} class={`${open ? "fa-solid fa-xmark" : "fa-solid fa-bars"} xs:text-3xl md:text-4xl md:pt-5 xs:block lg:hidden grid place-items-center`}></i>
           </div>
           <div className=''>
             <ul className={`${open ? "block " : "xs:hidden lg:flex"} flex xs:flex-col  lg:flex-row xs:gap-8 xs:pt-5 lg:gap-10 text-[#ffffffcc] font-medium tracking-wide`}>
