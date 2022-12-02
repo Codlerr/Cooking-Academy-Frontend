@@ -7,6 +7,9 @@ import {
 import Home from './pages/home/landingPage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import AboutUs from './pages/aboutus/aboutUs';
+import Cookingclass from './pages/cookingClass/cookingClass';
+import Services from './pages/services/services';
 
 const Layout = () => {
   return(
@@ -29,15 +32,15 @@ const router = createBrowserRouter([
       },
       {
         path:"/about-us",
-        element:<div>about Page</div>
+        element:<AboutUs/>
       },
       {
         path:"/cooking-class",
-        element:<div>cooking Page</div>
+        element:<Cookingclass/>
       },
       {
         path:"/services",
-        element:<div>service Page</div>
+        element:<Services/>
       },
     ]
   }

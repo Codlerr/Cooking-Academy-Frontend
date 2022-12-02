@@ -61,9 +61,9 @@ function Instaslider() {
         ]
       };
   return (
-    <div className='insta relative xs:mt-32 md:mt-44'>
+    <div className='insta relative xs:mt-32 md:mt-52 lg:mt-44'>
         <div className=' instta'>
-            <img className='xs:h-[300px] md:h-[480px]' src={instabox} />
+            <img className='xs:h-[300px] md:h-[600px] lg:h-[480px]' src={instabox} />
         </div>
         <Slider {...settings} className=' '>
             {

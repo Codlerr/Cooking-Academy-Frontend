@@ -174,6 +174,16 @@ body{
 .arrow-left2{
   left:0px;
 }
+@media (200px <= width <= 600px){
+  .arrow2{
+    top: 130px;
+  }
+}
+@media (600px <= width <= 1000px){
+  .arrow2{
+    top: 100px;
+  }
+}
 
 /*  */
 
