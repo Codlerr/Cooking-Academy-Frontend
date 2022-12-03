@@ -58,7 +58,7 @@ function Exploreslider() {
               breakpoint: 480,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
               }
             }
           ]
@@ -70,7 +70,7 @@ function Exploreslider() {
       {
         ExploreData.map((item,index) => (
           <div className='relative ui-card' key={index}>
-            <LazyLoadImage className='rounded-2xl card-img' src={item.image}/>
+            <LazyLoadImage className='rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full' src={item.image}/>
                 <div className='centered'>
                 <p className='text-2xl font-bold text-center'>{item.Title}</p>
                     <p className='text-4xl font-extrabold text-center'>{item.Title2}</p>
