@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import ExploreSlider from '../../components/sliders/explore-slider'
-import WorkSlider from '../../components/sliders/workshop-slider';
+import WorkSlider from '../../components/sliders/workshop-images';
 import InstaSlider from '../../components/sliders/insta-slider';
 import {Faq,Price} from '../../components/constant/data';
 
@@ -18,8 +18,8 @@ let Brand4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cook
 let Brand5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/logo_1_dbbxfe.webp';
 let Brand6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621452/Cooking%20Academy%20Assets/Layer_2_4_huybkz.svg';
 let Brand7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621452/Cooking%20Academy%20Assets/Layer_2_5_gnuqug.svg';
-let Videotemp = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621456/Cooking%20Academy%20Assets/Downloader.la_-62d10cae714b0_sk6f66.webp';
-let zomImg1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786722/Cooking%20Academy%20Assets/Component_19_1_wrk493.jpg';
+let Videotemp = 'https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4';
+let zomImg1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670062023/Cooking%20Academy%20Assets/kitchen%20assets/IMG-20221203-WA0093_gpvuln.jpg';
 let zomImg2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786013/Cooking%20Academy%20Assets/Component_20_1_qkz1nr.jpg';
 let zomImg3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786013/Cooking%20Academy%20Assets/Component_21_1_cuqked.jpg';
 let Item1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621459/Cooking%20Academy%20Assets/Chicken-Yakitori_EXPS_FT21_186160_F_0607_1-15_njhpqx.webp';
@@ -127,10 +127,23 @@ function LandingPage() {
               </div>
 
               <div data-aos="fade-right" className='md:w-10/12 mx-auto md:pt-5 grid grid-cols-2 md:grid-cols-4 xs:gap-5 md:gap-0 place-items-center text-[color:var(--thm-clr2)]'>
-                  <h4 className='xs:text-6xl lg:text-7xl'>+00</h4>
-                  <h4 className='xs:text-6xl lg:text-7xl'>+00</h4>
-                  <h4 className='xs:text-6xl lg:text-7xl'>+00</h4>
-                  <h4 className='xs:text-6xl lg:text-7xl'>+00</h4>
+                  <div className='grid place-items-center'>
+                    <h4 className='xs:text-6xl lg:text-7xl'>+10</h4>
+                    <p className='capitalize'>new partners</p>
+                  </div>
+                  <div className='grid place-items-center'>
+                    <h4 className='xs:text-6xl lg:text-7xl'>+20</h4>
+                    <p className='capitalize'>Workshop</p>
+                  </div>
+                  <div className='grid place-items-center'>
+                    <h4 className='xs:text-6xl lg:text-7xl'>+02</h4>
+                    <p className='capitalize'>awards</p>
+                  </div>
+                  <div className='grid place-items-center'>
+                    <h4 className='xs:text-6xl lg:text-7xl'>+50</h4>
+                    <p className='capitalize'>cooking class</p>
+                  </div>
+                    
               </div>
       </section>
     {/* =================================About us================================= */}
@@ -143,13 +156,15 @@ function LandingPage() {
             <p className='text-[#ffffffcb] md:w-[60%] text-xl xs:pb-5 md:pb-0'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
             <a href='#' className='bg-white hover:bg-[#f0eeee] text-black h-fit w-fit  py-2 px-5 rounded-lg lg:text-xl font-medium'>See all<i class="fa-solid fa-arrow-right pl-5"></i></a>
           </div>
-          <div data-aos="fade-right">
-            <LazyLoadImage effect='blur' className='pt-5' src={Videotemp}/>
+          <div className='workshop-video'>
+            <video className='w-full py-10' controls loop>
+              <source src={Videotemp} type="video/mp4"/>
+            </video>
           </div>
 
           
        {/* slider */}
-        <div data-aos="fade-right" ><WorkSlider/></div>
+        <div><WorkSlider/></div>
        </div>
 
      </section>
@@ -170,8 +185,8 @@ function LandingPage() {
                     <span id='cheflabel2' className='absolute top-5 left-10 '>Chef Dala<br></br><p>Pastry Chef</p></span>
                   </div>
                   <div id='cheftip3' className='relative'>
-                    <img src={Chef3} className='relative  z-0 md:h-[350px] lg:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
-                    <span id='cheflabel3' className='absolute top-0 left-0 '>Chef Landry Hatlas<br></br><p>Head Baker</p></span>
+                    <img src={Chef9} className='relative  z-0 md:h-[350px] lg:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel3' className='absolute top-0 left-0 '>Chef Aisha Al Tamimi<br></br><p>Qatari Chef</p></span>
                   </div>
                   <div id='cheftip4' className='relative'>
                     <img src={Chef4} className='relative pt-20 -left-20  z-20 md:h-[350px] lg:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
@@ -196,15 +211,15 @@ function LandingPage() {
                     <span id='cheflabel8' className='absolute top-5 left-0 '>Chef Airo<br></br><p>Executive Chef</p></span>
                   </div>
                   <div id='cheftip9' className='relative'>
-                    <img src={Chef9} className='relative pt-14 -left-24  z-20 md:h-[350px] lg:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
-                    <span id='cheflabel9' className='absolute top-20 right-20 '>Chef Aisha Al Tamimi<br></br><p>Qatari Chef</p></span>
+                    <img src={Chef3} className='relative pt-14 -left-24  z-20 md:h-[350px] lg:h-[500px] hover:z-30 hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel9' className='absolute top-20 right-20 '>Chef Landry Hatlas<br></br><p>Head Baker</p></span>
                   </div>
               </div>
           </div>
 
           {/* Small Device */}
 
-          <div id='chefs' className='xs:block md:hidden relative grid place-items-center pt-10'>
+          <div id='chefs' className='xs:block md:hidden relative grid place-items-center md:pt-10'>
               <div className='flex justify-center relative'>
                   <div id='cheftip4' className='relative'>
                     <img src={Chef4} className='relative h-32 -right-8  z-0   hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
@@ -215,8 +230,8 @@ function LandingPage() {
                     <span id='cheflabel2' className='absolute top-16 left-5 '>Chef Dala<br></br><p>Pastry Chef</p></span>
                   </div>
                   <div id='cheftip3' className='relative'>
-                    <img src={Chef3} className='relative h-32 -left-10  z-0  hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
-                    <span id='cheflabel3' className='absolute top-10 left-0 '>Chef Landry Hatlas<br></br><p>Head Baker</p></span>
+                    <img src={Chef9} className='relative h-32 -left-10  z-0  hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel3' className='absolute top-10 left-0 '>Chef Aisha Al Tamimi<br></br><p>Qatari Chef</p></span>
                   </div>
                   
               </div>
@@ -245,8 +260,8 @@ function LandingPage() {
                     <span id='cheflabel8' className='absolute top-20 left-5 '>Chef Airo<br></br><p>Executive Chef</p></span>
                   </div>
                   <div id='cheftip9' className='relative'>
-                    <img src={Chef9} className='relative h-40 z-20 -left-3  hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
-                    <span id='cheflabel9' className='absolute top-20 right-0 '>Chef Aisha Al Tamimi<br></br><p>Qatari Chef</p></span>
+                    <img src={Chef3} className='relative h-40 z-20 -left-3  hover:scale-125 transition-all duration-150 ease-in-out cursor-pointer' alt='img'/>
+                    <span id='cheflabel9' className='absolute top-20 right-0 '>Chef Landry Hatlas<br></br><p>Head Baker</p></span>
                   </div>
               </div>
           </div>
@@ -271,18 +286,29 @@ function LandingPage() {
         <a href='#' className='text-slate-600 hover:text-white text-xl font-medium flex align-bottom pt-2'>See all</a>
       </div>
 
-      <div class="grid grid-rows-4 grid-flow-row md:grid-flow-col overflow-hidden" >
+          {/* <div class="grid grid-rows-4 grid-flow-row md:grid-flow-col overflow-hidden" >
             <div class="relative zoom-card row-span-4 md:col-span-2">
               <img alt='img' className='h-full w-full object-cover brightness-75'  src={zomImg1}/>
               <h3 className='absolute bottom-5 left-10 text-4xl font-bold' data-aos="fade-right">Kitchen Studio</h3>
             </div>
             <div class="relative zoom-card row-span-2">
             <img alt='img' className='h-full w-full object-cover brightness-75' src={zomImg2}/>
-            <h3 className='absolute bottom-5 left-10 text-4xl font-bold' data-aos="fade-right">Consultancy</h3>
+            <h3 className='absolute bottom-5 left-10 text-4xl font-bold' data-aos="fade-right">Menu Consultancy</h3>
             </div>
             <div class="relative zoom-card row-span-2">
             <img alt='img' className='h-full w-full object-cover brightness-75' src={zomImg3}/>
             <h3 className='absolute bottom-5 left-10 text-4xl font-bold' data-aos="fade-right">Kitchen</h3>
+            </div>
+          </div> */}
+
+          <div className='grid grid-cols-1 md:grid-cols-2 overflow-hidden bg-yellow-300'>
+              <div class="relative zoom-card ">
+                <img alt='img' className='xs:h-60 md:h-96 w-full object-cover brightness-75'  src={zomImg1}/>
+                <h3 className='absolute bottom-2 left-5 xs:text-2xl md:text-4xl font-bold' data-aos="fade-right">Kitchen Studio</h3>
+              </div>
+              <div class="relative zoom-card ">
+            <img alt='img' className='xs:h-60 md:h-96 w-full object-cover brightness-75' src={zomImg2}/>
+            <h3 className='absolute bottom-2 left-5 xs:text-2xl md:text-4xl font-bold' data-aos="fade-right">Menu Consultancy</h3>
             </div>
           </div>
 

@@ -27,9 +27,9 @@ function SamplePrevArrow({onClick}) {
 function Exploreslider() {
 
         var settings = {
-          dots: true,
+          dots: false,
           infinite: true,
-          speed: 500,
+          speed:2000,
           autoplay: true,
           slidesToShow: 4,
           slidesToScroll: 1,
@@ -43,7 +43,6 @@ function Exploreslider() {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
               }
             },
             {
@@ -72,8 +71,8 @@ function Exploreslider() {
           <div className='relative ui-card' key={index}>
             <LazyLoadImage className='rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full' src={item.image}/>
                 <div className='centered'>
-                <p className='text-2xl font-bold text-center'>{item.Title}</p>
-                    <p className='text-4xl font-extrabold text-center'>{item.Title2}</p>
+                <p className='text-xl font-bold text-center uppercase'>{item.Title}</p>
+                    <p className='text-2xl font-extrabold text-center uppercase'>{item.Title2}</p>
                     <div className='flex flex-col  gap-5 w-64 md:w-52 lg:w-64 mx-auto pb-3 mt-8'>
                       <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
                       <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>

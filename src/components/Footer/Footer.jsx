@@ -39,14 +39,15 @@ function Footer() {
           </div>
           <div className='lg:py-10 text-base font-semibold flex flex-col justify-center gap-10' data-aos="fade-right">
               <div>
-                  <p>GET IN TOUCH</p>
-                  <a href='#'>+974 5004 7555</a>
-                  <p>Email:<a href='#'>Info@cookingacademy.qa</a></p>
+                  <p className='pb-3'>GET IN TOUCH</p>
+                  <a href='tel:+97433242999'>+974 33242999</a><br/>
+                  <a href='tel:+97430067796'>+974 30067796</a>
+                  {/* <p>Email:<a href='#'>Info@cookingacademy.qa</a></p> */}
               </div>
               <div>
-                  <p>the cooking academy</p>
-                  <p>Street 978 - zone 31 - building 30 and 32</p>
-                  <p>Umm Lekhba. Doha</p>
+                  <p>The Cooking Academy</p>
+                  <p>zone 31, building no 30, street 978.</p>
+                  <p>Umm Lekhba, Duhail, Doha, Qatar</p>
               </div>
           </div>
         </div>
