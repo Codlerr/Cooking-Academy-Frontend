@@ -33,8 +33,8 @@ let Item8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621459/Cooki
 let  User1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621459/Cooking%20Academy%20Assets/avatar-ff16c9f4f6a033d94f3ef4d895e78d42_2x_h99rtd.png';
 let  User2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.12.44_PM_qtrtei.jpg';
 let  User3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.10.49_PM_z4nnhl.jpg';
-let  User4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621458/Cooking%20Academy%20Assets/avatar-08db931a9ed7cf9e60e5a8c188683a76_2x_dos7la.png';
-let  User5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png';
+let  User4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670235612/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.43.18_PM_iokoby.jpg';
+let  User5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670235612/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.47.55_PM_bn7zat.jpg';
 let  User6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_2x_bxvjqo.png';
 let  User7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179a7d9dfc_vnafio.png';
 
@@ -486,45 +486,40 @@ function LandingPage() {
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.12.44_PM_qtrtei.jpg)]'>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670235612/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.43.18_PM_iokoby.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14' src={User2} />
+                        <img alt='img' className='h-14 rounded-2xl' src={User4} />
                         <span className='text-white pl-3'>
-                        <p className='font-medium'>Hamad</p>
+                        <p className='font-medium'>Marwa M</p>
+                        <p className='font-medium'>Shehat</p>
                         </span>
                       </div>
                 </div>
                
-                <div className='bg-white p-5  rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>A fully equipped place for
-                those who want to dream of sneezing or even
-                give lessons to trainees</p>
-                  <div className='flex pt-3'>
-                    <img alt='img' className='h-14' src={User1} />
+                <div className='bg-white p-5  rounded-[2rem] '>
+                  <p className='text-black xs:text-lg md:text-sm'>A fantastic organisation! Great service from beginning to end of the process. The team are really informed and go the extra mile at every stage. I would recommend them unreservedly.</p>
+                  <div className='flex pt-2'>
+                    <img alt='img' className='h-14 rounded-2xl' src={User4} />
                     <span className='text-black pl-3'>
-                      <p className='font-medium'>Alghalya</p>
-                      <p className='font-semibold'>Almarzzooqi</p>
+                      <p className='font-medium'>Chef Ali</p>
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.10.49_PM_z4nnhl.jpg)]'>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670235612/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.47.55_PM_bn7zat.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14 rounded-2xl' src={User3} />
+                        <img alt='img' className='h-14 rounded-2xl' src={User5} />
                         <span className='text-white pl-3'>
-                          <p className='font-medium'>Vladimir</p>
+                          <p className='font-medium'>Chef Ali</p>
                           <p className='font-semibold'>Kirkhmeyer</p>
                         </span>
                       </div>
                 </div>
-                <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>It's emazing class even 11m a chef But I benefited from a
-                                lot of classes I recommend everyone interesting for
-                                cooking to join.</p>
-                  <div className='flex pt-3'>
-                    <img alt='img' className='h-14 rounded-2xl' src={User2} />
+                <div className='bg-white p-5  rounded-[2rem] '>
+                  <p className='text-black xs:text-lg md:text-sm'>Great customer service and professional staff members.</p>
+                  <div className='flex pt-2'>
+                    <img alt='img' className='h-14 rounded-2xl' src={User5} />
                     <span className='text-black pl-3'>
-                      <p className='font-medium'>Hamad</p>
-                    
+                      <p className='font-medium'>Chef Ali</p>
                     </span>
                   </div>
                 </div>
