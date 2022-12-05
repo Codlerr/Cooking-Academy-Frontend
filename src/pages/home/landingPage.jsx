@@ -437,8 +437,8 @@ function LandingPage() {
                   <div className='flex pt-3'>
                     <img alt='img' className='h-14' src={User1} />
                     <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
+                      <p className='font-medium'>Alghalya</p>
+                      <p className='font-semibold'>Almarzzooqi</p>
                     </span>
                   </div>
                 </div>
@@ -446,8 +446,8 @@ function LandingPage() {
                     <div className='absolute bottom-2 left-2 flex pt-3'>
                         <img alt='img' className='h-14 rounded-2xl' src={User3} />
                         <span className='text-white pl-3'>
-                          <p className='font-medium'>Alex</p>
-                          <p className='font-semibold'>Joseph</p>
+                          <p className='font-medium'>Vladimir</p>
+                          <p className='font-semibold'>Kirkhmeyer</p>
                         </span>
                       </div>
                 </div>
@@ -458,8 +458,8 @@ function LandingPage() {
                   <div className='flex pt-3'>
                     <img alt='img' className='h-14 rounded-2xl' src={User2} />
                     <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
+                      <p className='font-medium'>Hamad</p>
+                    
                     </span>
                   </div>
                 </div>
@@ -467,8 +467,7 @@ function LandingPage() {
                     <div className='absolute bottom-2 left-2 flex pt-3'>
                         <img alt='img' className='h-14' src={User2} />
                         <span className='text-white pl-3'>
-                          <p className='font-medium'>Alex</p>
-                          <p className='font-semibold'>Joseph</p>
+                        <p className='font-medium'>Hamad</p>
                         </span>
                       </div>
                 </div>
@@ -482,8 +481,8 @@ function LandingPage() {
                   <div className='flex pt-3'>
                     <img alt='img' className='h-14 rounded-2xl' src={User3} />
                     <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
+                      <p className='font-medium'>Vladimir</p>
+                      <p className='font-semibold'>Kirkhmeyer</p>
                     </span>
                   </div>
                 </div>
@@ -491,11 +490,11 @@ function LandingPage() {
                     <div className='absolute bottom-2 left-2 flex pt-3'>
                         <img alt='img' className='h-14' src={User2} />
                         <span className='text-white pl-3'>
-                          <p className='font-medium'>Alex</p>
-                          <p className='font-semibold'>Joseph</p>
+                        <p className='font-medium'>Hamad</p>
                         </span>
                       </div>
                 </div>
+               
                 <div className='bg-white p-5  rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>A fully equipped place for
                 those who want to dream of sneezing or even
@@ -503,8 +502,8 @@ function LandingPage() {
                   <div className='flex pt-3'>
                     <img alt='img' className='h-14' src={User1} />
                     <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
+                      <p className='font-medium'>Alghalya</p>
+                      <p className='font-semibold'>Almarzzooqi</p>
                     </span>
                   </div>
                 </div>
@@ -512,8 +511,8 @@ function LandingPage() {
                     <div className='absolute bottom-2 left-2 flex pt-3'>
                         <img alt='img' className='h-14 rounded-2xl' src={User3} />
                         <span className='text-white pl-3'>
-                          <p className='font-medium'>Alex</p>
-                          <p className='font-semibold'>Joseph</p>
+                          <p className='font-medium'>Vladimir</p>
+                          <p className='font-semibold'>Kirkhmeyer</p>
                         </span>
                       </div>
                 </div>
@@ -524,8 +523,8 @@ function LandingPage() {
                   <div className='flex pt-3'>
                     <img alt='img' className='h-14 rounded-2xl' src={User2} />
                     <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
+                      <p className='font-medium'>Hamad</p>
+                    
                     </span>
                   </div>
                 </div>
