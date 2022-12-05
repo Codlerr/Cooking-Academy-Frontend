@@ -3,7 +3,7 @@ import React,{useEffect} from 'react'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 let Logo ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/Layer_2_vmobmf.svg';
-
+let ISO = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670215005/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_09.49.53_gm3fno.png';
 
 
 
@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <>
-    <section className='bg-[#000000f6] xs:py-20 md:py-10'>
+    <section className='bg-[#000000f6] xs:pt-20 md:pt-10'>
         <div className='w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 md:gap-10 bg-cover bg-no-repeat bg-center md:bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669628048/Cooking%20Academy%20Assets/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_dhixjz.webp)] text-[#ffffffdc] border-[#CBA135] md:border-t-2 md:border-b-2'>
           
           <div className='lg:py-10 ' data-aos="fade-right">
@@ -52,15 +52,22 @@ function Footer() {
           </div>
         </div>
 
-        <div className='w-11/12 mx-auto flex xs:flex-col md:flex-row xs:gap-5 md:gap-0 justify-between text-white pt-10' >
-            <div><p>All Right Reserved.</p></div>
-            <div className='flex gap-5'>
-              <a href='#'><i class="fa-brands fa-facebook text-xl"></i></a>
-              <a href='#'><i class="fa-brands fa-twitter text-xl"></i></a>
-              <a href='#'><i class="fa-brands fa-linkedin-in text-xl"></i></a>
+        <div className=' w-11/12 mx-auto flex xs:flex-col md:flex-row xs:gap-5 md:gap-0 justify-between text-white py-8' >
+            <div className='flex flex-col gap-3'>
+              <div><img className='h-16' src={ISO} alt="" /></div>
+              <p>All Right Reserved.</p>
             </div>
-            <div>
+        
+            <div className='flex md:grid grid-flow-col md:place-self-center gap-5'>
+                <a href='#'><i class="fa-brands fa-facebook text-xl"></i></a>
+                <a href='#'><i class="fa-brands fa-twitter text-xl"></i></a>
+                <a href='#'><i class="fa-brands fa-linkedin-in text-xl"></i></a>
+             </div>
+           
+        
+            <div className='grid  md:place-self-center'>
               <p><a href='#'>Terms of Use</a><span className='px-5'>|</span><a href='#'>Privacy Policy</a></p>
+              
             </div>
         </div>
     
