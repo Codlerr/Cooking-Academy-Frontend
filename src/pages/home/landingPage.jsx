@@ -31,8 +31,8 @@ let Item6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621458/Cooki
 let Item7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621449/Cooking%20Academy%20Assets/Cuccidati_EXPS_HCBZ22_49902_P2_MD_04_15_16b-1_tvsxfq.webp';
 let Item8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621459/Cooking%20Academy%20Assets/amirali-mirhashemian-5tC2YOVXE9Y-unsplash_fjtjrv.webp';
 let  User1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621459/Cooking%20Academy%20Assets/avatar-ff16c9f4f6a033d94f3ef4d895e78d42_2x_h99rtd.png';
-let  User2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621458/Cooking%20Academy%20Assets/avatar-8aae058a0f5df7ef941fe5ef9577bc3c_2x_ybvck6.png';
-let  User3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621458/Cooking%20Academy%20Assets/avatar-8aae058a0f5df7ef941fe5ef9577bc3c_2x_ybvck6.png';
+let  User2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.12.44_PM_qtrtei.jpg';
+let  User3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.10.49_PM_z4nnhl.jpg';
 let  User4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621458/Cooking%20Academy%20Assets/avatar-08db931a9ed7cf9e60e5a8c188683a76_2x_dos7la.png';
 let  User5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png';
 let  User6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_2x_bxvjqo.png';
@@ -121,7 +121,7 @@ function LandingPage() {
       <section className='w-11/12 mx-auto py-10'>
               <div data-aos="fade-right">
                   <h2 className='text-center font-bold xs:text-4xl lg:text-5xl'>About Us</h2>
-                  <p className='xs:w-[90%] md:w-[80%] mx-auto text-center text-[#ffffffcb] xs:text-lg md:text-xl py-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quas nam fuga itaque expedita distinctio totam dolore, consequuntur ullam dolorum est consectetur eos, maxime enim dolorem nihil illo minus, reprehenderit aliquid delectus dignissimos maiores dicta sunt quasi! Harum, magnam doloribus?</p>
+                  <p className='xs:w-[90%] md:w-[80%] mx-auto text-center text-[#ffffffcb] xs:text-lg md:text-xl py-5'>The Cooking Academy (TCA) is culinary startup in Qatar with the aim of bringing people together, to learn and enjoy the art of cooking. The academy does this through various engagements and events for culinary professionals and food lovers to interact and do what they love. The academy aims at ensuring that people prepare meals that are as pleasing to the eye as they are to the palate.The newly established academy has been organising food-tasting events for professionals and foodies.</p>
                   <h2 className='text-center font-bold text-4xl text-[color:var(--thm-clr2)] pt-5'>Last year achievemrnt</h2>
                   <p className='xs:w-[90%] md:w-[60%] mx-auto text-center text-[#ffffffcb] xs:text-lg md:text-xl py-5'>we are a culinary startup based in qatar with the aim of bringing people together, to leam and enjoy the art of cooking.</p>
               </div>
@@ -270,9 +270,7 @@ function LandingPage() {
 
           <div className='text-center pt-5' data-aos="fade-right">
             <h2 className='text-4xl font-bold'>Meet our chefs</h2>
-            <p className='text-xl pt-3 md:w-[70%] mx-auto text-[#ffffffcb]'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est</p>
+            <p className='text-xl pt-3 md:w-[70%] mx-auto text-[#ffffffcb]'>Our passionate culinary team is made up of innovative and experienced professionals with years of experience in foodservice. Their work combines food science, technology and the culinary arts to imagine the future of food. They draw on current trends and culinary insights from across our global network to create customized solutions for all of our clients. Using proprietary flavor research, our team of forward-thinking chefs aims to guide the next phase of foodservice. Individually, they've earned accolades across the industry, but together they're crafting the future of flavor!</p>
           </div>
       </section>
      {/* =================================Meet Our Chefs================================= */}
@@ -321,7 +319,7 @@ function LandingPage() {
           <div className='grid grid-cols-1 md:grid-cols-2 md:px-5 bg-slate-800 xs:py-10 md:py-16 rounded-md md:place-items-center enquire-form'>
               <div className='xs:px-2 md:px-0' data-aos="fade-right">
                 <h3 className='font-bold text-2xl'>Enquire Now for More Details</h3>
-                <p className='text-[#ffffffcb]'>Enter your email and we'll send you some samples of our favorite classes.</p>
+                <p className='text-[#ffffffcb]'>Enter your email and we’ll keep you updates on all upcoming programs.</p>
               </div>
               <div className='xs:px-2 md:px-0 xs:pt-5 md:pt-0'>
                 <form className='flex xs:flex-col md:flex-row justify-start gap-5 '>
@@ -433,7 +431,9 @@ function LandingPage() {
 
           <div className='xs:w-10/12 md:w-full mx-auto md:col-span-3 grid grid-cols-1 gap-3 md:grid-cols-3 overflow-y-scroll xs:h-[600px] md:h-[500px] lg:h-[600px] scroll-main'>
                 <div className='bg-white p-5  rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
+                  <p className='text-black xs:text-lg md:text-sm'>A fully equipped place for
+                those who want to dream of sneezing or even
+                give lessons to trainees</p>
                   <div className='flex pt-3'>
                     <img alt='img' className='h-14' src={User1} />
                     <span className='text-black pl-3'>
@@ -442,9 +442,9 @@ function LandingPage() {
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669705586/Cooking%20Academy%20Assets/Downloader.la_-62d179a7d9dfc_dl2d8z.webp)]'>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.10.49_PM_z4nnhl.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14' src={User7} />
+                        <img alt='img' className='h-14 rounded-2xl' src={User3} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
@@ -452,18 +452,20 @@ function LandingPage() {
                       </div>
                 </div>
                 <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
+                  <p className='text-black xs:text-lg md:text-sm'>It's emazing class even 11m a chef But I benefited from a
+                                lot of classes I recommend everyone interesting for
+                                cooking to join.</p>
                   <div className='flex pt-3'>
-                    <img alt='img' className='h-14' src={User2} />
+                    <img alt='img' className='h-14 rounded-2xl' src={User2} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706361/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_zo60xv.webp)]'>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.12.44_PM_qtrtei.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14' src={User6} />
+                        <img alt='img' className='h-14' src={User2} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
@@ -471,9 +473,14 @@ function LandingPage() {
                       </div>
                 </div>
                 <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
+                  <p className='text-black xs:text-lg md:text-sm'>Recently, we had team building event in The Cooking
+                        Academy. Everything was very well organized by the
+                        academy. Team enjoyed the black box activity and spend
+                        good 2 hours for cooking different type of dishes.
+                        Recommend others to try it as well. Everyone will
+                        definitely remember team building activity.</p>
                   <div className='flex pt-3'>
-                    <img alt='img' className='h-14' src={User4} />
+                    <img alt='img' className='h-14 rounded-2xl' src={User3} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
@@ -501,7 +508,7 @@ function LandingPage() {
                 </div>
                 <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706522/Cooking%20Academy%20Assets/avatar-8aae058a0f5df7ef941fe5ef9577bc3c_shlfy1.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14' src={User2} />
+                        <img alt='img' className='h-14' src={User4} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
