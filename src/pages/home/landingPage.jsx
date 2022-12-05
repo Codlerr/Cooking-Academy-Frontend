@@ -299,7 +299,7 @@ function LandingPage() {
             </div>
           </div> */}
 
-          <div className='grid grid-cols-1 md:grid-cols-2 overflow-hidden bg-yellow-300'>
+          <div className='grid grid-cols-1 md:grid-cols-2 overflow-hidden'>
               <div class="relative zoom-card ">
                 <img alt='img' className='xs:h-60 md:h-96 w-full object-cover brightness-75'  src={zomImg1}/>
                 <h3 className='absolute bottom-2 left-5 xs:text-2xl md:text-4xl font-bold' data-aos="fade-right">Kitchen Studio</h3>
@@ -487,46 +487,19 @@ function LandingPage() {
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706433/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_pgh3it.webp)]'>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.12.44_PM_qtrtei.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14' src={User5} />
+                        <img alt='img' className='h-14' src={User2} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
                         </span>
                       </div>
                 </div>
-                <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
-                  <div className='flex pt-3'>
-                    <img alt='img' className='h-14' src={User3} />
-                    <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
-                    </span>
-                  </div>
-                </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706522/Cooking%20Academy%20Assets/avatar-8aae058a0f5df7ef941fe5ef9577bc3c_shlfy1.jpg)]'>
-                    <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14' src={User4} />
-                        <span className='text-white pl-3'>
-                          <p className='font-medium'>Alex</p>
-                          <p className='font-semibold'>Joseph</p>
-                        </span>
-                      </div>
-                </div>
-                <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
-                  <div className='flex pt-3'>
-                    <img alt='img' className='h-14' src={User4} />
-                    <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
-                    </span>
-                  </div>
-                </div>
-                <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
+                <div className='bg-white p-5  rounded-[2rem]'>
+                  <p className='text-black xs:text-lg md:text-sm'>A fully equipped place for
+                those who want to dream of sneezing or even
+                give lessons to trainees</p>
                   <div className='flex pt-3'>
                     <img alt='img' className='h-14' src={User1} />
                     <span className='text-black pl-3'>
@@ -535,9 +508,9 @@ function LandingPage() {
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669705586/Cooking%20Academy%20Assets/Downloader.la_-62d179a7d9dfc_dl2d8z.webp)]'>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.10.49_PM_z4nnhl.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14' src={User7} />
+                        <img alt='img' className='h-14 rounded-2xl' src={User3} />
                         <span className='text-white pl-3'>
                           <p className='font-medium'>Alex</p>
                           <p className='font-semibold'>Joseph</p>
@@ -545,72 +518,20 @@ function LandingPage() {
                       </div>
                 </div>
                 <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
+                  <p className='text-black xs:text-lg md:text-sm'>It's emazing class even 11m a chef But I benefited from a
+                                lot of classes I recommend everyone interesting for
+                                cooking to join.</p>
                   <div className='flex pt-3'>
-                    <img alt='img' className='h-14' src={User2} />
+                    <img alt='img' className='h-14 rounded-2xl' src={User2} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Alex</p>
                       <p className='font-semibold'>Joseph</p>
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706361/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_zo60xv.webp)]'>
-                    <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14' src={User6} />
-                        <span className='text-white pl-3'>
-                          <p className='font-medium'>Alex</p>
-                          <p className='font-semibold'>Joseph</p>
-                        </span>
-                      </div>
-                </div>
-                <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
-                  <div className='flex pt-3'>
-                    <img alt='img' className='h-14' src={User1} />
-                    <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
-                    </span>
-                  </div>
-                </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669705586/Cooking%20Academy%20Assets/Downloader.la_-62d179a7d9dfc_dl2d8z.webp)]'>
-                    <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14' src={User7} />
-                        <span className='text-white pl-3'>
-                          <p className='font-medium'>Alex</p>
-                          <p className='font-semibold'>Joseph</p>
-                        </span>
-                      </div>
-                </div>
-                <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
-                  <div className='flex pt-3'>
-                    <img alt='img' className='h-14' src={User2} />
-                    <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
-                    </span>
-                  </div>
-                </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669706361/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_zo60xv.webp)]'>
-                    <div className='absolute bottom-2 left-2 flex pt-3'>
-                        <img alt='img' className='h-14' src={User6} />
-                        <span className='text-white pl-3'>
-                          <p className='font-medium'>Alex</p>
-                          <p className='font-semibold'>Joseph</p>
-                        </span>
-                      </div>
-                </div>
-                <div className='bg-white p-5 rounded-[2rem]'>
-                  <p className='text-black xs:text-lg md:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est deserunt iusto recusandae expedita quidem, delectus provident ut magni ipsum.</p>
-                  <div className='flex pt-3'>
-                    <img alt='img' className='h-14' src={User2} />
-                    <span className='text-black pl-3'>
-                      <p className='font-medium'>Alex</p>
-                      <p className='font-semibold'>Joseph</p>
-                    </span>
-                  </div>
-                </div>
+                
+               
+                
                 
           </div>
       </div>
