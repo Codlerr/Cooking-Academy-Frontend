@@ -41,97 +41,97 @@ export const ExploreData=[
     {
         Title: `Traditional`,
         Title2: `Qatari Food`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_vjmgsi.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322167/Cooking%20Academy%20Assets/foods/Qatari_food_ue24zq.jpg`
 
     },
     {
         Title: `Arabic`,
         Title2: `Food`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_1_cxnvhp.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322167/Cooking%20Academy%20Assets/foods/arabic_zfyf7o.jpg`
 
     },
     {
         Title: `Pastry basic`,
         Title2: `fundementals`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_2_gnkpms.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322164/Cooking%20Academy%20Assets/foods/Pastry_basic_mowbyq.jpg`
 
     },
     {
         Title: `Modern`,
         Title2: `pastry class`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_3_gzyv5c.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322163/Cooking%20Academy%20Assets/foods/modern_pastry_djxfxw.jpg`
 
     },
     {
         Title: `Croissants`,
         Title2: `Master Class`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_vjmgsi.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322166/Cooking%20Academy%20Assets/foods/Croissants_cutlcw.jpg`
 
     },
     {
         Title: `Keto`,
         Title2: `Diet`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_1_cxnvhp.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322165/Cooking%20Academy%20Assets/foods/Keto_diet_le6yno.jpg`
 
     },
     {
         Title: `International`,
         Title2: `Food`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_2_gnkpms.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322162/Cooking%20Academy%20Assets/foods/International_lon1gb.jpg`
 
     },
     {
         Title: `Cake`,
         Title2: `masterclass`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_3_gzyv5c.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322163/Cooking%20Academy%20Assets/foods/Cake_frizoa.jpg`
 
     },
     {
         Title: `Chocolates &`,
         Title2: `Bon bon masterclass`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_vjmgsi.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322165/Cooking%20Academy%20Assets/foods/Chocolates_ucwptp.jpg`
 
     },
     {
         Title: `Desserts`,
         Title2: `Masterclass`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_1_cxnvhp.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322166/Cooking%20Academy%20Assets/foods/Desserts_yqtnwt.jpg`
 
     },
     {
         Title: `Indian`,
         Title2: `Food`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_2_gnkpms.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322162/Cooking%20Academy%20Assets/foods/Indian_food_yyqojn.jpg`
 
     },
     {
         Title: `Bread`,
         Title2: `Masterclass`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_3_gzyv5c.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322163/Cooking%20Academy%20Assets/foods/Bread_tc9mrf.jpg`
 
     },
     {
         Title: `Cheesecake`,
         Title2: `Masterclass`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_vjmgsi.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322165/Cooking%20Academy%20Assets/foods/Cheesecake_oxychn.jpg`
 
     },
     {
         Title: `Thai`,
         Title2: `Food`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_1_cxnvhp.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322165/Cooking%20Academy%20Assets/foods/Thai_food_y59efd.jpg`
 
     },
     {
         Title: `Italian`,
         Title2: `Cuisine`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_2_gnkpms.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322163/Cooking%20Academy%20Assets/foods/Italian_xfrisu.jpg`
 
     },
     {
         Title: `French`,
         Title2: `bakery`,
-        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/istockphoto-922783734-612x612_3_gzyv5c.jpg`
+        image: `https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322163/Cooking%20Academy%20Assets/foods/French_hwqew4.jpg`
 
     },
     
