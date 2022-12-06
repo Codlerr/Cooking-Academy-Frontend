@@ -422,12 +422,13 @@ function LandingPage() {
     {/* ==================================Feedback================================ */}
     <section className='feedback xs:my-10 lg:my-28 xs:h-screen md:h-[800px] lg:h-[600px] overflow-hidden'>
       <div className='w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5'>
-          <div className='md:col-span-2 flex justify-center flex-col xs:py-10 lg:py-0' data-aos="fade-right">
+          <div className='md:col-span-2 flex justify-center flex-col xs:py-10 lg:py-0 lg:h-[600px]' data-aos="fade-right">
                 <h1 className='xs:text-3xl md:text-4xl font-medium pb-5'>Feedbacks</h1>
                 <a className='bg-white text-black px-4 py-2 text-xl rounded-lg w-fit h-fit' href="#">Read all <i class="fa-solid fa-arrow-right pl-4"></i></a>
           </div>
 
-          <div className='xs:w-10/12 md:w-full mx-auto md:col-span-3 grid grid-cols-1 gap-3 md:grid-cols-3 overflow-y-scroll xs:h-[600px] md:h-[500px] lg:h-[600px] scroll-main'>
+          {/* <div className='xs:w-10/12 md:w-full mx-auto md:col-span-3 grid grid-cols-1 gap-3 md:grid-cols-3 overflow-y-scroll xs:h-[600px] md:h-[500px] lg:h-[600px] scroll-main'> */}
+          <div className='xs:w-10/12 md:w-full mx-auto md:col-span-3 grid grid-cols-1 gap-3 md:grid-cols-3 overflow-hidden  xs:h-[650px] md:h-[570px] lg:h-fit  scroll-main'>
                 <div className='bg-white p-5  rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>A fully equipped place for
                 those who want to dream of sneezing or even
