@@ -535,8 +535,7 @@ function LandingPage() {
     <section className='xs:py-10  insta-bg'>
          <div className='xs:w-11/12 md:w-full mx-auto text-center text-[#ffffffcb]' data-aos="fade-right">
             <h2 className='xs:text-xl md:text-3xl '>Check out@cookingacademy on instagram</h2>
-            <p className='xs:text-sm md:text-base py-3 lg:w-[30%] mx-auto'>Lorem ipsurn dolor sit amet, consetetur sadipscing elitr, sed diam
-                nonumy eirmod tempor invidunt ut I</p>
+            <p className='xs:text-sm md:text-base py-3 lg:w-[30%] mx-auto'>Follow us on instagram to get more tips & updates on cooking</p>
           </div>
 
           {/* scroll */}
