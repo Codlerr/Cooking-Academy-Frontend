@@ -18,9 +18,9 @@ function Footer() {
     <section className='bg-[#000000f6] xs:pt-20 md:pt-10'>
         <div className='w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 md:gap-10 bg-cover bg-no-repeat bg-center md:bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669628048/Cooking%20Academy%20Assets/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_dhixjz.webp)] text-[#ffffffdc] border-[#CBA135] md:border-t-2 md:border-b-2'>
           
-          <div className='lg:py-10 ' data-aos="fade-right">
+          <div className='lg:py-20 ' data-aos="fade-right">
             <img className='' src={Logo}></img>
-            <p className='pt-5 xs:text-sm md:text-xs lg:text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure, nulla soluta repudiandae non odio quia reprehenderit inventore corporis rem repellendus ullam culpa quo suscipit veniam laboriosam minima nobis obcaecati.</p>
+            {/* <p className='pt-5 xs:text-sm md:text-xs lg:text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure, nulla soluta repudiandae non odio quia reprehenderit inventore corporis rem repellendus ullam culpa quo suscipit veniam laboriosam minima nobis obcaecati.</p> */}
           </div>
           <div className='md:col-span-2 grid xs:py-10 md:py-0 grid-cols-2' data-aos="fade-right">
                   <div className='lg:py-10 grid lg:place-items-center '>

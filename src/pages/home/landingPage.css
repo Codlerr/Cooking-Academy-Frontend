@@ -94,8 +94,11 @@ body{
 
 
 .card-img{
-  filter: brightness(0.6);
+  filter: brightness(0.9);
   cursor: pointer;
+}
+.card-img:hover{
+  filter: brightness(0.7);
 }
 
 .arroww2{
@@ -407,9 +410,10 @@ margin: 0;
   cursor: pointer;
 }
 .slide3{
-  opacity: .7;
+  opacity: .8;
   transition: .5s;
 }
+
 
 .slide3-active{
   opacity: 1;
