@@ -191,9 +191,6 @@ export const WorkshopImg=[
         image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670062059/Cooking%20Academy%20Assets/kitchen%20assets/IMG-20221203-WA0080_nyuzyn.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670062055/Cooking%20Academy%20Assets/kitchen%20assets/IMG-20221203-WA0075_vkgpzr.jpg`
-    },
-    {
         image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670062054/Cooking%20Academy%20Assets/kitchen%20assets/IMG-20221203-WA0085_x0e7ew.jpg`
     },
     {

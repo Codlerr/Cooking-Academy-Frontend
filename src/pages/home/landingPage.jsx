@@ -544,7 +544,7 @@ function LandingPage() {
             <InstaSlider/>
           </div>
           <div className='grid place-items-center xs:mt-16 md:mt-28'>
-            <a className='bg-white hover:bg-[#FFBB00] rounded-lg px-3 py-2 text-black hover:text-white xs:text-lg md:text-xl' href="#">Visit Our Instgram<i class="fa-brands fa-instagram font-medium text-2xl pl-2"></i></a>
+            <a className='bg-white hover:bg-[#FFBB00] rounded-lg px-3 py-2 text-black hover:text-white xs:text-lg md:text-xl' href="https://instagram.com/thecookingacademyqtr" target="__blank">Visit Our Instgram<i class="fa-brands fa-instagram font-medium text-2xl pl-2"></i></a>
           </div>
     </section>
     {/* ==================================Instagram================================ */}
