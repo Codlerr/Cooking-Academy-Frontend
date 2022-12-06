@@ -55,8 +55,8 @@ function Footer() {
 
         <div className=' w-11/12 mx-auto flex xs:flex-col md:flex-row xs:gap-5 md:gap-0 justify-between text-white py-8' >
             <div className='flex gap-5'>
-              <p>All Right Reserved.</p>
               <div className='flex gap-2'><img className='h-6' src={ISO1}/><p className='grid place-items-center text-xs'>22000:2018</p></div>
+              <p>All Right Reserved.</p>
             </div>
         
             <div className='flex md:grid grid-flow-col md:place-self-center gap-5'>
