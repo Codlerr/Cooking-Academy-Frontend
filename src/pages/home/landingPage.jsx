@@ -14,10 +14,11 @@ import {Faq,Price} from '../../components/constant/data';
 let Brand1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669636282/Cooking%20Academy%20Assets/PngItem_2430409_c1mjn7.png';
 let Brand2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/Layer_2_1_i3ipvl.svg';
 let Brand3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621452/Cooking%20Academy%20Assets/Layer_2_2_ge5flv.svg';
-let Brand4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/Layer_2_3_id8fxj.svg';
+let Brand4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670308695/Cooking%20Academy%20Assets/2014_7_8-alto-shaam-logo-trans-650x248_bsxirp.png';
 let Brand5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/logo_1_dbbxfe.webp';
-let Brand6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621452/Cooking%20Academy%20Assets/Layer_2_4_huybkz.svg';
-let Brand7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621452/Cooking%20Academy%20Assets/Layer_2_5_gnuqug.svg';
+let Brand6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670309776/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.18_1_okxyeg.png';
+let Brand7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670302898/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.17_vqqecw.png';
+let Brand8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670309778/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.19c_1_tu42s7.png';
 let Videotemp = 'https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4';
 let zomImg1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670062023/Cooking%20Academy%20Assets/kitchen%20assets/IMG-20221203-WA0093_gpvuln.jpg';
 let zomImg2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786013/Cooking%20Academy%20Assets/Component_20_1_qkz1nr.jpg';
@@ -91,7 +92,7 @@ function LandingPage() {
 
     {/* =================================Brands================================= */}
     <section className='w-11/12 mx-auto'>
-        <div className='grid grid-cols-1 md:grid-cols-7 gap-10 place-items-center py-20' data-aos="fade-right">
+        <div className='grid grid-cols-1 md:grid-cols-8 gap-10 place-items-center py-20' data-aos="fade-right">
           <LazyLoadImage effect='blur' className='h-10' src={Brand1}/>
           <LazyLoadImage effect='blur' className='h-10' src={Brand2}/>
           <LazyLoadImage effect='blur' className='h-14' src={Brand3}/>
@@ -99,6 +100,7 @@ function LandingPage() {
           <LazyLoadImage effect='blur' className='h-14' src={Brand5}/>
           <LazyLoadImage effect='blur' className='h-14' src={Brand6}/>
           <LazyLoadImage effect='blur' className='h-14' src={Brand7}/>
+          <LazyLoadImage effect='blur' className='h-14' src={Brand8}/>
         </div>
     </section>
     {/* =================================Brands================================= */}
@@ -108,7 +110,7 @@ function LandingPage() {
     <section className='' data-aos="fade-right">
       <div className='flex gap-10 py-10 xs:px-5 md:px-0 md:pl-5 lg:pl-16'>
         <h3 className='xs:text-2xl md:text-3xl font-semibold'>Explore our classes.</h3>
-        <a href='#' className='text-slate-600 hover:text-white text-xl font-medium flex align-bottom md:pt-2'>See all</a>
+        {/* <a href='#' className='text-slate-600 hover:text-white text-xl font-medium flex align-bottom md:pt-2'>See all</a> */}
       </div>
       <ExploreSlider/>
       <div className='grid place-items-center pt-20 pb-10'>
@@ -122,8 +124,7 @@ function LandingPage() {
               <div data-aos="fade-right">
                   <h2 className='text-center font-bold xs:text-4xl lg:text-5xl'>About Us</h2>
                   <p className='xs:w-[90%] md:w-[80%] mx-auto text-center text-[#ffffffcb] xs:text-lg md:text-xl py-5'>The Cooking Academy (TCA) is culinary startup in Qatar with the aim of bringing people together, to learn and enjoy the art of cooking. The academy does this through various engagements and events for culinary professionals and food lovers to interact and do what they love. The academy aims at ensuring that people prepare meals that are as pleasing to the eye as they are to the palate.The newly established academy has been organising food-tasting events for professionals and foodies.</p>
-                  <h2 className='text-center font-bold text-4xl text-[color:var(--thm-clr2)] pt-5'>Last year achievemrnt</h2>
-                  <p className='xs:w-[90%] md:w-[60%] mx-auto text-center text-[#ffffffcb] xs:text-lg md:text-xl py-5'>we are a culinary startup based in qatar with the aim of bringing people together, to leam and enjoy the art of cooking.</p>
+                  <h2 className='text-center font-bold text-4xl text-[color:var(--thm-clr2)] pt-5 pb-3'>Last year achievement</h2>
               </div>
 
               <div data-aos="fade-right" className='md:w-10/12 mx-auto md:pt-5 grid grid-cols-2 md:grid-cols-4 xs:gap-5 md:gap-0 place-items-center text-[color:var(--thm-clr2)]'>
@@ -151,10 +152,9 @@ function LandingPage() {
      {/* =================================Workshop================================= */}
      <section className='workshop'>
        <div className='xs:w-11/12 lg:w-10/12 mx-auto xs:pt-10 lg:pt-20'>
-          <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
           <div className='flex flex-col md:flex-row justify-between pt-5' data-aos="fade-right">
-            <p className='text-[#ffffffcb] md:w-[60%] text-xl xs:pb-5 md:pb-0'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
-            <a href='#' className='bg-white hover:bg-[#f0eeee] text-black h-fit w-fit  py-2 px-5 rounded-lg lg:text-xl font-medium'>See all<i class="fa-solid fa-arrow-right pl-5"></i></a>
+          <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
+            <a href='#' className='bg-white hover:bg-[#f0eeee] text-black h-fit w-fit xs:mt-5 md:mt-0  py-2 px-5 rounded-lg lg:text-xl font-medium'>See all<i class="fa-solid fa-arrow-right pl-5"></i></a>
           </div>
           <div className='workshop-video'>
             <video className='w-full py-10' controls loop>
@@ -279,9 +279,8 @@ function LandingPage() {
 
     {/* ==================================Other Service================================ */}
     <section>
-      <div className='md:pl-5 lg:pl-32 flex gap-10 xs:px-5 md:px-0 py-10' data-aos="fade-right">
+      <div className='md:pl-5 lg:pl-32  xs:px-5 md:px-0 py-10' data-aos="fade-right">
         <h3 className='text-3xl font-semibold'>Other Services.</h3>
-        <a href='#' className='text-slate-600 hover:text-white text-xl font-medium flex align-bottom pt-2'>See all</a>
       </div>
 
           {/* <div class="grid grid-rows-4 grid-flow-row md:grid-flow-col overflow-hidden" >
@@ -424,8 +423,7 @@ function LandingPage() {
     <section className='feedback xs:my-10 lg:my-28 xs:h-screen md:h-[800px] lg:h-[600px] overflow-hidden'>
       <div className='w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5'>
           <div className='md:col-span-2 flex justify-center flex-col xs:py-10 lg:py-0' data-aos="fade-right">
-                <h1 className='xs:text-3xl md:text-4xl font-medium'>Feedbacks</h1>
-                <p className='text-[#ffffffc7] text-lg lg:w-[60%] py-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates id inventore fugiat!</p>
+                <h1 className='xs:text-3xl md:text-4xl font-medium pb-5'>Feedbacks</h1>
                 <a className='bg-white text-black px-4 py-2 text-xl rounded-lg w-fit h-fit' href="#">Read all <i class="fa-solid fa-arrow-right pl-4"></i></a>
           </div>
 
@@ -501,7 +499,8 @@ function LandingPage() {
                   <div className='flex pt-2'>
                     <img alt='img' className='h-14 rounded-2xl' src={User4} />
                     <span className='text-black pl-3'>
-                      <p className='font-medium'>Chef Ali</p>
+                    <p className='font-medium'>Marwa M</p>
+                        <p className='font-medium'>Shehat</p>
                     </span>
                   </div>
                 </div>
@@ -514,9 +513,9 @@ function LandingPage() {
                         </span>
                       </div>
                 </div>
-                <div className='bg-white p-5  rounded-[2rem] '>
+                <div className='bg-white p-5  rounded-[2rem]'>
                   <p className='text-black xs:text-lg md:text-sm'>Great customer service and professional staff members.</p>
-                  <div className='flex pt-2'>
+                  <div className='flex pt-5'>
                     <img alt='img' className='h-14 rounded-2xl' src={User5} />
                     <span className='text-black pl-3'>
                       <p className='font-medium'>Chef Ali</p>
