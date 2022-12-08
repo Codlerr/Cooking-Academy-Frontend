@@ -7,6 +7,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import ExploreSlider from '../../components/sliders/explore-slider'
 import WorkSlider from '../../components/sliders/workshop-images';
 import InstaSlider from '../../components/sliders/insta-slider';
+import ServiceSlider from '../../components/sliders/service-slider';
 import {Faq,Price} from '../../components/constant/data';
 
 
@@ -20,9 +21,6 @@ let Brand6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670309776/Cook
 let Brand7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670302898/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.17_vqqecw.png';
 let Brand8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670309778/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.19c_1_tu42s7.png';
 let Videotemp = 'https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4';
-let zomImg1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670062023/Cooking%20Academy%20Assets/kitchen%20assets/IMG-20221203-WA0093_gpvuln.jpg';
-let zomImg2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786013/Cooking%20Academy%20Assets/Component_20_1_qkz1nr.jpg';
-let zomImg3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786013/Cooking%20Academy%20Assets/Component_21_1_cuqked.jpg';
 let Item1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621459/Cooking%20Academy%20Assets/Chicken-Yakitori_EXPS_FT21_186160_F_0607_1-15_njhpqx.webp';
 let Item2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621458/Cooking%20Academy%20Assets/Downloader.la_-62d1127ecf2b9_z39o5c.webp';
 let Item3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621450/Cooking%20Academy%20Assets/exps128090_TH153340B10_01_7b-1_wgmm2v.webp';
@@ -36,9 +34,6 @@ let  User2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cook
 let  User3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.10.49_PM_z4nnhl.jpg';
 let  User4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670235612/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.43.18_PM_iokoby.jpg';
 let  User5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670235612/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.47.55_PM_bn7zat.jpg';
-let  User6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d1798845da8_2x_bxvjqo.png';
-let  User7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179a7d9dfc_vnafio.png';
-
 let Chef1= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669886573/Cooking%20Academy%20Assets/4_kkde8z.webp';
 let Chef2= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669886572/Cooking%20Academy%20Assets/5_zrgcc9.webp';
 let Chef3= 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669887904/Cooking%20Academy%20Assets/7_as7x3q.webp';
@@ -278,27 +273,14 @@ function LandingPage() {
           
 
     {/* ==================================Other Service================================ */}
-    <section>
+    <section className=''>
       <div className='md:pl-5 lg:pl-32  xs:px-5 md:px-0 py-10' data-aos="fade-right">
         <h3 className='text-3xl font-semibold'>Other Services.</h3>
       </div>
 
-          {/* <div class="grid grid-rows-4 grid-flow-row md:grid-flow-col overflow-hidden" >
-            <div class="relative zoom-card row-span-4 md:col-span-2">
-              <img alt='img' className='h-full w-full object-cover brightness-75'  src={zomImg1}/>
-              <h3 className='absolute bottom-5 left-10 text-4xl font-bold' data-aos="fade-right">Kitchen Studio</h3>
-            </div>
-            <div class="relative zoom-card row-span-2">
-            <img alt='img' className='h-full w-full object-cover brightness-75' src={zomImg2}/>
-            <h3 className='absolute bottom-5 left-10 text-4xl font-bold' data-aos="fade-right">Menu Consultancy</h3>
-            </div>
-            <div class="relative zoom-card row-span-2">
-            <img alt='img' className='h-full w-full object-cover brightness-75' src={zomImg3}/>
-            <h3 className='absolute bottom-5 left-10 text-4xl font-bold' data-aos="fade-right">Kitchen</h3>
-            </div>
-          </div> */}
+          
 
-          <div className='grid grid-cols-1 md:grid-cols-2 overflow-hidden'>
+          {/* <div className='grid grid-cols-1 md:grid-cols-2 overflow-hidden'>
               <div class="relative zoom-card ">
                 <img alt='img' className='xs:h-60 md:h-96 w-full object-cover brightness-75'  src={zomImg1}/>
                 <h3 className='absolute bottom-2 left-5 xs:text-2xl md:text-4xl font-bold' data-aos="fade-right">Kitchen Studio</h3>
@@ -307,7 +289,8 @@ function LandingPage() {
             <img alt='img' className='xs:h-60 md:h-96 w-full object-cover brightness-75' src={zomImg2}/>
             <h3 className='absolute bottom-2 left-5 xs:text-2xl md:text-4xl font-bold' data-aos="fade-right">Menu Consultancy</h3>
             </div>
-          </div>
+          </div> */}
+          <ServiceSlider/>
 
     </section>
     {/* ==================================Other Service================================ */}

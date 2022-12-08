@@ -3,8 +3,7 @@ import '../../pages/home/landingPage.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { WorkshopImg } from '../constant/data'
+import { ServiceImg } from '../constant/data';
 
 
 
@@ -29,38 +28,48 @@ function Workshopslider() {
     const [slideIndex, setSlideIndex] = useState(0);
 
     const settings = {
-      dots: false,
+      dots: true,
+      dotsClass: "slick-dots custom-indicator",
       infinite: true,
       speed: 2000,
-      slidesToShow: 3,
+      arrows:false,
+      slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 4000,
       beforeChange: (current, next)=>setSlideIndex(next),
-      centerMode: true,
-      centerPadding: "20px",
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: false,
+      customPaging: function(i) {
+        return (
+         <div>
+            <img src={ServiceImg[i].image} alt='img' className='custom-pagin'/>
+         </div>
+        );
+      },
+      // responsive: [
+      //   {
+      //     breakpoint: 768,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1,
+      //       dots: true,
 
-          }
-        }]
+      //     }
+      //   }]
     };
 
   return (
-    <div>
-        <Slider {...settings} className='w-full mx-auto py-5'>
+    <div className='services'>
+        <Slider {...settings} className='w-full'>
           {
-            WorkshopImg.map((img, index) => (
+            ServiceImg.map((img, index) => (
             <div className={index === slideIndex ? 'slide2 slide2-active': 'slide2'} key={index}>
-                <LazyLoadImage className='h-[400px]' effect='blur' src={img.image} alt="" />
-            </div>
+                <div className='relative zoom-card'>
+                <img alt='img' className='xs:h-60 md:h-[400px] lg:h-[600px] w-full object-cover brightness-75'  src={img.image}/>
+                <h3 className='absolute bottom-2 left-5 xs:text-2xl md:text-4xl font-bold'>{img.heading}</h3>
+              </div>
+          </div>
             ))
           }
         </Slider>

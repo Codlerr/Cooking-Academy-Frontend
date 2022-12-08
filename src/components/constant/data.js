@@ -230,3 +230,16 @@ export const WorkshopImg=[
         image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670062016/Cooking%20Academy%20Assets/kitchen%20assets/IMG-20221203-WA0062_mmrx2r.jpg`
     }
 ]
+
+export const ServiceImg=[
+    {
+        heading:`Kitchen Studio`,
+        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670062023/Cooking%20Academy%20Assets/kitchen%20assets/IMG-20221203-WA0093_gpvuln.jpg`
+    },
+    {
+        heading:`Menu Consultancy`,
+        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786013/Cooking%20Academy%20Assets/Component_20_1_qkz1nr.jpg`
+    },
+]
+
+
