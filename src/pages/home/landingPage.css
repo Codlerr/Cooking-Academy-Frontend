@@ -218,7 +218,7 @@ margin: 0;
 }
 
 .zoom-card img{
-  display: block;
+  width: 100%;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -233,6 +233,49 @@ margin: 0;
   transform: scale(1.02);
 }
 
+.services .slick-slide > div{
+  margin: 0;
+
+}
+.services .slick-list{
+margin: 0;
+
+}
+.custom-indicator{
+
+  bottom: -65px;
+  height: 100px;
+
+}
+.custom-indicator li{
+  width: 100px !important;
+  height: 60px !important;
+  filter: grayscale(100%);
+  
+}
+.custom-indicator li.slick-active {
+  filter: grayscale(0%);
+  border: 2px white solid;
+  height: 60px !important;
+  border-radius: 10px;
+}
+.custom-pagin{
+  height: 60px !important;
+  width: 100px !important;
+  object-fit: cover;
+  border-radius: 10px;
+  border: none;
+  padding-bottom: 3px;
+}
+
+@media (200px <= width <= 600px){
+  .custom-pagin{
+    display: none;
+  }
+  .custom-indicator li.slick-active {
+    display: none;
+  }
+}
 
 /* enquire */
 .enquire{
@@ -442,16 +485,7 @@ margin: 0;
   z-index: 9999;
 }
 
-/* #chefs span::before{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 12px;
-  height: 13px;
-  border-radius: 50%;
-  background-color: #CBA135;
-} */
+
 #chefs span p{
   font-size: 15px;
 }
@@ -547,3 +581,4 @@ margin: 0;
   visibility: visible;
   opacity: 1;
 }
+
