@@ -243,3 +243,69 @@ export const ServiceImg=[
 ]
 
 
+export const KitchenImg=[
+    {
+        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011767/Cooking%20Academy%20Assets/kitchen%20page/Monti_Studios_iique7.jpg`
+    },
+    {
+        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2_2x_vt0tfc.webp`
+    },
+    {
+        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011767/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_1_2x_tvipfa.webp`
+    },
+    {
+        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Equipment_1_2x_nnyiwz.webp`
+    },
+    {
+        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2x_ixucle.webp`
+    },
+    {
+        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Equipment_2x_rblymk.webp`
+    },
+    {
+        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011765/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_3_2x_hip4hc.webp`
+    },
+]
+
+export const KitchenFilter=[
+    {
+        id:'1',
+        title:`SHOOTING SPACE`,
+        point1:'High-speed Wifi',
+        point2:'Washroom with shower facilities',
+        point3:'Fully-functional kitchen (extra charge)',
+        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2_2x_vt0tfc.webp'
+    },
+    {
+        id:'2',
+        title:`LIGHTING`,
+        point1:'High-speed Wifi',
+        point2:'Washroom with shower facilities',
+        point3:'Fully-functional kitchen (extra charge)',
+        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011767/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_1_2x_tvipfa.webp'
+    },
+    {
+        id:'3',
+        title:`LIGHTING ACCESSORIES`,
+        point1:'High-speed Wifi',
+        point2:'Washroom with shower facilities',
+        point3:'Fully-functional kitchen (extra charge)',
+        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Equipment_1_2x_nnyiwz.webp'
+    },
+    {
+        id:'4',
+        title:`GENERAL`,
+        point1:'High-speed Wifi',
+        point2:'Washroom with shower facilities',
+        point3:'Fully-functional kitchen (extra charge)',
+        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2x_ixucle.webp'
+    },
+    {
+        id:'5',
+        title:`OTHERS`,
+        point1:'High-speed Wifi',
+        point2:'Washroom with shower facilities',
+        point3:'Fully-functional kitchen (extra charge)',
+        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011765/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_3_2x_hip4hc.webp'
+    },
+]

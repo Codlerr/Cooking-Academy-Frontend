@@ -10,7 +10,17 @@ module.exports = {
             'xl': '1270px',
             '2xl' : '1536px'
         },
-    extend: {},
+        
+    extend: {
+      colors:{
+        'primary-clr1': '#FFBB00',
+        'primary-clr2': '#CBA135',
+        'primary-clr3': '#FFBD07',
+        'primary-dark': '#706c6c',
+        'text-dark': '#d4d3d3',
+      },
+    },
+   
   },
   plugins: [],
 }
