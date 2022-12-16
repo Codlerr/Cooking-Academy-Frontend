@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import './signUp.css';
 
 let p1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671099281/Cooking%20Academy%20Assets/Login-Signup/vadim-markin-Dn82UF7qsso-unsplash_u9zgzm.jpg';
 let p2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671099281/Cooking%20Academy%20Assets/Login-Signup/nordwood-themes-wtevVfGYwnM-unsplash_wtwkjh.jpg';
@@ -22,14 +21,14 @@ function SignUp() {
   return (
     <>
     <section className='h-screen w-full grid place-items-center'>
-        <div className='h-[80vh] w-full overflow-hidden grid grid-cols-1 md:grid-cols-6'>
-            <img className='xs:hidden md:block w-full h-full' src={p1} alt="img" />
-            <img className='xs:hidden md:block w-full h-full' src={p2} alt="img" />
-            <div className='col-span-2 xs:w-[80%] md:w-[70%] mx-auto'>
+        <div className='h-[80vh] w-full overflow-hidden grid grid-cols-1 lg:grid-cols-6'>
+            <img className='xs:hidden lg:block w-full h-full' src={p1} alt="img" />
+            <img className='xs:hidden lg:block w-full h-full' src={p2} alt="img" />
+            <div className='col-span-2 xs:w-[80%] md:w-[60%] lg:w-[70%] mx-auto'>
                 <div className='grid place-items-center'>
                     <img className='' src={logo} alt="logo" />
                 </div>
-                <p className='text-primary-clr2 py-5'>Alrady an user?<a className='pl-5 text-text-dark' href="#">Sign In</a></p>
+                <p className='text-primary-clr2 py-5'>Alrady an user?<a className='pl-5 text-text-dark' href="/login">Sign In</a></p>
                 <form className='flex flex-col gap-4' action="">
                     <input className='bg-transparent w-full outline-none border-2 border-primary-clr2 px-3 py-2 rounded-lg' type="text" placeholder='Full Name*' required/>
                     <input className='bg-transparent w-full outline-none border-2 border-primary-clr2 px-3 py-2 rounded-lg' type="email" placeholder='Email*' required/>
@@ -55,8 +54,8 @@ function SignUp() {
                     <i class="text-primary-clr1 hover:text-white transition-all duration-200 text-3xl fa-brands fa-apple"></i>
                 </div>
             </div>
-            <img className='xs:hidden md:block w-full h-full' src={p3} alt="img" />
-            <img className='xs:hidden md:block w-full h-full' src={p4} alt="img" />
+            <img className='xs:hidden lg:block w-full h-full' src={p3} alt="img" />
+            <img className='xs:hidden lg:block w-full h-full' src={p4} alt="img" />
         </div>
     </section>
     </>

@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import './landingPage.css';
+import './index.css';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -296,7 +296,7 @@ function LandingPage() {
     {/* ==================================Other Service================================ */}
 
 
-    {/* ==================================Enquire================================ */}
+    {/* ==================================Enquire Submit form================================ */}
     <section className='w-11/12 mx-auto xs:py-16 md:py-24'>
           <div className='grid grid-cols-1 md:grid-cols-2 md:px-5 bg-slate-800 xs:py-10 md:py-16 rounded-md md:place-items-center enquire-form'>
               <div className='xs:px-2 md:px-0' data-aos="fade-right">
@@ -314,12 +314,12 @@ function LandingPage() {
               </div>
           </div>
     </section>
-    {/* ==================================Enquire================================ */}
+    {/* ==================================Enquire Submit form================================ */}
 
 
 
-    {/* ==================================Enquire================================ */}
-      <section className='w-11/12 mx-auto enquire p-2'>
+    {/* ==================================delicious recipe================================ */}
+      <section className='w-11/12 mx-auto recipe p-2'>
         <div className='bg-[#000000a2] rounded-3xl'>
               <div className='flex xs:flex-col md:flex-row justify-between py-10 px-5' data-aos="fade-right">
                 <p className='text-[color:var(--thm-clr2)] text-3xl lg:w-[30%]'>Try these delicious recipe to make your day</p>
@@ -399,7 +399,7 @@ function LandingPage() {
                     </div>
         </div>
       </section>
-    {/* ==================================Enquire================================ */}
+    {/* ==================================delicious recipe================================ */}
 
 
     {/* ==================================Feedback================================ */}

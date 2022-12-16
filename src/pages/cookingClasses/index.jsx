@@ -1,5 +1,5 @@
 import React from 'react';
-import './cookingClass.css';
+import './index.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -30,31 +30,31 @@ function cookingClass() {
             <div>
               <LazyLoadImage className='md:rounded-tr-2xl md:rounded-br-2xl w-screen' effect='blur' src={expo1} alt="img" />
             </div>
-            <div className='px-5 flex flex-col justify-center gap-8'>
-              <h3 className='xs:text-3xl md:text-5xl font-bold md:w-[50%]'>Fundamentals of cuisine</h3>
-              <p className='text-text-dark md:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            <div className='px-5 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8'>
+              <h3 className='xs:text-3xl lg:text-5xl font-bold md:w-[50%]'>Fundamentals of cuisine</h3>
+              <p className='text-text-dark lg:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et
                 dolore magna aliquyam erat, sed diam voluptua. At vero
                 eos et accusam et justo duo dolores et ea rebum. Stet
                 clita kasd gubergren, no sea takimata sanctus est</p>
               <div className='flex xs:justify-center md:justify-start gap-10'>
-                <a href="#" className='xs:px-6 md:px-16 py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 md:text-2xl font-medium'>Enroll Now</a>
-                <a href="#" className='xs:px-6 md:px-16 py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 md:text-2xl font-medium'>Know More</a>
+                <a href="#" className='xs:px-6 lg:px-16 py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 lg:text-2xl font-medium'>Enroll Now</a>
+                <a href="#" className='xs:px-6 lg:px-16 py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
               </div>
             </div>
       </div>
 
       <div className='flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-2  gap-10 py-20 overflow-hidden'>
-            <div className='px-5 md:pl-10 flex flex-col justify-center gap-8'>
-              <h3 className='xs:text-3xl md:text-5xl font-bold md:w-[50%]'>Worldwide cuisine</h3>
-              <p className='text-text-dark md:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            <div className='px-5 md:pl-10 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8'>
+              <h3 className='xs:text-3xl lg:text-5xl font-bold md:w-[50%]'>Worldwide cuisine</h3>
+              <p className='text-text-dark lg:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et
                 dolore magna aliquyam erat, sed diam voluptua. At vero
                 eos et accusam et justo duo dolores et ea rebum. Stet
                 clita kasd gubergren, no sea takimata sanctus est</p>
               <div className='flex xs:justify-center md:justify-start gap-10'>
-                <a href="#" className='xs:px-6 md:px-16  py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 md:text-2xl font-medium'>Enroll Now</a>
-                <a href="#" className='xs:px-6 md:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 md:text-2xl font-medium'>Know More</a>
+                <a href="#" className='xs:px-6 lg:px-16  py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 lg:text-2xl font-medium'>Enroll Now</a>
+                <a href="#" className='xs:px-6 lg:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
               </div>
             </div>
             <div>
@@ -66,31 +66,31 @@ function cookingClass() {
             <div>
               <LazyLoadImage className='md:rounded-tr-2xl md:rounded-br-2xl w-screen' effect='blur' src={expo3} alt="img" />
             </div>
-            <div className='px-5 flex flex-col justify-center gap-8'>
-              <h3 className='xs:text-3xl md:text-5xl font-bold md:w-[80%] leading-snug'>Pastry program:<br></br>fundamentals of pastry</h3>
-              <p className='text-text-dark md:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            <div className='px-5 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8'>
+              <h3 className='xs:text-3xl lg:text-5xl font-bold md:w-[80%] leading-snug'>Pastry program:<br></br>fundamentals of pastry</h3>
+              <p className='text-text-dark lg:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et
                 dolore magna aliquyam erat, sed diam voluptua. At vero
                 eos et accusam et justo duo dolores et ea rebum. Stet
                 clita kasd gubergren, no sea takimata sanctus est</p>
               <div className='flex xs:justify-center md:justify-start gap-10'>
-                <a href="#" className='xs:px-6 md:px-16  py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 md:text-2xl font-medium'>Enroll Now</a>
-                <a href="#" className='xs:px-6 md:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 md:text-2xl font-medium'>Know More</a>
+                <a href="#" className='xs:px-6 lg:px-16  py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 lg:text-2xl font-medium'>Enroll Now</a>
+                <a href="#" className='xs:px-6 lg:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
               </div>
             </div>
       </div>
 
       <div className='flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-2 gap-10 py-20 overflow-hidden'>
-            <div className='px-5 md:pl-10 flex flex-col justify-center gap-8'>
-              <h3 className='xs:text-3xl md:text-5xl font-bold md:w-[80%]'>Household assistant program</h3>
-              <p className='text-text-dark md:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            <div className='px-5 md:pl-10 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8'>
+              <h3 className='xs:text-3xl lg:text-5xl font-bold md:w-[80%]'>Household assistant program</h3>
+              <p className='text-text-dark lg:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et
                 dolore magna aliquyam erat, sed diam voluptua. At vero
                 eos et accusam et justo duo dolores et ea rebum. Stet
                 clita kasd gubergren, no sea takimata sanctus est</p>
               <div className='flex xs:justify-center md:justify-start gap-10'>
-                <a href="#" className='xs:px-6 md:px-16  py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 md:text-2xl font-medium'>Enroll Now</a>
-                <a href="#" className='xs:px-6 md:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 md:text-2xl font-medium'>Know More</a>
+                <a href="#" className='xs:px-6 lg:px-16  py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 lg:text-2xl font-medium'>Enroll Now</a>
+                <a href="#" className='xs:px-6 lg:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
               </div>
             </div>
             <div>

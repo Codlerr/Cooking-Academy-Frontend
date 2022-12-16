@@ -15,12 +15,13 @@ function Footer() {
 
 // custom hide
 const { pathname } = useLocation();
+if (pathname === "/login") return null;
 if (pathname === "/signup") return null;
 
   return (
     <>
     <section className='bg-[#000000f6] xs:pt-20 md:pt-10'>
-        <div className='w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 md:gap-10 bg-cover bg-no-repeat bg-center md:bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669628048/Cooking%20Academy%20Assets/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_dhixjz.webp)] text-[#ffffffdc] border-[#CBA135] md:border-t-2 md:border-b-2'>
+        <div className='w-11/12 mx-auto md:py-5 lg:py-0 grid grid-cols-1 lg:grid-cols-4 md:gap-10 bg-cover bg-no-repeat bg-center md:bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1669628048/Cooking%20Academy%20Assets/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_dhixjz.webp)] text-[#ffffffdc] border-[#CBA135] md:border-t-2 md:border-b-2'>
           
           <div className='lg:py-20 ' data-aos="fade-right">
             <a href="/"><img className='' src={Logo}></img></a>

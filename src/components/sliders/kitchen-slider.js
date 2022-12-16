@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import '../../pages/kitchenStudio/kitchenStudio.css';
+import '../../pages/kitchenStudio/index.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -59,7 +59,7 @@ function Kitchenslider() {
             KitchenImg.map((img, index) => (
             <div className={index === slideIndex ? 'slide5 slide5-active': 'slide5'} key={index}>
 
-                <img alt='img' className=' md:h-[600px] w-full'  src={img.image}/>
+                <img alt='img' className=' lg:h-[600px] w-full'  src={img.image}/>
 
               </div>
 

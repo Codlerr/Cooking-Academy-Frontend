@@ -11,6 +11,7 @@ function Navbar() {
 
     // custom hide
     const { pathname } = useLocation();
+    if (pathname === "/login") return null;
     if (pathname === "/signup") return null;
     
   return (

@@ -11,3 +11,8 @@
       height: 80vh;
     }
   }
+@media (650px <= width <= 900px){
+    .cook-banner{
+      height: 60vh;
+    }
+  }

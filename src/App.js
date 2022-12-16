@@ -4,15 +4,17 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
-import SignUp from './pages/signUp/signUp';
-import Home from './pages/home/landingPage';
+import Login from './pages/login/index';
+import SignUp from './pages/signUp/index';
+import Home from './pages/home/index';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import AboutUs from './pages/aboutus/aboutUs';
-import Cookingclass from './pages/cookingClass/cookingClass';
-import KitchenStudio from './pages/kitchenStudio/kitchenStudio';
-import Services from './pages/services/services';
-import Profile from './pages/profile/Profile';
+import AboutUs from './pages/aboutus/index';
+import Cookingclass from './pages/cookingClasses/index';
+import Cookingclassone from './pages/cookingClass-1/index';
+import KitchenStudio from './pages/kitchenStudio/index';
+import Services from './pages/services/index';
+import Profile from './pages/profile/index';
 
 const Layout = () => {
   return(
@@ -34,6 +36,10 @@ const router = createBrowserRouter([
         element:<Home/>
       },
       {
+        path:"/login",
+        element:<Login/>
+      },
+      {
         path:"/signup",
         element:<SignUp/>
       },
@@ -44,6 +50,10 @@ const router = createBrowserRouter([
       {
         path:"/cooking-class",
         element:<Cookingclass/>
+      },
+      {
+        path:"/cooking-class-1",
+        element:<Cookingclassone/>
       },
       {
         path:"/kitchen-studio",

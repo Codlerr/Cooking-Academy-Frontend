@@ -15,6 +15,11 @@
     height: 80vh;
   }
 }
+@media (650px <= width <= 900px){
+  .kitchen-banner{
+    height: 50vh;
+  }
+}
 
 .custom-indicator2{
 
@@ -48,6 +53,20 @@
     }
     .custom-indicator2 li.slick-active {
       display: none;
+    }
+  }
+
+  @media (650px <= width <= 900px){
+    .custom-indicator2 li{
+      width: 60px !important;
+      height: 40px !important;
+    }
+    .custom-indicator2 li.slick-active {
+      height: 45px !important;
+    }
+    .custom-pagin2{
+      width: 60px !important;
+      height: 40px !important;
     }
   }
 

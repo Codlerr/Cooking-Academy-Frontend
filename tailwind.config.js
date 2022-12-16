@@ -19,6 +19,9 @@ module.exports = {
         'primary-dark': '#706c6c',
         'text-dark': '#d4d3d3',
       },
+      fontFamily: {
+        sansserif:["sans-serif","Roboto"],
+      },
     },
    
   },

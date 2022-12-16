@@ -277,14 +277,7 @@ margin: 0;
   }
 }
 
-/* enquire */
-.enquire{
-  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621450/Cooking%20Academy%20Assets/Group_105_nr9xef.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 30px;
-}
+/* Enquire Submit form*/
 
 .enquire-form{
   background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669787511/Cooking%20Academy%20Assets/123123ewqeqweqe_o6e311.webp');
@@ -295,10 +288,18 @@ margin: 0;
 .enquire-form input[type=checkbox]{
   accent-color: #FFBD07;
 }
-/* enquire */
+/* Enquire Submit form*/
 
 
 /* recipe */
+.recipe{
+  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621450/Cooking%20Academy%20Assets/Group_105_nr9xef.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
 .dishes{
   overflow: hidden;
   /* -- Prevent flicker -- */

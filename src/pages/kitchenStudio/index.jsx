@@ -1,5 +1,5 @@
 import react,{useEffect, useState} from 'react';
-import './kitchenStudio.css';
+import './index.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import KitcheSlider from '../../components/sliders/kitchen-slider';
@@ -64,7 +64,7 @@ function KitchenStudio() {
         <div className='filter '>
             <ul className='flex justify-between flex-wrap list-none  gap-5'>
                 {
-                collection.map((item) => <li className=' border-primary-clr2 border-[2px] hover:bg-primary-clr1 rounded-3xl px-5 py-1.5 duration-500 text-md'><button onClick={() => {ImageFilter(item)}}>{item}</button></li>)
+                collection.map((item) => <li className=' border-primary-clr2 border-[2px] hover:bg-primary-clr1 rounded-3xl px-5 py-1.5 duration-500 xs:text-xs md:text-xs lg:text-lg'><button onClick={() => {ImageFilter(item)}}>{item}</button></li>)
                 }
             </ul>
         </div>
@@ -72,7 +72,7 @@ function KitchenStudio() {
             {
             data.slice(0,1).map((item) => 
             <div className='grid grid-cols-1 md:grid-cols-2 xs:gap-y-10 md:gap-20 py-10'>
-                <LazyLoadImage effect='blur' className='md:h-[350px]' src={item.img} key={item.id} />
+                <LazyLoadImage effect='blur' className='lg:h-[350px]' src={item.img} key={item.id} />
                 <div className='filts'>
                     <h1 className='text-xl uppercase font-semibold'>{item.title}</h1>
                     <ul className='pl-4 pt-3 text-text-dark'>

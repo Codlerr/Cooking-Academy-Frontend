@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../pages/home/landingPage.css';
+import '../../pages/home/index.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
