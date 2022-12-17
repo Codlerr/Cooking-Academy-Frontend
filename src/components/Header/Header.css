@@ -4,6 +4,9 @@
     border-bottom: 3.5px solid #FFBB00;
     width: 100%;
 }
+.active img{
+    border: 2.5px solid #FFBB00;
+}
 
 .withOpacity{
     position: absolute;
