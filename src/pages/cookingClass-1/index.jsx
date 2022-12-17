@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./index.css";
+import "./style.css";
 
 let Videotemp ="https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4";
 
@@ -13,7 +13,7 @@ function Cookingclass() {
 
   return (
     <>
-      <section className=" relative overflow-hidden">
+      <section className=" relative overflow-hidden mt-40">
         <span className="xs:hidden md:block absolute top-32 left-8"><i class="text-primary-clr2 text-3xl fa-solid fa-trophy"></i></span>
         <div className="xs:w-11/12 md:w-8/12 mx-auto py-5">
           <div className="flex gap-10">

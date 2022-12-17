@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import '../../pages/kitchenStudio/index.css';
+import '../../pages/kitchenStudio/style.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";

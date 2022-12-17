@@ -5,7 +5,7 @@ let Logo ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking
 let Logo2 ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png'
 let Menu = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669970200/Cooking%20Academy%20Assets/menu-100_fphqfd.png';
 function Navbar() {
-  
+  const location = useLocation()
   const [open, setOpen] = useState(false);
 
 
@@ -13,10 +13,12 @@ function Navbar() {
     const { pathname } = useLocation();
     if (pathname === "/login") return null;
     if (pathname === "/signup") return null;
+
+    const navWithOpacity = location.pathname !== '/' ? 'withOpacity' : ""
     
   return (
     <>
-    <nav className='bg-transparent w-full border-b-2 border-[#383838] z-50'>
+    <nav className={`bg-black border-b-2 border-[#383838] ${navWithOpacity}`}>
       <div className='w-11/12 mx-auto lg:flex justify-between pt-8 pb-3'>
           <div className='flex justify-between'>
             <a href="/"><img src={Logo} className='h-12 md:h-20'></img></a>
@@ -28,7 +30,6 @@ function Navbar() {
               <li><NavLink exact to="/" >Home</NavLink></li>
               <li><NavLink to="/about-us" >About Us</NavLink></li>
               <li><NavLink to="/cooking-class" >Cooking Class</NavLink></li>
-              <li><NavLink to="/services" >Services</NavLink></li>
               <li className='xs:hidden lg:block'><i class="fa-solid fa-magnifying-glass text-xl"></i></li>
               <li className='xs:hidden lg:block'><NavLink to="/profile" ><img src={Logo2} className='h-14 rounded-full'></img></NavLink></li>
             

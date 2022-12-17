@@ -4,3 +4,11 @@
     border-bottom: 3.5px solid #FFBB00;
     width: 100%;
 }
+
+.withOpacity{
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.24);
+    width: 100%;
+    z-index: 100;
+}

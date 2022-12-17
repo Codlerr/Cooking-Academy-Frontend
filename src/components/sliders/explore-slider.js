@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../pages/home/index.css';
+import '../../pages/home/style.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -64,7 +64,7 @@ function Exploreslider() {
         };
   return (
     <>
-    <section className='text-white lg:pl-14'>
+    <section className='text-white lg:pl-14 overflow-hidden'>
     <Slider {...settings} className='w-full py-5 bg-[#131212]'>
       {
         ExploreData.map((item,index) => (

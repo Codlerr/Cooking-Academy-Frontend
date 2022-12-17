@@ -1,9 +1,14 @@
 import react,{useEffect, useState} from 'react';
-import './index.css';
+import './style.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import KitcheSlider from '../../components/sliders/kitchen-slider';
-import { KitchenFilter } from '../../components/constant/data'
+import { KitchenFilter } from '../../components/constant/data';
+import ENQ from "../../components/Enquiry"
+import FEEDBACK from "../../components/Feedback"
+import FAQ from "../../components/Faq"
+
+
 
 let graph = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011767/Cooking%20Academy%20Assets/kitchen%20page/e736728f395daac3c44999403c6eea40_r9sga7.webp';
 
@@ -28,14 +33,17 @@ function KitchenStudio() {
 
   return (
     <>
+    {/* =========================BANNER=============================== */}
     <section className='kitchen-banner'>
-            <div className='xs:px-5 md:px-0 md:pl-20 h-full flex justify-center flex-col xs:gap-5 md:gap-10'>
+            <div className='xs:px-5 md:px-0 md:pl-20 h-full flex justify-center flex-col xs:gap-5 md:gap-5'>
                 <h1 className='xs:text-5xl lg:text-7xl  font-bold md:w-[40%] '>The Modern Kitchen Studio</h1>
                 <p className='xs:text-xl md:text-2xl md:w-[40%]'>Cooking is not just about ingredients, it's a creative outlet for us.</p>
                 <a className='bg-primary-clr2 hover:bg-primary-clr1 w-fit text-xl font-medium rounded-3xl xs:px-10 md:px-16 py-3' href="#">Book Now</a>
             </div>
     </section>
+    {/* ==========================BANNER============================== */}
 
+    {/* ============================BOOK NOW============================ */}
     <section>
         <div className='xs:pt-10 md:pt-20'>
             <div className='xs:text-2xl md:text-4xl text-center font-semibold italic leading-snug'>
@@ -53,13 +61,17 @@ function KitchenStudio() {
             <KitcheSlider/>
         </div>
     </section>
+    {/* ============================BOOK NOW============================ */}
 
+    {/* ==========================SKETCH============================== */}
     <section className='md:pt-10'>
         <div className='md:py-16 xs:w-[90%] md:w-9/12 mx-auto'>
             <LazyLoadImage effect='blur' className='' src={graph} alt="graph" />
         </div>
     </section>
+    {/* =========================SKETCH=============================== */}
 
+    {/* ============================TABS============================ */}
     <section className='xs:w-11/12 md:w-9/12 mx-auto xs:pt-10 md:pt-0'>
         <div className='filter '>
             <ul className='flex justify-between flex-wrap list-none  gap-5'>
@@ -86,6 +98,19 @@ function KitchenStudio() {
             }
         </div>
     </section>
+    {/* =============================TABS=========================== */}
+
+    {/* ===========================ENQUIRY=========================== */}
+    <ENQ/>
+    {/* ===========================ENQUIRY=========================== */}
+
+    {/* ==========================FEEDBACK============================ */}
+    <FEEDBACK/>
+    {/* ==========================FEEDBACK============================ */}
+
+    {/* =============================FAQ========================= */}
+    <FAQ/>
+    {/* =============================FAQ========================= */}
 
 
     </>

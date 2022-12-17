@@ -11,9 +11,9 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import AboutUs from './pages/aboutus/index';
 import Cookingclass from './pages/cookingClasses/index';
+import CookingclassInside from './pages/cookingClassInside/index';
 import Cookingclassone from './pages/cookingClass-1/index';
 import KitchenStudio from './pages/kitchenStudio/index';
-import Services from './pages/services/index';
 import Profile from './pages/profile/index';
 
 const Layout = () => {
@@ -52,16 +52,16 @@ const router = createBrowserRouter([
         element:<Cookingclass/>
       },
       {
+        path:"/cooking-class-inside",
+        element:<CookingclassInside/>
+      },
+      {
         path:"/cooking-class-1",
         element:<Cookingclassone/>
       },
       {
         path:"/kitchen-studio",
         element:<KitchenStudio/>
-      },
-      {
-        path:"/services",
-        element:<Services/>
       },
       {
         path:"/profile",

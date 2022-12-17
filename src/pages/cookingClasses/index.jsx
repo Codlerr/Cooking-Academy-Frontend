@@ -1,7 +1,12 @@
 import React from 'react';
-import './index.css';
+import './style.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import MOC from "../../components/MeetOurChefs"
+import LSA from "../../components/LatYearAchive"
+import ENQ from "../../components/Enquiry"
+import FAQ from "../../components/Faq"
+
 
 let expo1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671086874/Cooking%20Academy%20Assets/cooking%20class/funtamental_jqkey4.jpg';
 let expo2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671086874/Cooking%20Academy%20Assets/cooking%20class/worldwide_cuisine_bku80s.jpg';
@@ -11,6 +16,7 @@ let expo4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671084211/Cooki
 function cookingClass() {
   return (
     <>
+    {/* =========================BANNER======================== */}
     <section className='cook-banner'>
       <div className='h-full flex flex-col justify-end pb-40 align-bottom xs:gap-5 md:gap-6'>
         <h1 className='xs:text-5xl md:text-6xl font-bold text-center'>Flavours surrounds you in<br></br> The Cooking Academy</h1>
@@ -20,7 +26,9 @@ function cookingClass() {
         </div>
       </div>
     </section>
+    {/* =======================BANNER========================== */}
 
+    {/* =========================Classes======================== */}
     <section className=''>
       <div className='w-11/12 mx-auto py-10'>
         <h3 className='text-4xl font-bold'>Explore our classes.</h3>
@@ -98,6 +106,26 @@ function cookingClass() {
             </div>
       </div>
     </section>
+    {/* =======================Classes========================== */}
+
+    {/* =======================Cheif========================== */}
+    <MOC/>
+    {/* =======================Cheif========================== */}
+
+    {/* =======================Acheivement========================== */}
+    <LSA/>
+    {/* =======================Acheivement========================== */}
+
+    {/* =========================ENQUIRY======================== */}
+    <ENQ/>
+    {/* =========================ENQUIRY======================== */}
+
+
+    {/* ========================FAQ========================= */}
+    <FAQ/>
+    {/* ========================FAQ========================= */}
+
+
     </>
   )
 }

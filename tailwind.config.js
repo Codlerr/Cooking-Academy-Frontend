@@ -13,6 +13,7 @@ module.exports = {
         
     extend: {
       colors:{
+        'satin-gold': '#CBA135',
         'primary-clr1': '#FFBB00',
         'primary-clr2': '#CBA135',
         'primary-clr3': '#FFBD07',
