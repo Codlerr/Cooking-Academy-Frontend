@@ -31,6 +31,7 @@ function Navbar() {
               <li><NavLink exact to="/" >Home</NavLink></li>
               <li><NavLink to="/about-us" >About Us</NavLink></li>
               <li><NavLink to="/cooking-class" >Cooking Class</NavLink></li>
+              <li><NavLink to="/kitchen-studio" >Kitchen Studio</NavLink></li>
               <li className='xs:hidden lg:block'><i class="fa-solid fa-magnifying-glass text-xl"></i></li>
               <li className=''><NavLink to="/profile" ><img src={Logo2} className='h-14 rounded-full'></img></NavLink></li>
             
