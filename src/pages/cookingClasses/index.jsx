@@ -18,7 +18,7 @@ function cookingClass() {
     <>
     {/* =========================BANNER======================== */}
     <section className='cook-banner'>
-      <div className='h-full flex flex-col justify-end pb-40 align-bottom xs:gap-5 md:gap-6'>
+      <div className='h-full flex flex-col justify-end md:pb-40 align-bottom xs:gap-5 md:gap-6'>
         <h1 className='xs:text-5xl md:text-6xl font-bold text-center'>Flavours surrounds you in<br></br> The Cooking Academy</h1>
         <p className='text-2xl text-center xs:w-[80%] md:w-[35%] mx-auto'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
         <div className='grid place-items-center'>
