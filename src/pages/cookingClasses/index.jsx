@@ -47,7 +47,7 @@ function cookingClass() {
                 clita kasd gubergren, no sea takimata sanctus est</p>
               <div className='flex xs:justify-center md:justify-start gap-10'>
                 <a href="#" className='xs:px-6 lg:px-16 py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 lg:text-2xl font-medium'>Enroll Now</a>
-                <a href="#" className='xs:px-6 lg:px-16 py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
+                <a href="/cooking-class-inside" className='xs:px-6 lg:px-16 py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
               </div>
             </div>
       </div>
@@ -62,7 +62,7 @@ function cookingClass() {
                 clita kasd gubergren, no sea takimata sanctus est</p>
               <div className='flex xs:justify-center md:justify-start gap-10'>
                 <a href="#" className='xs:px-6 lg:px-16  py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 lg:text-2xl font-medium'>Enroll Now</a>
-                <a href="#" className='xs:px-6 lg:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
+                <a href="/cooking-class-inside" className='xs:px-6 lg:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
               </div>
             </div>
             <div>
@@ -83,7 +83,7 @@ function cookingClass() {
                 clita kasd gubergren, no sea takimata sanctus est</p>
               <div className='flex xs:justify-center md:justify-start gap-10'>
                 <a href="#" className='xs:px-6 lg:px-16  py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 lg:text-2xl font-medium'>Enroll Now</a>
-                <a href="#" className='xs:px-6 lg:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
+                <a href="/cooking-class-inside" className='xs:px-6 lg:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
               </div>
             </div>
       </div>
@@ -98,7 +98,7 @@ function cookingClass() {
                 clita kasd gubergren, no sea takimata sanctus est</p>
               <div className='flex xs:justify-center md:justify-start gap-10'>
                 <a href="#" className='xs:px-6 lg:px-16  py-2 rounded-3xl bg-primary-clr2 hover:bg-primary-clr1 lg:text-2xl font-medium'>Enroll Now</a>
-                <a href="#" className='xs:px-6 lg:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
+                <a href="/cooking-class-inside" className='xs:px-6 lg:px-16  py-2 border-2 transition-all duration-500 border-primary-clr2 rounded-3xl hover:bg-primary-clr1 lg:text-2xl font-medium'>Know More</a>
               </div>
             </div>
             <div>
