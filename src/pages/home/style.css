@@ -23,6 +23,10 @@ body{
   background-repeat: no-repeat;
   background-position: center;
 }
+.banner div{
+   display: flex ;
+   flex-direction: column;
+}
 
 
 
