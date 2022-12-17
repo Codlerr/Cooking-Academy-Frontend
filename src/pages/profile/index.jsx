@@ -17,7 +17,10 @@ function Profile() {
     <section className='w-11/12 mx-auto'>
       <div className='grid grid-cols-1 md:grid-cols-3 md:gap-x-10 md:place-items-start py-10'>
           <div className='grid place-items-center gap-2'>
-            <img src={profile} alt="profile" />
+            <div className='relative'>
+              <img src={profile} alt="profile" />
+              <i class="absolute bottom-5 right-5 text-xl hover:text-primary-clr1 fa-solid fa-pen-to-square"></i>
+            </div>
             <h2 className='font-bold text-3xl'>John Doe</h2>
             <p>Johndoe@gmail.com</p>
             <a href="#">+98 0458 0158 58</a>
