@@ -1,10 +1,11 @@
 import React from 'react'
 import './style.css';
-import ENQ from "../../components/Enquiry"
-import FAQ from "../../components/Faq"
-import LSA from "../../components/LatYearAchive"
-import MOC from "../../components/MeetOurChefs"
-import CLASSES from "../../components/ExploreClasses"
+import Slide from '../../components/sliders/cooking-inner-slider'
+import ENQ from "../../components/Enquiry";
+import FAQ from "../../components/Faq";
+import LSA from "../../components/LatYearAchive";
+import MOC from "../../components/MeetOurChefs";
+import CLASSES from "../../components/ExploreClasses";
 
 let bgVideo = 'https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4';
 let P1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671270925/Cooking%20Academy%20Assets/cooking%20class/Rectangle_155_s1lgmw.webp';
@@ -80,6 +81,7 @@ function CookingclassInside() {
     {/* ================About class=================== */}
 
     {/* ================Testimonial=================== */}
+    <Slide/>
     {/* ================Testimonial=================== */}
 
 

@@ -81,76 +81,7 @@ function Exploreslider() {
        </div>
         ))
       }
-       {/* <div className='relative ui-card'>
-        <LazyLoadImage className='rounded-2xl card-img' src={Image1}/>
-            <div className='centered'>
-            <p className='text-xl font-bold text-center'>FUNDAMENTAL</p>
-                <p className='text-3xl font-bold text-center'>CUISINE</p>
-                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
-                </div>
-            </div>
-       </div>
-
-       <div className='relative ui-card'>
-        <LazyLoadImage className='rounded-2xl card-img' src={Image2}/>
-            <div className='centered'>
-                <p className='text-xl font-bold text-center'>WORLDWIDE</p>
-                <p className='text-3xl font-bold text-center'>CUISINE</p>
-                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
-                </div>
-            </div>
-       </div>
-
-       <div className='relative ui-card'>
-        <LazyLoadImage className='rounded-2xl card-img' src={Image3}/>
-            <div className='centered'>
-            <p className='text-xl font-bold text-center'>FUNDAMENTAL</p>
-                <p className='text-3xl font-bold text-center'>PASTRY</p>
-                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
-                </div>
-            </div>
-       </div>
-
-       <div className='relative ui-card'>
-        <LazyLoadImage className='rounded-2xl card-img' src={Image4}/>
-            <div className='centered'>
-            <p className='text-xl font-bold text-center'>WORLDWIDE</p>
-                <p className='text-3xl font-bold text-center'>CUISINE</p>
-                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
-                </div>
-            </div>
-       </div>
-       <div className='relative ui-card'>
-        <LazyLoadImage className='rounded-2xl card-img' src={Image1}/>
-            <div className='centered'>
-            <p className='text-xl font-bold text-center'>FUNDAMENTAL</p>
-                <p className='text-3xl font-bold text-center'>CUISINE</p>
-                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
-                </div>
-            </div>
-       </div>
-
-       <div className='relative ui-card'>
-        <LazyLoadImage className='rounded-2xl card-img' src={Image2}/>
-            <div className='centered '>
-                <p className='text-xl font-bold text-center'>WORLDWIDE</p>
-                <p className='text-3xl font-bold text-center'>CUISINE</p>
-                <div className='flex flex-col  gap-5 w-64 mx-auto pb-3 mt-8'>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='#'>ENROLL NOW</a>
-                  <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='#'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
-                </div>
-            </div>
-       </div> */}
+       
       
     </Slider>
 

@@ -309,3 +309,45 @@ export const KitchenFilter=[
         img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011765/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_3_2x_hip4hc.webp'
     },
 ]
+
+
+export const Testimonial=[
+    {
+        name:'Anne Joe 1',
+        Desng:'Entertainer ,USA',
+        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
+        desc:`1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+    },
+    {
+        name:'Anne Joe 2',
+        Desng:'Entertainer ,USA',
+        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
+        desc:`2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+    },
+    {
+        name:'Anne Joe 3',
+        Desng:'Entertainer ,USA',
+        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
+        desc:`3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+    },
+    {
+        name:'Anne Joe 4',
+        Desng:'Entertainer ,USA',
+        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
+        desc:`4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+    },
+    {
+        name:'Anne Joe 5',
+        Desng:'Entertainer ,USA',
+        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
+        desc:`5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+    },
+    {
+        name:'Anne Joe 6',
+        Desng:'Entertainer ,USA',
+        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
+        desc:`6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+    }
+
+]
+
