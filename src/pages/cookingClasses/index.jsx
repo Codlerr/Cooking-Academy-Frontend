@@ -18,7 +18,7 @@ function cookingClass() {
     <>
     {/* =========================BANNER======================== */}
     <section className='cook-banner'>
-      <div className='h-full flex flex-col justify-end md:pb-40 align-bottom xs:gap-5 md:gap-6'>
+      <div className='h-full flex flex-col justify-end md:pb-40 align-bottom xs:gap-5 md:gap-6' data-aos="fade-right">
         <h1 className='xs:text-5xl md:text-6xl font-bold text-center'>Flavours surrounds you in<br></br> The Cooking Academy</h1>
         <p className='text-2xl text-center xs:w-[80%] md:w-[35%] mx-auto'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
         <div className='grid place-items-center'>
@@ -35,10 +35,10 @@ function cookingClass() {
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10 overflow-hidden'>
-            <div>
+            <div >
               <LazyLoadImage className='md:rounded-tr-2xl md:rounded-br-2xl w-screen' effect='blur' src={expo1} alt="img" />
             </div>
-            <div className='px-5 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8'>
+            <div className='px-5 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8' data-aos="fade-right">
               <h3 className='xs:text-3xl lg:text-5xl font-bold md:w-[50%]'>Fundamentals of cuisine</h3>
               <p className='text-text-dark lg:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et
@@ -53,7 +53,7 @@ function cookingClass() {
       </div>
 
       <div className='flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-2  gap-10 py-20 overflow-hidden'>
-            <div className='px-5 md:pl-10 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8'>
+            <div className='px-5 md:pl-10 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8' data-aos="fade-right">
               <h3 className='xs:text-3xl lg:text-5xl font-bold md:w-[50%]'>Worldwide cuisine</h3>
               <p className='text-text-dark lg:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et
@@ -74,7 +74,7 @@ function cookingClass() {
             <div>
               <LazyLoadImage className='md:rounded-tr-2xl md:rounded-br-2xl w-screen' effect='blur' src={expo3} alt="img" />
             </div>
-            <div className='px-5 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8'>
+            <div className='px-5 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8' data-aos="fade-right">
               <h3 className='xs:text-3xl lg:text-5xl font-bold md:w-[80%] leading-snug'>Pastry program:<br></br>fundamentals of pastry</h3>
               <p className='text-text-dark lg:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et
@@ -89,7 +89,7 @@ function cookingClass() {
       </div>
 
       <div className='flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-2 gap-10 py-20 overflow-hidden'>
-            <div className='px-5 md:pl-10 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8'>
+            <div className='px-5 md:pl-10 flex flex-col justify-center xs:gap-8 md:gap-4 lg:gap-8' data-aos="fade-right">
               <h3 className='xs:text-3xl lg:text-5xl font-bold md:w-[80%]'>Household assistant program</h3>
               <p className='text-text-dark lg:text-2xl lg:pr-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et

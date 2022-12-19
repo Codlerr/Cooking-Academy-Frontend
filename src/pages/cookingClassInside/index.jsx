@@ -28,7 +28,7 @@ function CookingclassInside() {
             <video src={bgVideo} autoPlay loop muted className='w-[100%] h-[100%] object-cover'/>
         </div>
 
-        <div className='ban-video-content md:pt-40'>
+        <div className='ban-video-content md:pt-40' >
             <h4 className='font-bold text-3xl md:tracking-wider uppercase'>fundamentals of</h4>
             <h1 className='font-bold text-7xl  uppercase'>cuisine</h1>
             <p className='md:w-[30%] mx-auto text-xl text-center py-5'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
@@ -43,13 +43,13 @@ function CookingclassInside() {
     {/* ================About class=================== */}
     <section className='relative w-11/12 mx-auto '>
         <div className='grid grid-cols-1 md:grid-cols-2 xs:gap-y-10 md:gap-x-10 py-20'>
-            <div>
+            <div data-aos="fade-right">
                 <h1 className='xs:text-3xl md:text-4xl font-bold'>About class</h1>
                 <p className='text-xl py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus rerum nemo amet sunt officia sed excepturi maiores fugit aut, libero labore obcaecati minima, animi earum necessitatibus at aliquam tempora! Molestias?</p>
                 <p >Instructor(s) : Kelly Wearstler</p>
                 <p className='pt-2'>Class Lenght : 17 video lessons (2 hrs 13 min)</p>
             </div>
-            <div className='grid place-items-center'>
+            <div className='grid place-items-center' data-aos="fade-right">
                 <div className='border-[1px] border-primary-clr2 xs:w-[90%] lg:w-[70%] mx-auto grid place-items-center py-5'>
                     <p className='uppercase text-xl font-light'>14-day free cancellation</p>
                     <h1 className='text-5xl py-3 text-primary-clr2 font-bold'>$299</h1>
@@ -60,19 +60,19 @@ function CookingclassInside() {
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:w-10/12 mx-auto xs:py-5 md:py-10'>
-            <div className='flex gap-10'>
+            <div className='flex gap-10' data-aos="fade-right">
                 <i class="text-4xl text-primary-clr2 fa-solid fa-photo-film"></i>
                 <p className='grid place-items-center xs:text-base lg:text-xl'>6 units | 17 lessons | 54 tasks</p>
             </div>
-            <div className='flex gap-10'>
+            <div className='flex gap-10' data-aos="fade-right">
                  <i class="text-4xl text-primary-clr2 fa-solid fa-download"></i>
                 <p className='grid place-items-center xs:text-base lg:text-xl'>Download and watch offline</p>
             </div>
-            <div className='flex gap-10'>
+            <div className='flex gap-10' data-aos="fade-right">
                 <i class="text-4xl text-primary-clr2 fa-solid fa-volume-high"></i>
                 <p className='grid place-items-center xs:text-base lg:text-xl'> Audio-only lessons</p>
             </div>
-            <div className='flex gap-10'>
+            <div className='flex gap-10' data-aos="fade-right">
                 <i class="text-4xl text-primary-clr2 fa-solid fa-file-pdf"></i>
                 <p className='grid place-items-center xs:text-base lg:text-xl'>Downloadable instructor guides for every class</p>
             </div>
@@ -91,19 +91,19 @@ function CookingclassInside() {
 
         <div className='grid grid-cols-1 gap-10 md:grid-cols-4 pt-16'>
             <div className='md:col-span-2'>
-                <img className='w-full h-full' src={P1} alt="image" />
+                <img className='w-full h-full overflow-hidden hover:brightness-90' src={P1} alt="image" />
             </div>
             <div className=''>
-                <img className='w-full h-full' src={P2} alt="image" />
+                <img className='w-full h-full overflow-hidden hover:brightness-90' src={P2} alt="image" />
             </div>
             <div className='grid grid-flow-row gap-10'>
-                <img className='w-full ' src={P3} alt="image" />
-                <img className='w-full ' src={P4} alt="image" />
+                <img className='w-full overflow-hidden hover:brightness-90' src={P3} alt="image" />
+                <img className='w-full overflow-hidden hover:brightness-90' src={P4} alt="image" />
             </div>
-            <img className='w-full xs:h-full lg:h-52' src={P5} alt="image" />
-            <img className='w-full xs:h-full lg:h-52' src={P6} alt="image" />
-            <img className='w-full xs:h-full lg:h-52' src={P7} alt="image" />
-            <img className='w-full xs:h-full lg:h-52' src={P8} alt="image" />
+            <img className='w-full xs:h-full lg:h-52 overflow-hidden hover:brightness-90' src={P5} alt="image" />
+            <img className='w-full xs:h-full lg:h-52 overflow-hidden hover:brightness-90' src={P6} alt="image" />
+            <img className='w-full xs:h-full lg:h-52 overflow-hidden hover:brightness-90' src={P7} alt="image" />
+            <img className='w-full xs:h-full lg:h-52 overflow-hidden hover:brightness-90' src={P8} alt="image" />
         </div>
     </section>
     {/* ================Gallery=================== */}

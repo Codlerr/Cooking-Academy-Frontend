@@ -35,7 +35,7 @@ function KitchenStudio() {
     <>
     {/* =========================BANNER=============================== */}
     <section className='kitchen-banner'>
-            <div className='xs:px-5 md:px-0 md:pl-20 h-full flex justify-center flex-col xs:gap-5 md:gap-5'>
+            <div data-aos="fade-right" className='xs:px-5 md:px-0 md:pl-20 h-full flex justify-center flex-col xs:gap-5 md:gap-5'>
                 <h1 className='xs:text-5xl lg:text-7xl  font-bold md:w-[40%] '>The Modern Kitchen Studio</h1>
                 <p className='xs:text-xl md:text-2xl md:w-[40%]'>Cooking is not just about ingredients, it's a creative outlet for us.</p>
                 <a className='bg-primary-clr2 hover:bg-primary-clr1 w-fit text-xl font-medium rounded-3xl xs:px-10 md:px-16 py-3' href="#">Book Now</a>
@@ -46,11 +46,11 @@ function KitchenStudio() {
     {/* ============================BOOK NOW============================ */}
     <section>
         <div className='xs:pt-10 md:pt-20'>
-            <div className='xs:text-2xl md:text-4xl text-center font-semibold italic leading-snug'>
+            <div data-aos="fade-right" className='xs:text-2xl md:text-4xl text-center font-semibold italic leading-snug'>
                 <h2 className=''>BRING YOUR <span className='text-primary-clr2'>VISION</span> TO LIFE.</h2>
                 <h2 className=''>LET US HANDLE THE REST.</h2>
             </div>
-            <div className='grid place-items-center'>
+            <div data-aos="fade-right" className='grid place-items-center'>
                     <p className='xs:w-[90%] md:w-[70%] text-xl mx-auto text-center text-text-dark pt-5 pb-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                     labore et dolore magna aliquyam erat. sed diam voluptua. At vero eos et accusam et justo duo dolores
                     et ea reburn. Stet clita kasd gubergren. no sea takimata sanctus est</p>
