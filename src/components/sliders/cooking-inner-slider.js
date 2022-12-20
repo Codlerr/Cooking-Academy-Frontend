@@ -73,7 +73,7 @@ function CookingInnerSlide() {
 return (
 <>
     <div className='cookingTestimonial py-20'>
-        <Slider {...settings} className=' xs:w-11/12 md:w-10/12 mx-auto md:border-r-[40px] border-double border-primary-clr2 overflow-hidden'>
+        <Slider {...settings} className='md:w-10/12 mx-auto md:border-r-[40px] border-double border-primary-clr2 overflow-hidden'>
         {
         Testimonial.map((item,index) => (
             <div className={index === slideIndex ? '!grid md:grid-cols-3  testi-slide testi-slide-active ': 'testi-slide !grid md:grid-cols-3 gap-0'}  key={index}>
@@ -84,8 +84,8 @@ return (
                 </div>
                 <div className='md:col-span-2 md:w-[70%] grid place-items-center text-xl relative'>
                     <i class="absolute xs:text-sm md:text-2xl xs:left-0 md:-left-10 xs:-top-5 md:top-0 fa-solid fa-quote-left auto-hide"></i>
-                    <i class="absolute xs:text-sm md:text-2xl right-0 bottom-0 fa-solid fa-quote-left auto-hide"></i>
-                    <p className='auto-hide sm:text-xs md:text-lg'>{item.desc}</p>
+                    <i class="absolute xs:text-sm md:text-2xl right-0 xs:-bottom-5 md:bottom-0 fa-solid fa-quote-left auto-hide"></i>
+                    <p className='auto-hide sm:text-xs md:text-lg xs:pt-3 md:pt-0 xs:text-center md:text-start'>{item.desc}</p>
                 </div>
             </div>
            ))

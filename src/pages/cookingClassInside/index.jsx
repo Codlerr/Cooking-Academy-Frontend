@@ -87,9 +87,9 @@ function CookingclassInside() {
 
     {/* ================Gallery=================== */}
     <section className='w-11/12 mx-auto py-10'>
-        <h1 className='md:text-4xl font-bold text-center'>Gallery</h1>
+        <h1 className='xs:text-3xl md:text-4xl font-bold text-center'>Gallery</h1>
 
-        <div className='grid grid-cols-1 gap-10 md:grid-cols-4 pt-16'>
+        <div className='grid grid-cols-1 gap-10 md:grid-cols-4 xs:pt-8 md:pt-16'>
             <div className='md:col-span-2'>
                 <img className='w-full h-full overflow-hidden hover:brightness-90' src={P1} alt="image" />
             </div>
