@@ -6,6 +6,7 @@ import MOC from "../../components/MeetOurChefs"
 import LSA from "../../components/LatYearAchive"
 import ENQ from "../../components/Enquiry"
 import FAQ from "../../components/Faq"
+import CLASSES from "../../components/sliders/explore-slider"
 
 
 let expo1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671086874/Cooking%20Academy%20Assets/cooking%20class/funtamental_jqkey4.jpg';
@@ -33,8 +34,24 @@ function cookingClass() {
       <div className='w-11/12 mx-auto py-10'>
         <h3 className='text-4xl font-bold'>Explore our classes.</h3>
       </div>
+       {/* =========================CLASS======================== */}
+      <div className='lg:pr-14'>
+        <CLASSES/>
+      </div>
+      {/* =========================CLASS======================== */}
+      <div className='pt-10 lg:pr-14'>
+        <CLASSES/>
+      </div>
+      
+    {/* =========================ENQUIRY======================== */}
+    <ENQ/>
+    {/* =========================ENQUIRY======================== */}
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 overflow-hidden'>
+    <div className='pt-10 lg:pr-14'>
+        <CLASSES/>
+    </div>
+    
+      {/* <div className='grid grid-cols-1 md:grid-cols-2 gap-10 overflow-hidden'>
             <div >
               <LazyLoadImage className='md:rounded-tr-2xl md:rounded-br-2xl w-screen' effect='blur' src={expo1} alt="img" />
             </div>
@@ -104,7 +121,7 @@ function cookingClass() {
             <div>
               <LazyLoadImage className='md:rounded-tl-2xl md:rounded-bl-2xl w-screen' effect='blur' src={expo4} alt="img" />
             </div>
-      </div>
+      </div> */}
     </section>
     {/* =======================Classes========================== */}
 
@@ -116,9 +133,6 @@ function cookingClass() {
     <LSA/>
     {/* =======================Acheivement========================== */}
 
-    {/* =========================ENQUIRY======================== */}
-    <ENQ/>
-    {/* =========================ENQUIRY======================== */}
 
 
     {/* ========================FAQ========================= */}

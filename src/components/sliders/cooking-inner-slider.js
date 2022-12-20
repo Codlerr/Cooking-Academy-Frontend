@@ -28,6 +28,8 @@ function CookingInnerSlide() {
     const settings = {
         dots: false,
         arrows:true,
+        speed:2000,
+        autoplay: true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -72,7 +74,7 @@ function CookingInnerSlide() {
     
 return (
 <>
-    <div className='cookingTestimonial py-20'>
+    <div className='cookingTestimonial xs:py-20 md:py-0'>
         <Slider {...settings} className='md:w-10/12 mx-auto md:border-r-[40px] border-double border-primary-clr2 overflow-hidden'>
         {
         Testimonial.map((item,index) => (
@@ -84,7 +86,7 @@ return (
                 </div>
                 <div className='md:col-span-2 md:w-[70%] grid place-items-center text-xl relative'>
                     <i class="absolute xs:text-sm md:text-2xl xs:left-0 md:-left-10 xs:-top-5 md:top-0 fa-solid fa-quote-left auto-hide"></i>
-                    <i class="absolute xs:text-sm md:text-2xl right-0 xs:-bottom-5 md:bottom-0 fa-solid fa-quote-left auto-hide"></i>
+                    <i class="absolute xs:text-sm md:text-2xl right-0 xs:-bottom-5 lg:bottom-0 fa-solid fa-quote-left auto-hide"></i>
                     <p className='auto-hide sm:text-xs md:text-lg xs:pt-3 md:pt-0 xs:text-center md:text-start'>{item.desc}</p>
                 </div>
             </div>

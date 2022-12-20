@@ -15,6 +15,7 @@ import CookingclassInside from './pages/cookingClassInside/index';
 import Cookingclassone from './pages/cookingClass-1/index';
 import KitchenStudio from './pages/kitchenStudio/index';
 import Profile from './pages/profile/index';
+import Cart from './pages/cart/index';
 
 const Layout = () => {
   return(
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
       {
         path:"/profile",
         element:<Profile/>
+      },
+      {
+        path:"/cart",
+        element:<Cart/>
       },
       {
         path:"*",

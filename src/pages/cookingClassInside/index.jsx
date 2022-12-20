@@ -17,7 +17,6 @@ let P6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671270925/Cooking%
 let P7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671270925/Cooking%20Academy%20Assets/cooking%20class/Rectangle_167_qkjplb.webp';
 let P8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671270926/Cooking%20Academy%20Assets/cooking%20class/Rectangle_168_vpo3nx.webp';
 
-
 function CookingclassInside() {
   return (
     <>
@@ -79,6 +78,19 @@ function CookingclassInside() {
         </div>
     </section>
     {/* ================About class=================== */}
+
+    {/* ================Quotes=================== */}
+    <section className='quotes-bg mt-20'>
+        <div className='lg:w-[40%] float-right flex justify-center flex-col h-full lg:pr-32'>
+            <h3 className='xs:w-[90%] lg:w-full mx-auto xs:text-3xl md:text-4xl xs:text-center md:text-left font-bold italic tracking-wider xs:leading-relaxed md:leading-relaxed'>KITCHENS ARE HARD
+                ENVIRONMENTS AND
+                THEY FORM INCREDIBLY
+                STRONG CHARACTERS.
+                </h3>
+            <p className='flex justify-center xs:text-xl md:text-2xl pt-4'>- Chef Gordon Ramsay</p>
+        </div>
+    </section>
+    {/* ================Quotes=================== */}
 
     {/* ================Testimonial=================== */}
     <Slide/>
