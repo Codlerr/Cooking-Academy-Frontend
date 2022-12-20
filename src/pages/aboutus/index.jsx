@@ -45,7 +45,7 @@ function AboutUs() {
       <section className='w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 md:py-10'>
         <div data-aos="fade-right" className='relative md:col-span-2 flex flex-col justify-center'>
             <h2 className='text-center  md:w-[80%] md:text-left font-bold xs:text-4xl lg:text-5xl'>who are we?</h2>
-            <p className='md::w-[80%]  lg:w-[70%] md:tracking-wider text-left xs:text-lg md:text-xl py-5 '>
+            <p className='md::w-[80%]  lg:w-[70%] md:tracking-wider xs:text-center md:text-left xs:text-lg md:text-xl py-5 '>
               We are a f&b company based in Qatar with the aim of bringing people together to learn and enjoy the art of cooking.
               We link culinary professionals and food lovers through innovative concepts, high quality products and special events.
               The Cooking Academy is a hub for food creation, experimenting, learning and events.
@@ -77,24 +77,27 @@ function AboutUs() {
           </div>
 
        <div className='w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2'>
-          <div className='md:w-[80%] max-w-lg z-20 md:ml-8 '>
-                <img src={ownerImg} alt="image of the company owner" width='100%' />
-                <hr className='h-px w-3/4 ml-42 hrThemeBg' />
-                <h1 className='font-bold text-satin-gold md:ml-16 text-2xl'>Mohamed Abdulmalik</h1>
-                <h1 className='md:ml-16 text-base'>Founder of The Cooking Academy</h1>
+          <div className=' lg:w-[80%] max-w-lg z-20 lg:ml-8 '>
+                <img className='' src={ownerImg} alt="image of the company owner" width='100%' />
+                <hr className='h-px md:w-3/4 md:ml-42 hrThemeBg' />
+                <h1 className='font-bold text-satin-gold lg:ml-16 text-2xl xs:text-center md:text-left'>Mohamed Abdulmalik</h1>
+                <h1 className='lg:ml-16 text-base xs:text-center md:text-left'>Founder of The Cooking Academy</h1>
           </div>
           <div className='flex flex-col xs:gap-5 md:gap-0 justify-between z-20 '>
-              <div className='xs:mt-28 md:mt-36 '>
-                <h1 className='font-bold xs:text-4xl lg:text-5xl  '>Our Vision</h1>
-                <p className='text-lg pt-2'>Create a culture of cooking excellence.</p>
+              <div className='xs:mt-28  lg:mt-36 '>
+                <h1 className='font-bold xs:text-4xl  xs:text-center md:text-left lg:text-5xl  '>Our Vision</h1>
+                <p className='text-lg pt-2 xs:text-center md:text-left'>Create a culture of cooking excellence.</p>
               </div>
-              <div className='mb-20'>
-                <h1 className='font-bold xs:text-4xl lg:text-5xl'>Our Mission</h1>
-                <p className='text-lg pt-2'>By connecting to nature, exchanging experiences and bridging cultures through innovative products and solutions.</p>
+              <div className=' lg:mb-20'>
+                <h1 className='font-bold xs:text-4xl  xs:text-center md:text-left lg:text-5xl'>Our Mission</h1>
+                <p className='text-lg pt-2 xs:text-center md:text-left'>By connecting to nature, exchanging experiences and bridging cultures through innovative products and solutions.</p>
               </div>
           </div>
        </div>
       </section>
+
+
+      
 
       {/*================================= Last Year achievement =================================*/}
       <section className='w-11/12 mx-auto xs:py-5 md:py-20'>
@@ -107,7 +110,7 @@ function AboutUs() {
           <div className='grid grid-cols-1 md:grid-cols-2 w-10/12 mx-auto'>
                 <div data-aos="fade-right" className='flex justify-center flex-col xs:py-10 md:py-24 '>
                     <h2 className='font-bold xs:text-4xl lg:text-5xl'>Our values</h2>
-                    <p className='text-xl md:w-[70%] pt-3'>These values are the operating philosophies
+                    <p className='text-xl lg:w-[70%] pt-3'>These values are the operating philosophies
                        and principles within TCA; they are
                       the guide of TCA’s internal conduct and the
                       definition of the relationship with customers,

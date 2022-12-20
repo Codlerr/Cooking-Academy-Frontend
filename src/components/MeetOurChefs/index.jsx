@@ -118,7 +118,7 @@ export default function index() {
 
           <div className='text-center pt-5' data-aos="fade-right">
             <h2 className='text-4xl font-bold'>Meet our chefs</h2>
-            <p className='text-xl pt-3 md:w-[70%] mx-auto text-[#ffffffcb]'>Our passionate culinary team is made up of innovative and experienced professionals with years of experience in foodservice. Their work combines food science, technology and the culinary arts to imagine the future of food. They draw on current trends and culinary insights from across our global network to create customized solutions for all of our clients. Using proprietary flavor research, our team of forward-thinking chefs aims to guide the next phase of foodservice. Individually, they've earned accolades across the industry, but together they're crafting the future of flavor!</p>
+            <p className='text-xl pt-3 md:w-[90%] lg:w-[70%] mx-auto text-[#ffffffcb]'>Our passionate culinary team is made up of innovative and experienced professionals with years of experience in foodservice. Their work combines food science, technology and the culinary arts to imagine the future of food. They draw on current trends and culinary insights from across our global network to create customized solutions for all of our clients. Using proprietary flavor research, our team of forward-thinking chefs aims to guide the next phase of foodservice. Individually, they've earned accolades across the industry, but together they're crafting the future of flavor!</p>
           </div>
       </section>
             </>

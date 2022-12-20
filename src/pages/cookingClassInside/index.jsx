@@ -31,7 +31,7 @@ function CookingclassInside() {
         <div className='ban-video-content md:pt-40' >
             <h4 className='font-bold text-3xl md:tracking-wider uppercase'>fundamentals of</h4>
             <h1 className='font-bold text-7xl  uppercase'>cuisine</h1>
-            <p className='md:w-[30%] mx-auto text-xl text-center py-5'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
+            <p className='xs:w-[90%] md:w-[30%] mx-auto text-xl text-center py-5'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
             <div className='grid place-items-center'>
                 <a href='#' className='bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>Resume Class</a>
             </div>
