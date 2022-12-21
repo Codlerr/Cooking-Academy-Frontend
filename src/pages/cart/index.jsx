@@ -9,8 +9,6 @@ function Cart() {
     <>
     <section className='w-11/12 mx-auto'>
         <h1 className='text-xl font-bold py-5'>2 Courses in Cart</h1>
-        
-
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10'>
             <div className='lg:col-span-2 grid gap-10 rounded-xl overflow-hidden bg-white xs:p-5 lg:p-10'>
 
@@ -114,7 +112,6 @@ function Cart() {
 
             </div>
         </div>
-
     </section>
 
     {/* Classes */}
