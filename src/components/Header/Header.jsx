@@ -16,11 +16,11 @@ function Navbar() {
 
     const navWithOpacity = location.pathname !== '/'  ? 'withOpacity' : ""
     const navWithOpacity2 = location.pathname !== '/profile'  ? 'withOpacity' : ""
-    const navWithOpacityCart = location.pathname !== '/cart'  ? 'withOpacity3' : ""
+    const navWithOpacity3 = location.pathname !== '/cart'  ? 'withOpacity' : ""
     
   return (
     <>
-    <nav className={`bg-black border-b-2 border-[#383838] ${navWithOpacity,navWithOpacity2,navWithOpacityCart}`}>
+    <nav className={`bg-black border-b-2 border-[#383838] ${navWithOpacity && navWithOpacity2 && navWithOpacity3}`}>
       <div className='w-11/12 mx-auto lg:flex justify-between pt-8 pb-3'>
           <div className='flex justify-between'>
             <a href="/"><img src={Logo} className='h-12 md:h-20'></img></a>
