@@ -52,6 +52,8 @@ function AboutUs() {
               We offer a wide range of courses, techniques, and expertise of local and international chefs</p>
         </div>
         
+
+        
         <div data-aos="fade-right" className="h-full">
           <img src={abtKitchen} alt='who we are' className='md:h-full' />
         </div>

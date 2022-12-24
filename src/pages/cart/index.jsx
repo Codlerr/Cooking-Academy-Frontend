@@ -114,6 +114,8 @@ function Cart() {
         </div>
     </section>
 
+
+
     {/* Classes */}
     <section className='py-20'>
         <h1 className='xs:text-3xl md:text-4xl w-11/12 mx-auto'>More Classes</h1>

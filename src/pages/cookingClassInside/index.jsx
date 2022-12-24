@@ -39,6 +39,8 @@ function CookingclassInside() {
     {/* ================Banner=================== */}
 
 
+
+
     {/* ================About class=================== */}
     <section className='relative w-11/12 mx-auto '>
         <div className='grid grid-cols-1 md:grid-cols-2 xs:gap-y-10 md:gap-x-10 py-20'>
