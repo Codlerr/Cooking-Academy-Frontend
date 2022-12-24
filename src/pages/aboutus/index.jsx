@@ -53,7 +53,7 @@ function AboutUs() {
         </div>
         
         <div data-aos="fade-right" className="h-full">
-          <img src={abtKitchen} alt='who we are' className='h-full' />
+          <img src={abtKitchen} alt='who we are' className='md:h-full' />
         </div>
       </section>
 
