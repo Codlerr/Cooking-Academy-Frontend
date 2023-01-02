@@ -13,6 +13,11 @@ function Navbar() {
     const { pathname } = useLocation();
     if (pathname === "/login") return null;
     if (pathname === "/signup") return null;
+    if (pathname === "/admin/faq") return null;
+    if (pathname === "/admin/email") return null;
+    if (pathname === "/admin/class-details") return null;
+    if (pathname === "/admin/course-details") return null;
+    if (pathname === "/admin/course-details-Inner") return null;
 
     const navWithOpacity = location.pathname !== '/'  ? 'withOpacity' : ""
     const navWithOpacity2 = location.pathname !== '/profile'  ? 'withOpacity' : ""

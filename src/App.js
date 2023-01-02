@@ -17,6 +17,13 @@ import KitchenStudio from './pages/kitchenStudio/index';
 import Profile from './pages/profile/index';
 import Cart from './pages/cart/index';
 
+
+import FAQ from './Admin/Pages/Faq';
+import Email from './Admin/Pages/Email';
+import CourseDetail from './Admin/Pages/Course Details';
+import ClassDetail from './Admin/Pages/Class Details';
+import ClassDetailInner from './Admin/Pages/Class Detail Inner';
+
 const Layout = () => {
   return(
     <div className='app'>
@@ -26,6 +33,7 @@ const Layout = () => {
     </div>
   )
 }
+
 
 const router = createBrowserRouter([
   {
@@ -74,11 +82,33 @@ const router = createBrowserRouter([
       },
       {
         path:"*",
-        element:<h1>Page Not Found</h1>
+        element:<div className='h-[80vh] grid place-items-center'><h1>Page Not Found</h1></div>
+      },
+      {
+        path:"/admin/faq",
+        element:<FAQ/>
+      },
+      {
+        path:"/admin/email",
+        element:<Email/>
+      },
+      {
+        path:"/admin/class-details",
+        element:<ClassDetail/>
+      },
+      {
+        path:"/admin/course-details",
+        element:<CourseDetail/>
+      },
+      {
+        path:"/admin/course-details-Inner",
+        element:<ClassDetailInner/>
       },
     ]
   }
 ]);
+
+
 
 function App() {
   return (
@@ -87,5 +117,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

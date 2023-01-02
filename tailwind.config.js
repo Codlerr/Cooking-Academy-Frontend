@@ -19,6 +19,7 @@ module.exports = {
         'primary-clr3': '#FFBD07',
         'primary-dark': '#706c6c',
         'text-dark': '#d4d3d3',
+        'bg-darks':'#3a3939'
       },
       fontFamily: {
         sansserif:["sans-serif","Roboto"],
