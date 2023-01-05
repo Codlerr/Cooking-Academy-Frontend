@@ -18,6 +18,7 @@ import Profile from './pages/profile/index';
 import Cart from './pages/cart/index';
 
 
+import AdminLogin from './Admin/Pages/login';
 import FAQ from './Admin/Pages/Faq';
 import Email from './Admin/Pages/Email';
 import CourseDetail from './Admin/Pages/Course Details';
@@ -83,6 +84,10 @@ const router = createBrowserRouter([
       {
         path:"*",
         element:<div className='h-[80vh] grid place-items-center'><h1>Page Not Found</h1></div>
+      },
+      {
+        path:"/admin/login",
+        element:<AdminLogin/>
       },
       {
         path:"/admin/faq",

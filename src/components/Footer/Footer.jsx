@@ -17,6 +17,7 @@ function Footer() {
 const { pathname } = useLocation();
 if (pathname === "/login") return null;
 if (pathname === "/signup") return null;
+if (pathname === "/admin/login") return null;
 if (pathname === "/admin/faq") return null;
 if (pathname === "/admin/email") return null;
 if (pathname === "/admin/class-details") return null;
