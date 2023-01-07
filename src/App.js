@@ -4,6 +4,7 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
+import {withReduxProvider} from './redux/store'
 import Login from './pages/login/index';
 import SignUp from './pages/signUp/index';
 import Home from './pages/home/index';
@@ -24,6 +25,7 @@ import Email from './Admin/Pages/Email';
 import CourseDetail from './Admin/Pages/Course Details';
 import ClassDetail from './Admin/Pages/Class Details';
 import ClassDetailInner from './Admin/Pages/Class Detail Inner';
+import useInitializeApp from './hooks/useInitializeApp';
 
 const Layout = () => {
   return(
@@ -116,6 +118,7 @@ const router = createBrowserRouter([
 
 
 function App() {
+  useInitializeApp();
   return (
     <div className="App">
       <RouterProvider router={router} />
@@ -124,4 +127,4 @@ function App() {
 }
 
 
-export default App;
+export default withReduxProvider(App);
