@@ -38,7 +38,7 @@ function Login() {
 
     useEffect(() => {
         if(auth.data) {
-            navigate('/', {
+            navigate('/admin/course-details', {
                 replace: true,
             })
         }
