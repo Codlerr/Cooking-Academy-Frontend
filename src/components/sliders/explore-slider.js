@@ -83,7 +83,7 @@ function Exploreslider() {
   return (
     <>
     <section className='text-white lg:pl-14 overflow-hidden'>
-    {/* <Slider {...settings} className='w-full py-5 bg-[#131212]'>
+    <Slider {...settings} className='w-full py-5 bg-[#131212]'>
       {
         ExploreData.map((item,index) => (
           <div className='relative ui-card' key={index}>
@@ -101,10 +101,10 @@ function Exploreslider() {
       }
        
       
-    </Slider> */}
+    </Slider>
 
 
-  <Slider {...settings} className='w-full py-5 bg-[#131212]'>
+  {/* <Slider {...settings} className='w-full py-5 bg-[#131212]'>
   {course && course.length>0 && course?.map((item, index) => {
           return (
             <div className='relative ui-card' key={index}>
@@ -122,7 +122,7 @@ function Exploreslider() {
         })}
        
       
-    </Slider>
+    </Slider> */}
 
     
     </section>
