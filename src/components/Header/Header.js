@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import useAppSelector from '../../redux/hooks/useAppSelector'
 import {NavLink, useLocation} from 'react-router-dom';
 import '../Header/Header.css';
 let Logo ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/Layer_2_vmobmf.svg'
@@ -7,7 +8,7 @@ let Menu = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669970200/Cookin
 function Navbar() {
   const location = useLocation()
   const [open, setOpen] = useState(false);
-
+  const auth = useAppSelector(state => state.auth);
 
     // custom hide
     const { pathname } = useLocation();
