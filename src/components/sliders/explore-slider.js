@@ -33,7 +33,7 @@ function Exploreslider() {
       const [course, setCourse] = useState([]);
         useEffect(() => {
           const fetchItems = async () => {
-            await instance.get("/course", {}).then((response) => {
+            await instance.get("/gust/course", {}).then((response) => {
               setCourse(response.data.data.courses);
               console.log(response.data);
             });
@@ -83,7 +83,7 @@ function Exploreslider() {
   return (
     <>
     <section className='text-white lg:pl-14 overflow-hidden'>
-    <Slider {...settings} className='w-full py-5 bg-[#131212]'>
+    {/* <Slider {...settings} className='w-full py-5 bg-[#131212]'>
       {
         ExploreData.map((item,index) => (
           <div className='relative ui-card' key={index}>
@@ -101,14 +101,14 @@ function Exploreslider() {
       }
        
       
-    </Slider>
+    </Slider> */}
 
 
-  {/* <Slider {...settings} className='w-full py-5 bg-[#131212]'>
-  {course && course.length>0 && course?.map((item, index) => {
+  <Slider {...settings} className='w-full py-5 bg-[#131212]'>
+  {course && course.length>0 && course?.slice(0).reverse().map((item, index) => {
           return (
             <div className='relative ui-card' key={index}>
-            <LazyLoadImage className='rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full' src={item.image}/>
+            <LazyLoadImage className='rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full md:w-[411px]' src={item.image}/>
                 <div className='centered'>
                 <p className='text-xl font-bold text-center uppercase'>{item.name}</p>
                   
@@ -122,7 +122,7 @@ function Exploreslider() {
         })}
        
       
-    </Slider> */}
+    </Slider>
 
     
     </section>

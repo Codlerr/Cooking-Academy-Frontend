@@ -1,120 +1,148 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/AdminNav";
 import instance from "../../API/api_instance";
+import { useDebouncedCallback } from 'use-debounce'
+import * as Yup from 'yup'
+import { useFormik } from 'formik';
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { confirmAlert } from 'react-confirm-alert'; // Import
+import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
+
+const CreateCourseSchema = Yup.object().shape({
+  name: Yup.string().required('Course Name is required'),
+  duration: Yup.string().required('Course Duration is required'),
+  instructorName: Yup.string().required('Course intrector name is required'),
+  unit: Yup.string().required('Course unnit is required'),
+  lesson: Yup.string().required('lesson is required'),
+  task: Yup.string().required('task is required'),
+  videoLink: Yup.string().required('Video LInk is required'),
+  image: Yup.mixed().required('Course Image is required'),
+})
 
 function CourseDetails() {
+ 
   const [course, setCourse] = useState([]);
+  const fetchItems = async () => {
+    await instance.get("/course", {}).then((response) => {
+      setCourse(response.data.data.courses);
+      console.log(response.data);
+    });
+  };
   useEffect(() => {
-    const fetchItems = async () => {
-      await instance.get("/course", {}).then((response) => {
-        setCourse(response.data.data.courses);
-        console.log(response.data);
-      });
-    };
     fetchItems();
   }, []);
 
-  
+// SUBMIT FUNCTION SATRT
 
-  const [post, setPost] = useState({
-    name: "",
-    image: "",
-    duration: "",
-    instructorName: "",
-    unit: "",
-    lesson: "",
-    task: "",
-    about: "",
-    price: "",
-    videoLink: "",
-  });
-
-  // Handle input
-  const handleChange = (event) => {
-    let name = event.target.name;
-    let value = event.target.value;
-
-    setPost({ ...post, [name]: value });
-  };
-
-  // handle submit
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    console.log(event);
-    const {
-      name,
-      image,
-      duration,
-      instructorName,
-      unit,
-      lesson,
-      task,
-      about,
-      price,
-      videoLink,
-    } = post;
-
-
-    let formdata = new FormData();
-    formdata.append("name", name);
-    formdata.append("image", image);
-    formdata.append("duration", duration);
-    formdata.append("instructorName", instructorName);
-    formdata.append("unit", unit);
-    formdata.append("lesson", lesson);
-    formdata.append("task", task);
-    formdata.append("about", about);
-    formdata.append("price", price);
-    formdata.append("videoLink", videoLink);
-    console.log(formdata);
-
+  const onSubmit = async (values, { setSubmitting, resetForm }) => {
+    let formdata = new FormData()
+    formdata.append('name', values.name)
+    formdata.append('duration', values.duration)
+    formdata.append('instructorName', values.instructorName)
+    formdata.append('unit', values.unit)
+    formdata.append('lesson', values.lesson)
+    formdata.append('task', values.task)
+    formdata.append('about', values.about)
+    formdata.append('price', values.price)
+    formdata.append('videoLink', values.videoLink)
+    values.image instanceof File && formdata.append('image', values.image)
+    console.log('1')
     try {
-      const res = await instance.post("/course",formdata, {
-        
-        headers: { "Content-Type": "multipart/form-data" },
-      });
-      console.log(res.status);
+      console.log(formdata)
+      const res = await instance.post('/course', formdata, {
+        headers: { 'Content-Type': 'multipart/form-data' },
+      })
+      console.log(res.status)
       if (res.status === 400 || !res) {
-        window.alert("Message not sent, try agin..");
+        window.alert('Message not sent, try agin..')
       } else {
-        window.alert("Message Sent");
-        setPost({
-          name: "",
-          image: "",
-          duration: "",
-          instructorName: "",
-          unit: "",
-          lesson: "",
-          task: "",
-          about: "",
-          price: "",
-          videoLink: "",
-        });
-       
+        fetchItems();
+        setSubmitting(false)
+        toast.dark('Course Added Successfully',{
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        })
+        resetForm()
       }
     } catch (error) {
-      console.log(error);
+      console.log('errr')
+      console.log(error)
     }
-  };
+  }
+
+  // SUBMIT FUNCTION END
+  
+  const debouncedSubmit = useDebouncedCallback(onSubmit, 300)
+  const {
+    values,
+    handleSubmit,
+    isSubmitting,
+    handleChange,
+    setFieldValue,
+    setFieldTouched,
+  } = useFormik({
+    initialValues: {
+      name: '',
+      image: '',
+      duration: '',
+      instructorName: '',
+      unit: '',
+      lesson: '',
+      task: '',
+      about: '',
+      price: '',
+      videoLink: '',
+    },
+    validationSchema: CreateCourseSchema,
+    onSubmit: debouncedSubmit,
+  })
 
 const HandleDelete = async (id)=>{
+  confirmAlert({
+    title: 'Confirm to submit',
+    message: 'Are you sure to do this.',
+    buttons: [
+      {
+        label: 'Yes',
+        onClick: () => Responce()
+        
+        
+      },
+      {
+        label: 'No',
+      }
+    ]
+  });
 
+  const Responce = async()=> {
   const res = await instance.delete(`/course/${id}`).then((result)=>{
+    fetchItems()
+    toast.dark('Course Deleted Successfully',{
+      position: "top-right",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    })
     if(
       result.statusCode === 200
     ){
-      CourseDetails()
+      console.log("sk");
     }
   })
   console.log(res);
+ }
+  
  
-  useEffect(() => {
-    CourseDetails()
-  }, [course])
 }
-
-
 
   return (
     <>
@@ -143,8 +171,15 @@ const HandleDelete = async (id)=>{
                       hover:file:bg-violet-100
                     "
                 name="image"
-                value={post.image}
-                onChange={handleChange}
+                onChange={(e) => {
+                  setFieldTouched("image", true);
+                  if (
+                    e?.target?.files &&
+                    e?.target?.files?.length > 0
+                  ) {
+                    setFieldValue("image", e.target.files[0]);
+                  }
+                }}
                 required
               />
             </div>
@@ -156,7 +191,7 @@ const HandleDelete = async (id)=>{
                 type="text"
                 placeholder="Video link"
                 name="videoLink"
-                value={post.videoLink}
+                value={values.videoLink}
                 onChange={handleChange}
                 required
               />
@@ -169,7 +204,7 @@ const HandleDelete = async (id)=>{
                 type="text"
                 placeholder="Enter your Headline"
                 name="name"
-                value={post.name}
+                value={values.name}
                 onChange={handleChange}
                 required
               />
@@ -183,7 +218,7 @@ const HandleDelete = async (id)=>{
                 type="text"
                 placeholder="About Class"
                 name="about"
-                value={post.about}
+                value={values.about}
                 onChange={handleChange}
                 required
               />
@@ -196,7 +231,7 @@ const HandleDelete = async (id)=>{
                 type="text"
                 placeholder="Instructure name"
                 name="instructorName"
-                value={post.instructorName}
+                value={values.instructorName}
                 onChange={handleChange}
                 required
               />
@@ -209,7 +244,7 @@ const HandleDelete = async (id)=>{
                 type="text"
                 placeholder="Class Length"
                 name="duration"
-                value={post.duration}
+                value={values.duration}
                 onChange={handleChange}
                 required
               />
@@ -223,7 +258,7 @@ const HandleDelete = async (id)=>{
                   type="text"
                   placeholder="01"
                   name="unit"
-                  value={post.unit}
+                  value={values.unit}
                   onChange={handleChange}
                   required
                 />
@@ -235,7 +270,7 @@ const HandleDelete = async (id)=>{
                   type="text"
                   placeholder="19"
                   name="lesson"
-                  value={post.lesson}
+                  value={values.lesson}
                   onChange={handleChange}
                   required
                 />
@@ -247,7 +282,7 @@ const HandleDelete = async (id)=>{
                   type="text"
                   placeholder="60"
                   name="task"
-                  value={post.task}
+                  value={values.task}
                   onChange={handleChange}
                   required
                 />
@@ -261,7 +296,7 @@ const HandleDelete = async (id)=>{
                 type="text"
                 placeholder="300"
                 name="price"
-                value={post.price}
+                value={values.price}
                 onChange={handleChange}
                 required
               />
@@ -269,10 +304,14 @@ const HandleDelete = async (id)=>{
 
             <div className="flex justify-end">
               <button
+               disabled={isSubmitting}
                 className="bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-200 md:px-16 py-2 rounded-md"
                 type="submit"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSubmit();
+                }}>
             
-              >
                 Create
               </button>
             </div>
@@ -304,8 +343,10 @@ const HandleDelete = async (id)=>{
                   </h1>
                 </div>
                 {/* Edit/Delete Buttons */}
-                <div className="absolute top-10 right-5 flex gap-8">
-                  <i  class="fa-solid fa-pen-to-square hover:text-red-700 cursor-pointer"></i>
+                <div className="absolute top-10 right-10 flex gap-8">
+                  {/* Edit btn */}
+                  {/* <i  class="fa-solid fa-pen-to-square hover:text-red-700 cursor-pointer"></i> */}
+                  {/* Delete btn */}
                   <i onClick={()=>HandleDelete(item._id)}  class="fa-solid fa-trash hover:text-red-700 cursor-pointer"></i>
                 </div>
               </div>

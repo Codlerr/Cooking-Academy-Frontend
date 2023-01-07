@@ -1,4 +1,5 @@
 import './App.css';
+import {ToastContainer, toast} from 'react-toastify'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -32,6 +33,7 @@ const Layout = () => {
     <div className='app'>
       <Header/>
       <Outlet/>
+      <ToastContainer/>
       <Footer/>
     </div>
   )
