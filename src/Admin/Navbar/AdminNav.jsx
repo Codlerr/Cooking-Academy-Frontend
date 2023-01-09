@@ -14,7 +14,7 @@ function AdminNav() {
             {/* <li className='cursor-pointer'><NavLink to="/admin/faq">FAQ</NavLink></li>
             <li className='cursor-pointer'><NavLink to="/admin/email">Email</NavLink></li> */}
             <li className='cursor-pointer'><NavLink to="/admin/course-details">Course Details</NavLink></li>
-            {/* <li className='cursor-pointer'><NavLink to="/admin/class-details">Class Details</NavLink></li> */}
+            <li className='cursor-pointer'><NavLink to="/admin/class-details">Class Details</NavLink></li>
         </ul>
     </nav>
     </>

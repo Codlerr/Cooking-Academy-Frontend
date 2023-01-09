@@ -22,7 +22,7 @@ if (pathname === "/admin/faq") return null;
 if (pathname === "/admin/email") return null;
 if (pathname === "/admin/class-details") return null;
 if (pathname === "/admin/course-details") return null;
-if (pathname === "/admin/course-details-Inner") return null;
+if (pathname === "/admin/class") return null;
 
   return (
     <>

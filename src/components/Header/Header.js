@@ -19,7 +19,7 @@ function Navbar() {
     if (pathname === "/admin/email") return null;
     if (pathname === "/admin/class-details") return null;
     if (pathname === "/admin/course-details") return null;
-    if (pathname === "/admin/course-details-Inner") return null;
+    if (pathname === "/admin/class") return null;
 
     const navWithOpacity = location.pathname !== '/'  ? 'withOpacity' : ""
     const navWithOpacity2 = location.pathname !== '/profile'  ? 'withOpacity' : ""

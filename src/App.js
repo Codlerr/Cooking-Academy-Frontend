@@ -66,7 +66,7 @@ const router = createBrowserRouter([
         element:<Cookingclass/>
       },
       {
-        path:"/cooking-class-inside",
+        path:"/cooking-class/:name",
         element:<CookingclassInside/>
       },
       {
@@ -110,7 +110,7 @@ const router = createBrowserRouter([
         element:<CourseDetail/>
       },
       {
-        path:"/admin/course-details-Inner",
+        path:"/admin/class",
         element:<ClassDetailInner/>
       },
     ]

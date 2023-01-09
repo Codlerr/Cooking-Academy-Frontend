@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react';
-// import {useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import '../../pages/home/style.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
@@ -31,6 +31,8 @@ function Exploreslider() {
 
       // -------------------API CALL-----------------------//
       const [course, setCourse] = useState([]);
+      const navigate = useNavigate('');
+
         useEffect(() => {
           const fetchItems = async () => {
             await instance.get("/gust/course", {}).then((response) => {
@@ -83,46 +85,26 @@ function Exploreslider() {
   return (
     <>
     <section className='text-white lg:pl-14 overflow-hidden'>
-    {/* <Slider {...settings} className='w-full py-5 bg-[#131212]'>
-      {
-        ExploreData.map((item,index) => (
-          <div className='relative ui-card' key={index}>
-            <LazyLoadImage className='rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full' src={item.image}/>
-                <div className='centered'>
-                <p className='text-xl font-bold text-center uppercase'>{item.Title}</p>
-                    <p className='text-2xl font-extrabold text-center uppercase'>{item.Title2}</p>
-                    <div className='flex flex-col  gap-5 w-64 md:w-52 lg:w-64 mx-auto pb-3 mt-8'>
-                      <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='/cooking-class-inside'>ENROLL NOW</a>
-                      <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='/cooking-class-inside'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
-                    </div>
-                </div>
-       </div>
-        ))
-      }
-       
-      
-    </Slider> */}
 
-
-  <Slider {...settings} className='w-full py-5 bg-[#131212]'>
-  {course && course.length>0 && course?.slice(0).reverse().map((item, index) => {
-          return (
-            <div className='relative ui-card' key={index}>
-            <LazyLoadImage className='rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full md:w-[411px]' src={item.image}/>
-                <div className='centered'>
-                <p className='text-xl font-bold text-center uppercase'>{item.name}</p>
-                  
-                    <div className='flex flex-col  gap-5 w-64 md:w-52 lg:w-64 mx-auto pb-3 mt-8'>
-                      <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold' href='/cooking-class-inside'>ENROLL NOW</a>
-                      <a className='bg-white rounded-lg text-black py-2.5 text-center font-medium' href='/cooking-class-inside'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
-                    </div>
-                </div>
-       </div>
-          );
-        })}
-       
-      
-    </Slider>
+        <Slider {...settings} className='w-full py-5 bg-[#131212]'>
+        {course && course.length>0 && course?.slice(0).reverse().map((item, index) => {
+                return (
+                  <div className='relative ui-card' key={index}>
+                  <LazyLoadImage className='rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full md:w-[411px]' src={item.image}/>
+                      <div className='centered'>
+                      <p className='text-xl font-bold text-center uppercase'>{item.name}</p>
+                        
+                          <div className='flex flex-col  gap-5 w-64 md:w-52 lg:w-64 mx-auto pb-3 mt-8'>
+                            <a className='bg-white rounded-lg text-black py-2.5 text-center font-semibold cursor-pointer' href='/cart'>ENROLL NOW</a>
+                            <a onClick={() => navigate(`/cooking-class/${item.name}`, { state: { classinfo: item } })} className='bg-white rounded-lg text-black py-2.5 text-center font-medium cursor-pointer'><i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS INFO</a>
+                          </div>
+                      </div>
+            </div>
+                );
+              })}
+            
+            
+          </Slider>
 
     
     </section>

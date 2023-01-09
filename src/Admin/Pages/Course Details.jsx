@@ -328,13 +328,10 @@ const HandleDelete = async (id)=>{
 
                 <div className="flex flex-col py-5 gap-5 md:col-span-3">
                   <p className="text-2xl font-medium">{item.name}</p>
-                  <p>{item.about}</p>
+                  <p>{item.about.slice(0,180)} ...</p>
                   <p>Instructor(s): {item.instructorName}</p>
                   <p>Class Length: {item.duration} video</p>
-                  <p>
-                    {item.unit} units | {item.lesson} lessons | {item.task}{" "}
-                    tasks
-                  </p>
+                  <p>{item.unit} units | {item.lesson} lessons | {item.task} tasks</p>
                 </div>
 
                 <div className="md:grid place-items-center">
