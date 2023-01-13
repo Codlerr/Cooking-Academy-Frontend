@@ -13,9 +13,152 @@ function Cookingclass() {
 
   return (
     <>
-      <section className=" relative overflow-hidden mt-40">
-        <span className="xs:hidden md:block absolute top-32 left-8"><i class="text-primary-clr2 text-3xl fa-solid fa-trophy"></i></span>
-        <div className="xs:w-11/12 md:w-8/12 mx-auto py-5">
+      <section className="w-11/12 mx-auto xs:flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-3 gap-16 relative mt-32">
+
+        {/* left */}
+        <div className="bg-zinc-800 px-10 md:my-5 rounded-[2rem] relative h-fit">
+        <span className="xs:hidden md:block absolute top-10 xs:-left-5 lg:-left-10"><i class="text-primary-clr2 text-3xl fa-solid fa-trophy"></i></span>
+
+          {/* Progress */}
+            <div className="py-5">
+                <p className="text-xl font-semibold">Course Progress: <span>55%</span></p>
+                <div class="progress">
+                  <div class="bar bg-primary-clr2" style={{width:"55%"}}>
+                  </div>
+                </div>
+            </div>
+
+            {/* Content Navigator */}
+            <div className="flex flex-col gap-3">
+              <p className="text-xl font-semibold">Content Navigator</p>
+              <div className="flex justify-between items-center bg-black p-4 rounded-2xl">
+                  <div className="flex flex-col gap-2">
+                    <p>Chapter</p>
+                    <p className="text-base font-medium">Heading</p>
+                    <div className="flex gap-5">
+                        <span className="flex gap-2 text-sm">
+                          <i class="text-primary-clr2 grid place-items-center fa-regular fa-circle-play"></i>
+                          <p>Video 5</p>
+                        </span>
+                        <span className="flex gap-2 text-sm">
+                          <i class="text-primary-clr2 grid place-items-center fa-regular fa-clock"></i>
+                          <p>1 hrs</p>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="progresess">
+                      <span class="title timer" data-from="0" data-to="70" data-speed="1500">5/6</span>
+                      <div class="overlay"></div>
+                      <div class="left"></div>
+                      <div class="right"></div>
+                  </div>
+              </div>
+            </div>
+
+            {/* More class list */}
+
+            <div className="flex justify-between items-center p-4">
+              <div className="flex flex-col gap-2">
+                <div className="flex gap-5">
+                    <span className="flex gap-2 text-sm">
+                      <i class="text-primary-clr2 grid place-items-center fa-regular fa-circle-play"></i>
+                      <p>Video 5</p>
+                    </span>
+                    <span className="flex gap-2 text-sm">
+                      <i class="text-primary-clr2 grid place-items-center fa-regular fa-clock"></i>
+                      <p>1 hrs</p>
+                    </span>
+                </div>
+                <p className="text-base font-medium">Heading</p>
+              </div>
+
+              <i class="text-4xl text-primary-clr2 fa-regular fa-circle-play"></i>
+            </div>
+
+            <div className="flex justify-between items-center p-4">
+              <div className="flex flex-col gap-2">
+                <div className="flex gap-5">
+                    <span className="flex gap-2 text-sm">
+                      <i class="text-primary-clr2 grid place-items-center fa-regular fa-circle-play"></i>
+                      <p>Video 5</p>
+                    </span>
+                    <span className="flex gap-2 text-sm">
+                      <i class="text-primary-clr2 grid place-items-center fa-regular fa-clock"></i>
+                      <p>1 hrs</p>
+                    </span>
+                </div>
+                <p className="text-base font-medium">Heading</p>
+              </div>
+
+              <i class="text-4xl text-primary-clr2 fa-regular fa-circle-play"></i>
+            </div>
+
+
+            <div className="flex justify-between items-center p-4">
+              <div className="flex flex-col gap-2">
+                <div className="flex gap-5">
+                    <span className="flex gap-2 text-sm">
+                      <i class="text-primary-clr2 grid place-items-center fa-regular fa-circle-play"></i>
+                      <p>Video 5</p>
+                    </span>
+                    <span className="flex gap-2 text-sm">
+                      <i class="text-primary-clr2 grid place-items-center fa-regular fa-clock"></i>
+                      <p>1 hrs</p>
+                    </span>
+                </div>
+                <p className="text-base font-medium">Heading</p>
+              </div>
+
+              <i class="text-4xl text-primary-clr2 fa-regular fa-circle-play"></i>
+            </div>
+
+
+            <div className="flex justify-between items-center p-4">
+              <div className="flex flex-col gap-2">
+                <div className="flex gap-5">
+                    <span className="flex gap-2 text-sm">
+                      <i class="text-primary-clr2 grid place-items-center fa-regular fa-circle-play"></i>
+                      <p>Video 5</p>
+                    </span>
+                    <span className="flex gap-2 text-sm">
+                      <i class="text-primary-clr2 grid place-items-center fa-regular fa-clock"></i>
+                      <p>1 hrs</p>
+                    </span>
+                </div>
+                <p className="text-base font-medium">Heading</p>
+              </div>
+
+              <i class="text-4xl text-primary-clr2 fa-regular fa-circle-play"></i>
+            </div>
+
+
+
+            <div className="flex justify-between items-center p-4">
+              <div className="flex flex-col gap-2">
+                <div className="flex gap-5">
+                    <span className="flex gap-2 text-sm">
+                      <i class="text-primary-clr2 grid place-items-center fa-regular fa-circle-play"></i>
+                      <p>Video 5</p>
+                    </span>
+                    <span className="flex gap-2 text-sm">
+                      <i class="text-primary-clr2 grid place-items-center fa-regular fa-clock"></i>
+                      <p>1 hrs</p>
+                    </span>
+                </div>
+                <p className="text-base font-medium">Heading</p>
+              </div>
+
+              <i class="text-4xl text-primary-clr2 fa-regular fa-circle-play"></i>
+            </div>
+
+
+
+
+        </div>
+
+
+      {/* Right */}
+        <div className="lg:col-span-2 md:my-5 overflow-hidden">
           <div className="flex gap-10">
             <span className="flex">
               <i class="text-primary-clr2 pr-2 grid place-items-center fa-regular fa-circle-play"></i>
@@ -30,7 +173,7 @@ function Cookingclass() {
             5. Crispy Dishes
           </h1>
 
-          <video className="w-full h-full rounded-2xl" controls loop>
+          <video className=" rounded-2xl" controls loop>
             <source src={Videotemp} type="video/mp4" />
           </video>
 

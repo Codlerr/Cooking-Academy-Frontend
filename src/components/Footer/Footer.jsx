@@ -1,4 +1,4 @@
-import {Link,useLocation} from 'react-router-dom';
+import {Link,useLocation,useParams} from 'react-router-dom';
 import React,{useEffect} from 'react'
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -9,6 +9,10 @@ let ISO1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670316067/Cookin
 
 
 function Footer() {
+
+  let { id } = useParams();
+
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
 }, [])
@@ -17,12 +21,15 @@ function Footer() {
 const { pathname } = useLocation();
 if (pathname === "/login") return null;
 if (pathname === "/signup") return null;
+if (pathname === "/success") return null;
 if (pathname === "/admin/login") return null;
 if (pathname === "/admin/faq") return null;
 if (pathname === "/admin/email") return null;
 if (pathname === "/admin/class-details") return null;
+if (pathname === `/admin/course-edit/${id}`) return null;
+if (pathname === "/admin/class-edit") return null;
 if (pathname === "/admin/course-details") return null;
-if (pathname === "/admin/class") return null;
+if (pathname === `/admin/class/${id}`) return null;
 
   return (
     <>

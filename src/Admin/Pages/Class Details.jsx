@@ -24,7 +24,7 @@ function ClassDetails() {
 
   function displayClassDetails(index){
     return(
-          <div className='p-2 grid grid-cols-1 md:grid-cols-4  bg-bg-darks rounded-lg place-items-center'>
+          <div className='p-2 grid grid-cols-1 md:grid-cols-4 gap-5  bg-bg-darks rounded-lg place-items-center'>
               <img className='h-72 w-52 object-cover rounded-md' src={index.image} alt="img" />
               <div className='flex flex-col gap-4 md:col-span-2'>
                 <p className='font-medium text-xl'>{index.name}</p>
@@ -33,7 +33,7 @@ function ClassDetails() {
                 <p>{index.unit} units | {index.lesson} lessons | {index.task} tasks</p>
               </div>
               <div>
-                <a onClick={() => navigate(`/admin/class`, { state: { details: index } })}><i class="text-5xl text-primary-clr2 hover:text-primary-clr1 bg-[#424040] hover:bg-[#555151] p-2 rounded-md fa-solid fa-arrow-right-from-bracket"></i></a>
+                {/* <a onClick={() => navigate(`/admin/class`, { state: { details: index } })}><i class="text-5xl text-primary-clr2 hover:text-primary-clr1 bg-[#424040] hover:bg-[#555151] p-2 rounded-md fa-solid fa-arrow-right-from-bracket"></i></a> */}
                 {/* <a onClick={() => navigate(`/admin/class-details-Inner/${index.name}`, { state: { details: index } })}><i class="text-5xl text-primary-clr2 hover:text-primary-clr1 bg-[#424040] hover:bg-[#555151] p-2 rounded-md fa-solid fa-arrow-right-from-bracket"></i></a> */}
               </div>
           </div>

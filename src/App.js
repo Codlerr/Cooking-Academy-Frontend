@@ -18,6 +18,7 @@ import Cookingclassone from './pages/cookingClass-1/index';
 import KitchenStudio from './pages/kitchenStudio/index';
 import Profile from './pages/profile/index';
 import Cart from './pages/cart/index';
+import Success from './pages/success/success';
 
 
 import AdminLogin from './Admin/Pages/login';
@@ -26,7 +27,11 @@ import Email from './Admin/Pages/Email';
 import CourseDetail from './Admin/Pages/Course Details';
 import ClassDetail from './Admin/Pages/Class Details';
 import ClassDetailInner from './Admin/Pages/Class Detail Inner';
+import ClassInnerEdit from './Admin/Pages/Class Detail Inner Edit';
+import CourseEdit from './Admin/Pages/Course Details Edit';
+
 import useInitializeApp from './hooks/useInitializeApp';
+import ClassInnerDetails from './Admin/Pages/Class Detail Inner';
 
 const Layout = () => {
   return(
@@ -86,6 +91,10 @@ const router = createBrowserRouter([
         element:<Cart/>
       },
       {
+        path:"/success",
+        element:<Success/>
+      },
+      {
         path:"*",
         element:<div className='h-[80vh] grid place-items-center'><h1>Page Not Found</h1></div>
       },
@@ -110,7 +119,15 @@ const router = createBrowserRouter([
         element:<CourseDetail/>
       },
       {
-        path:"/admin/class",
+        path:"/admin/course-edit/:id",
+        element:<CourseEdit/>
+      },
+      {
+        path:"/admin/class-edit/:id/:courseId",
+        element:<ClassInnerEdit/>
+      },
+      {
+        path:"/admin/class/:id",
         element:<ClassDetailInner/>
       },
     ]

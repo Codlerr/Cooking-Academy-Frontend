@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { useParams } from "react-router";
 import useAppSelector from '../../redux/hooks/useAppSelector'
 import {NavLink, useLocation} from 'react-router-dom';
 import '../Header/Header.css';
@@ -6,6 +7,8 @@ let Logo ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking
 let Logo2 ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png'
 let Menu = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669970200/Cooking%20Academy%20Assets/menu-100_fphqfd.png';
 function Navbar() {
+  let { id } = useParams();
+
   const location = useLocation()
   const [open, setOpen] = useState(false);
   const auth = useAppSelector(state => state.auth);
@@ -14,12 +17,15 @@ function Navbar() {
     const { pathname } = useLocation();
     if (pathname === "/login") return null;
     if (pathname === "/signup") return null;
+    if (pathname === "/success") return null;
     if (pathname === "/admin/login") return null;
     if (pathname === "/admin/faq") return null;
     if (pathname === "/admin/email") return null;
     if (pathname === "/admin/class-details") return null;
     if (pathname === "/admin/course-details") return null;
-    if (pathname === "/admin/class") return null;
+    if (pathname === `/admin/course-edit/${id}`) return null;
+    if (pathname === "/admin/class-edit") return null;
+    if (pathname === `/admin/class/${id}`) return null;
 
     const navWithOpacity = location.pathname !== '/'  ? 'withOpacity' : ""
     const navWithOpacity2 = location.pathname !== '/profile'  ? 'withOpacity' : ""

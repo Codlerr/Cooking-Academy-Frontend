@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/AdminNav";
+import { useParams } from "react-router";
 import { useNavigate } from "react-router-dom";
 import instance from "../../API/api_instance";
 import { useDebouncedCallback } from 'use-debounce'
 import * as Yup from 'yup'
-import { useFormik } from 'formik';
+import { setNestedObjectValues, useFormik } from 'formik';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { confirmAlert } from 'react-confirm-alert'; // Import
@@ -18,35 +19,30 @@ const CreateCourseSchema = Yup.object().shape({
   unit: Yup.string().required('Course unnit is required'),
   lesson: Yup.string().required('lesson is required'),
   task: Yup.string().required('task is required'),
-  image: Yup.mixed().required('Course Image is required'),
+  // image: Yup.mixed().required('Course Image is required'),
 })
 
-function CourseDetails(props) {
+function CourseEditDetails(props) {
  
+  let { id } = useParams();
+  // console.log(id);
 
 
-  const handleClick = (id) => {
-    navigate(`/admin/class/${id}`);
-  };
-  const handleClick2 = (id) => {
-    navigate(`/admin/course-edit/${id}`);
-  };
-
-
-
-  const [course, setCourse] = useState([]);
   const navigate = useNavigate('');
-  const fetchItems = async () => {
-    await instance.get("/course", {}).then((response) => {
-      setCourse(response.data.data.courses);
-      console.log(response.data);
-    });
-  };
-  useEffect(() => {
-    fetchItems();
-  }, []);
 
-// SUBMIT FUNCTION SATRT
+  const [course, setCourse] = useState({
+    name: "",
+    about: "",
+    instructorName: "",
+    duration: "",
+    unit: "",
+    lesson: "",
+    task: "",
+    price: "",
+  });
+
+
+  // SUBMIT FUNCTION SATRT
 
   const onSubmit = async (values, { setSubmitting, resetForm }) => {
     let formdata = new FormData()
@@ -58,21 +54,22 @@ function CourseDetails(props) {
     formdata.append('task', values.task)
     formdata.append('about', values.about)
     formdata.append('price', values.price)
-    // formdata.append('videoLink', values.videoLink)
     values.image instanceof File && formdata.append('image', values.image)
     console.log('1')
     try {
-      console.log(formdata)
-      const res = await instance.post('/course', formdata, {
+      // console.log(formdata)
+      const res = await instance.put(`/course/${id}`, formdata, {
         headers: { 'Content-Type': 'multipart/form-data' },
       })
-      console.log(res.status)
-      if (res.status === 400 || !res) {
+      // console.log(res.status)
+      console.log(res);
+      if (res.status === 400) {
+       
         window.alert('Message not sent, try agin..')
       } else {
-        fetchItems();
+        
         setSubmitting(false)
-        toast.dark('Course Added Successfully',{
+        toast.dark('Course Edited Successfully',{
           position: "top-right",
           autoClose: 3000,
           hideProgressBar: false,
@@ -81,6 +78,7 @@ function CourseDetails(props) {
           draggable: true,
           progress: undefined,
         })
+        navigate('/admin/course-details')
         resetForm()
       }
     } catch (error) {
@@ -89,73 +87,59 @@ function CourseDetails(props) {
     }
   }
 
-  // SUBMIT FUNCTION END
-  
-  const debouncedSubmit = useDebouncedCallback(onSubmit, 300)
-  const {
-    values,
-    handleSubmit,
-    isSubmitting,
-    handleChange,
-    setFieldValue,
-    setFieldTouched,
-  } = useFormik({
-    initialValues: {
-      name: '',
-      image: '',
-      duration: '',
-      instructorName: '',
-      unit: '',
-      lesson: '',
-      task: '',
-      about: '',
-      price: '',
-      // videoLink: '',
-    },
-    validationSchema: CreateCourseSchema,
-    onSubmit: debouncedSubmit,
-  })
 
-const HandleDelete = async (id)=>{
-  confirmAlert({
-    title: 'Confirm to submit',
-    message: 'Are you sure to do this.',
-    buttons: [
-      {
-        label: 'Yes',
-        onClick: () => Responce()
-        
-        
+    // SUBMIT FUNCTION END
+  
+    const debouncedSubmit = useDebouncedCallback(onSubmit, 300)
+    const {
+      values,
+      setValues,
+      handleSubmit,
+      isSubmitting,
+      handleChange,
+      setFieldValue,
+      setFieldTouched,
+    } = useFormik({
+      initialValues: {
+        name: '',
+        image: '',
+        duration: '',
+        instructorName: '',
+        unit: '',
+        lesson: '',
+        task: '',
+        about: '',
+        price: '',
       },
-      {
-        label: 'No',
-      }
-    ]
-  });
-
-  const Responce = async()=> {
-  const res = await instance.delete(`/course/${id}`).then((result)=>{
-    fetchItems()
-    toast.dark('Course Deleted Successfully',{
-      position: "top-right",
-      autoClose: 1000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
+      validationSchema: CreateCourseSchema,
+      onSubmit: debouncedSubmit,
     })
-    if(
-      result.statusCode === 200
-    ){
-      console.log("sk");
-    }
-  })
-  console.log(res);
- }
   
- 
-}
+
+  // console.log(course);
+  useEffect(() => {
+    instance
+      .get(`/course/${id}`)
+      .then((res) =>
+      setValues({
+        name: res.data.data.name,
+        duration: res.data.data.duration,
+        instructorName: res.data.data.instructorName,
+        unit: res.data.data.unit,
+        lesson: res.data.data.lesson,
+        task: res.data.data.task,
+        about: res.data.data.about,
+        price: res.data.data.price,
+
+      })
+      )
+      // .then((data) => setCourse(data))
+      .catch((error) => console.log(error));
+  }, []);
+
+
+
+
 
   return (
     <>
@@ -193,22 +177,11 @@ const HandleDelete = async (id)=>{
                     setFieldValue("image", e.target.files[0]);
                   }
                 }}
-                required
+     
               />
             </div>
 
-            {/* <div>
-              <p className="text-xl pb-4">Banner Video</p>
-              <input
-                className="bg-bg-darks border-none  p-3 rounded-lg w-full"
-                type="text"
-                placeholder="Video link"
-                name="videoLink"
-                value={values.videoLink}
-                onChange={handleChange}
-                required
-              />
-            </div> */}
+           
 
             <div>
               <p className="text-xl pb-4">Headline</p>
@@ -332,47 +305,10 @@ const HandleDelete = async (id)=>{
         </div>
         {/* Data Input end*/}
 
-        {/* Display Data*/}
-        {course && course.length>0 && course?.slice(0).reverse().map((item, index) => {
-          return (
-            <div className="w-full bg-[#2b2929] p-5 min-h-[200px]" key={index}>
-              <div className="relative grid grid-cols-1  md:grid-cols-5">
-                {/* contents */}
-
-                <div className="flex flex-col py-5 gap-5 md:col-span-3">
-                  <p className="text-2xl font-medium">{item.name}</p>
-                  <p>{item.about.slice(0,180)} ...</p>
-                  <p>Instructor(s): {item.instructorName}</p>
-                  <p>Class Length: {item.duration} video</p>
-                  <p>{item.unit} units | {item.lesson} lessons | {item.task} tasks</p>
-                </div>
-
-                <div className="md:grid place-items-center">
-                  <h1 className="text-primary-clr2 text-3xl font-semibold">
-                    ${item.price}
-                  </h1>
-                </div>
-                {/* Edit/Delete Buttons */}
-                <div className="absolute top-10 right-10 flex gap-8">
-                  {/* Edit btn */}
-                  <i onClick={() => handleClick2(item._id)} class="fa-solid fa-pen-to-square hover:text-red-700 cursor-pointer"></i>
-                  {/* Delete btn */}
-                  <i onClick={()=>HandleDelete(item._id)}  class="fa-solid fa-trash hover:text-red-700 cursor-pointer"></i>
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                    <button onClick={() => handleClick(item._id)} className="bg-primary-clr2 hover:bg-primary-clr1 rounded-md text-xl px-4 py-1 cursor-pointer">Add class</button>
-                 
-
-                </div>
-              </div>
-
-              <hr />
-            </div>
-          );
-        })}
       </section>
     </>
   );
 }
 
-export default CourseDetails;
+export default CourseEditDetails;
+

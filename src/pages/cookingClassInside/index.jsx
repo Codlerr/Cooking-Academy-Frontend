@@ -42,7 +42,7 @@ function CookingclassInside() {
     {/* ================Banner=================== */}
     <section className='relative'>
         <div className='w-[100%] h-[100vh]'>
-            <video src={classInfo.videoLink} autoPlay loop muted className='w-[100%] h-[100%] object-cover'/>
+            <video src={bgVideo} autoPlay loop muted className='w-[100%] h-[100%] object-cover'/>
         </div>
 
         <div className='ban-video-content md:pt-40' >

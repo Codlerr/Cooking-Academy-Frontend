@@ -1,6 +1,7 @@
+
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useParams } from "react-router";
+import { useParams,useLocation } from "react-router";
 import instance from "../../API/api_instance";
 import Navbar from "../Navbar/AdminNav";
 import { useDebouncedCallback } from "use-debounce";
@@ -19,10 +20,12 @@ const CreateCourseSchema = Yup.object().shape({
 
 });
 
-function ClassInnerDetails() {
-  console.log("up id");
-  let { id } = useParams();
-  console.log(id);
+function ClassDetailEdit() {
+  let { id,courseId } = useParams();
+
+  const location = useLocation()
+  console.log(courseId);
+  console.log(id,"clas id");
 
   const navigate = useNavigate("");
   const [inputList, setinputList] = useState([{ title: "", videoLink: "" }]);
@@ -30,18 +33,9 @@ function ClassInnerDetails() {
 
   // =======API CALL===========//
   const [classes, setClasses] = useState([]);
-  const fetchItems = async () => {
-    await instance.get(`/course/class/${id}/class`, {}).then((response) => {
-      setClasses(response.data.data.classes);
-      console.log(response.data);
-    });
-  };
-  useEffect(() => {
-    fetchItems();
-  }, []);
-  // =======API CALL===========//
 
-  // ===========API POST========//
+
+   // ===========API POST========//
 
   const onSubmit = async (values, { setSubmitting, resetForm }) => {
     const { chapterTitle, classInfo, instructorName } = values;
@@ -50,13 +44,13 @@ function ClassInnerDetails() {
       classInfo,
       instructorName,
       lessons:inputList,
-      courseId:id,
+      courseId
     };
     console.log(data);
 
     try {
       // console.log(formdata)
-      const res = await instance.post("/course/class",data ,{
+      const res = await instance.put(`/course/class/${id}`,data ,{
         headers: {
           "Content-Type": "application/json",
         },
@@ -67,9 +61,9 @@ function ClassInnerDetails() {
       if (res.status === 400 || !res) {
         window.alert("Message not sent, try again..");
       } else {
-        fetchItems();
+       
         setSubmitting(false);
-        toast.dark('Class Added Successfully',{
+        toast.dark('Class Updated Successfully',{
           position: "top-right",
           autoClose: 3000,
           hideProgressBar: false,
@@ -80,6 +74,7 @@ function ClassInnerDetails() {
         })
         resetForm();
         setinputList([{ title: "", videoLink: "" }])
+        navigate(`/admin/class/${courseId}`)
       }
     } catch (error) {
       console.log("errr");
@@ -87,20 +82,51 @@ function ClassInnerDetails() {
     }
   };
 
-  // SUBMIT FUNCTION END
+  
+    // SUBMIT FUNCTION END
+  
+    const debouncedSubmit = useDebouncedCallback(onSubmit, 300)
+    const {
+      values,
+      setValues,
+      handleSubmit,
+      isSubmitting,
+      handleChange,
+      setFieldValue,
+      setFieldTouched,
+    } = useFormik({
+      initialValues: {
+        chapterTitle: '',
+        classInfo: '',
+        instructorName: '',
 
-  const debouncedSubmit = useDebouncedCallback(onSubmit, 300);
-  const { values, handleSubmit, isSubmitting, handleChange } = useFormik({
-    initialValues: {
-      chapterTitle: "",
-      classInfo: "",
-      instructorName: "",
-      inputList: "",
+      },
+      validationSchema: CreateCourseSchema,
+      onSubmit: debouncedSubmit,
+    })
 
-    },
-    validationSchema: CreateCourseSchema,
-    onSubmit: debouncedSubmit,
-  });
+
+  useEffect(() => {
+    
+       instance.get(`/course/class/${id}`, {}).then((response) => {
+        
+        setValues({
+          
+          chapterTitle: response.data.data.chapterTitle,
+          classInfo: response.data.data.classInfo,
+          instructorName: response.data.data.instructorName,
+        
+
+  
+        })
+        setinputList(response.data.data.lessons)
+      });
+    
+  }, []);
+  // =======API CALL===========//
+
+ 
+
 
   // ===========API POST========//
 
@@ -121,44 +147,7 @@ function ClassInnerDetails() {
     setinputList([...inputList, { title: "", videoLink: "" }]);
   };
 
-  // ===========Handle Delete==========//
-  const HandleDelete = async (id) => {
-    confirmAlert({
-      title: "Confirm to submit",
-      message: "Are you sure to do this.",
-      buttons: [
-        {
-          label: "Yes",
-          onClick: () => Responce(),
-        },
-        {
-          label: "No",
-        },
-      ],
-    });
-
-    const Responce = async () => {
-      const res = await instance
-        .delete(`/course/class/${id}`)
-        .then((result) => {
-          fetchItems();
-          toast.dark("Class Deleted Successfully", {
-            position: "top-right",
-            autoClose: 1000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          if (result.statusCode === 200) {
-            console.log("sk");
-          }
-        });
-      console.log(res);
-    };
-  };
-  // ===========Handle Delete==========//
+  
 
   return (
     <>
@@ -229,6 +218,7 @@ function ClassInnerDetails() {
                         type="text"
                         name="title"
                         placeholder="Title"
+                        value={x.title}
                         onChange={(e) => handleinputchange(e, i)}
                       />
                     </div>
@@ -240,6 +230,7 @@ function ClassInnerDetails() {
                       type="text"
                       placeholder="Video link"
                       name="videoLink"
+                      value={x.videoLink}
                       onChange={(e) => handleinputchange(e, i)}
                     />
                   </div>
@@ -280,41 +271,10 @@ function ClassInnerDetails() {
         </div>
         {/* Data Input end*/}
 
-        {/* Display Data*/}
-        <div className="w-full bg-[#2b2929] p-5 min-h-[200px]">
-          <h1 className="font-bold text-2xl text-primary-clr2">Chapters</h1>
-          {classes &&
-            classes.length > 0 &&
-            classes
-              ?.slice(0)
-              .reverse()
-              .map((item, index) => {
-                return (
-                  <div className="relative" key={index}>
-                    {/* contents */}
-                    <div className="w-[90%] flex flex-col py-5 gap-5">
-                      <p className="font-medium text-xl">{item.chapterTitle}</p>
-                      <p>Instructor: {item.instructorName}</p>
-                    </div>
-                    {/* Edit/Delete Buttons */}
-                    <div className="absolute top-10 right-5 flex gap-8">
-                      <i
-                        onClick={() => navigate(`/admin/class-edit/${item._id}/${id}`)}
-                        class="fa-solid fa-pen-to-square hover:text-red-700"
-                      ></i>
-                      <i
-                        onClick={() => HandleDelete(item._id)}
-                        class="fa-solid fa-trash hover:text-red-700 cursor-pointer"
-                      ></i>
-                    </div>
-                    <hr />
-                  </div>
-                );
-              })}
-        </div>
+        
       </section>
     </>
   );
 }
 
-export default ClassInnerDetails;
+export default ClassDetailEdit;

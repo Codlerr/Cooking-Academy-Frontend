@@ -24,3 +24,17 @@ a:visited {
   text-decoration: none;
 }
 
+
+::-webkit-scrollbar{
+  width: 15px;
+  
+}
+
+::-webkit-scrollbar-track{
+  background: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(66, 66, 66);
+  border-radius: 20px;
+  
+}
