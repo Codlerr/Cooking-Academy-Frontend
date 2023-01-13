@@ -80,6 +80,7 @@ function ClassInnerDetails() {
         })
         resetForm();
         setinputList([{ title: "", videoLink: "" }])
+        window.location.reload();
       }
     } catch (error) {
       console.log("errr");
