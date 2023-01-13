@@ -7,7 +7,7 @@ let Logo ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking
 let Logo2 ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png'
 let Menu = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669970200/Cooking%20Academy%20Assets/menu-100_fphqfd.png';
 function Navbar() {
-  let { id } = useParams();
+  let { id, courseId} = useParams();
 
   const location = useLocation()
   const [open, setOpen] = useState(false);
@@ -24,7 +24,7 @@ function Navbar() {
     if (pathname === "/admin/class-details") return null;
     if (pathname === "/admin/course-details") return null;
     if (pathname === `/admin/course-edit/${id}`) return null;
-    if (pathname === "/admin/class-edit") return null;
+    if (pathname === `/admin/class-edit/${id}/${courseId}`) return null;
     if (pathname === `/admin/class/${id}`) return null;
 
     const navWithOpacity = location.pathname !== '/'  ? 'withOpacity' : ""

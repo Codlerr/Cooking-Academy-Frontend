@@ -10,7 +10,7 @@ let ISO1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670316067/Cookin
 
 function Footer() {
 
-  let { id } = useParams();
+  let { id,courseId } = useParams();
 
 
   useEffect(() => {
@@ -27,7 +27,7 @@ if (pathname === "/admin/faq") return null;
 if (pathname === "/admin/email") return null;
 if (pathname === "/admin/class-details") return null;
 if (pathname === `/admin/course-edit/${id}`) return null;
-if (pathname === "/admin/class-edit") return null;
+if (pathname === `/admin/class-edit/${id}/${courseId}`) return null;
 if (pathname === "/admin/course-details") return null;
 if (pathname === `/admin/class/${id}`) return null;
 

@@ -169,7 +169,7 @@ function ClassInnerDetails() {
       <section className="admin-body">
         {/* Data Input */}
         <div className="p-5">
-          {/* <h1 className="font-bold text-4xl pt-5">Fundamentals of Cuisine</h1> */}
+          <h1 className="font-bold text-4xl pt-5">Add Class</h1>
 
           <form
             onSubmit={handleSubmit}
