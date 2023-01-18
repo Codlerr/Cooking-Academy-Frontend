@@ -6,7 +6,7 @@ export default function index() {
      <section className='w-11/12 mx-auto xs:py-16 md:py-24'>
           <div className='grid grid-cols-1 md:grid-cols-2 md:px-5 bg-slate-800 xs:py-10 md:py-16 rounded-md md:place-items-center enquire-form'>
               <div className='xs:px-2 md:px-0' data-aos="fade-right">
-                <h3 className='font-bold text-2xl'>Enquire Now for More Details</h3>
+                <h3 className='font-bold text-2xl'>Subscribe to our newsletter</h3>
                 <p className='text-[#ffffffcb]'>Enter your email and we’ll keep you updates on all upcoming programs.</p>
               </div>
               <div className='xs:px-2 md:px-0 xs:pt-5 md:pt-0'>
