@@ -80,7 +80,7 @@ function CookingclassInside() {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:w-10/12 mx-auto xs:py-5 md:py-10'>
             <div className='flex gap-10' data-aos="fade-right">
                 <i class="text-4xl text-primary-clr2 fa-solid fa-photo-film"></i>
-                <p className='grid place-items-center xs:text-base lg:text-xl'>6 units | 17 lessons | 54 tasks</p>
+                <p className='grid place-items-center xs:text-base lg:text-xl'>{classInfo.unit} units | {classInfo.lesson} lessons | {classInfo.task} tasks</p>
             </div>
             <div className='flex gap-10' data-aos="fade-right">
                  <i class="text-4xl text-primary-clr2 fa-solid fa-download"></i>
