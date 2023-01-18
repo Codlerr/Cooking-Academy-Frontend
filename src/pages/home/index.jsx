@@ -23,7 +23,7 @@ let Item3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039134/Cooki
 let Item4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/SLOW_COOKER_BEEF_BARBACOA_fu6cfb.jpg';
 let Item5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/SHEET_PAN_CHICKEN_AND_STUFFING_dnwjxp.jpg';
 let Item6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/LOADED_SMASHED_POTATOES_uipncw.jpg';
-let Item7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/POT_BBQ_PULLED_PORK_angctn.jpg';
+let Item7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674050617/Cooking%20Academy%20Assets/MINI_CHICKEN_QUESADILLAS_wparli.jpg';
 let Item8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/HOT_SPINACH_AND_ARTICHOKE_DIP_t95lsn.jpg';
 
 function LandingPage() {
@@ -188,7 +188,7 @@ function LandingPage() {
                     </div>
                     <div className='relative' data-aos="fade-right">
                       <img alt='img' className=' rounded-3xl' src={Item7}/>
-                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Pot BBQ Pulled Pork</p>
+                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Mini Chicken Quesadillas</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>50 minutes</p>
                         <p><i class="fa-solid fa-utensils pr-2"></i>Healthy</p>
