@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {Faq,Price} from '../../components/constant/data';
+import {General,Price} from '../../components/constant/data';
 
 function FAQ() {
     // ---accordion--//
@@ -26,7 +26,7 @@ function FAQ() {
         <p className='text-center text-3xl  pb-5' data-aos="fade-right">Frequently asked questions</p>
         <div className='accordion__faq'>
             <h2 className='text-xl pb-3'>General</h2>
-            {Faq.map((item, index) =>
+            {General.map((item, index) =>
                         <div key={index} onClick={() => toggleAccordion(index)} data-aos="fade-right">
                             <div className="accordion__faq-heading acco-m">
                             <h3 className={accordion === index ? "active" : ""}>{item.question}</h3>
