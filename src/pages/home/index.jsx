@@ -84,12 +84,11 @@ function LandingPage() {
      {/* =================================Workshop================================= */}
      <section className='workshop'>
        <div className='xs:w-11/12 lg:w-10/12 mx-auto xs:pt-10 lg:pt-20'>
-          <div className='flex flex-col md:flex-row justify-between pt-5' data-aos="fade-right">
+          <div className='pt-5' data-aos="fade-right">
           <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
-            <a href='#' className='bg-white hover:bg-[#f0eeee] text-black h-fit w-fit xs:mt-5 md:mt-0  py-2 px-5 rounded-lg lg:text-xl font-medium'>See all<i class="fa-solid fa-arrow-right pl-5"></i></a>
           </div>
-          <div className='workshop-video'>
-            <video className='w-full py-10' controls loop controlsList="nodownload">
+          <div className='workshop-video '>
+            <video className='w-full py-10 ' controls loop controlsList="nodownload">
               <source src={Videotemp} type="video/mp4"/>
             </video>
           </div>
