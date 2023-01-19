@@ -21,6 +21,7 @@ function Navbar() {
     if (pathname === "/admin/login") return null;
     if (pathname === "/admin/faq") return null;
     if (pathname === "/admin/email") return null;
+    if (pathname === "/admin/workshop-images") return null;
     if (pathname === "/admin/class-details") return null;
     if (pathname === "/admin/course-details") return null;
     if (pathname === `/admin/course-edit/${id}`) return null;

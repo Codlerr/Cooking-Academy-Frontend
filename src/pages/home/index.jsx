@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import WorkSlider from '../../components/sliders/workshop-images';
 import InstaSlider from '../../components/sliders/insta-slider';
 import ServiceSlider from '../../components/sliders/service-slider';
+import WorkshopVideo from '../../components/sliders/workshopVideo';
 import LSA from "../../components/LatYearAchive"
 import MOC from "../../components/MeetOurChefs"
 import CL from "../../components/ClientList"
@@ -82,8 +83,14 @@ function LandingPage() {
 
 
      {/* =================================Workshop================================= */}
-     <section className='workshop'>
-       <div className='xs:w-11/12 lg:w-10/12 mx-auto xs:pt-10 lg:pt-20'>
+     <section className='workshop overflow-hidden relative'>
+        <div className='xs:w-[90%] md:w-[85%] mx-auto xs:pt-10 lg:pt-10'>
+          <div className='' data-aos="fade-right">
+            <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
+          </div>
+          <WorkshopVideo/>
+        </div>
+       {/* <div className='xs:w-11/12 lg:w-10/12 mx-auto xs:pt-10 lg:pt-20'>
           <div className='pt-5' data-aos="fade-right">
           <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
           </div>
@@ -94,9 +101,9 @@ function LandingPage() {
           </div>
 
           
-       {/* slider */}
+       
         <div><WorkSlider/></div>
-       </div>
+       </div> */}
 
      </section>
      {/* =================================Workshop================================= */}
@@ -111,7 +118,7 @@ function LandingPage() {
 
     {/* ==================================Other Service================================ */}
     <section className=''>
-      <div className='md:pl-5 lg:pl-32  xs:px-5 md:px-0 py-10' data-aos="fade-right">
+      <div className='md:pl-5 lg:pl-20  xs:px-5 md:px-0 py-10' data-aos="fade-right">
         <h3 className='text-3xl font-semibold'>Other Services.</h3>
       </div>
 

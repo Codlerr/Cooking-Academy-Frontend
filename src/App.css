@@ -14,6 +14,15 @@ body {
   box-sizing: border-box;
   
 }
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #CBA135;
+}
+
+::selection {
+  color: white;
+  background: #CBA135;
+}
 button:focus {
   outline: none;
 }
