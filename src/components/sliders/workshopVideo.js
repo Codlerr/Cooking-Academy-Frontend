@@ -107,6 +107,7 @@ function WorkshopVideo() {
           controls
           autoPlay
           loop 
+          muted
           controlsList="nodownload"
         ></video>
 

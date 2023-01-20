@@ -16,6 +16,7 @@ import Cookingclass from './pages/cookingClasses/index';
 import CookingclassInside from './pages/cookingClassInside/index';
 import Cookingclassone from './pages/cookingClass-1/index';
 import KitchenStudio from './pages/kitchenStudio/index';
+import Menuconsultancy from './pages/menu consultancy/index';
 import Profile from './pages/profile/index';
 import Cart from './pages/cart/index';
 import Success from './pages/success/success';
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
       {
         path:"/kitchen-studio",
         element:<KitchenStudio/>
+      },
+      {
+        path:"/menu-consultancy",
+        element:<Menuconsultancy/>
       },
       {
         path:"/profile",

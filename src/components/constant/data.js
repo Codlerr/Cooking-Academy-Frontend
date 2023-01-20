@@ -240,7 +240,7 @@ export const ServiceImg=[
     {
         heading:`Menu Consultancy`,
         image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786013/Cooking%20Academy%20Assets/Component_20_1_qkz1nr.jpg`,
-        url: `/kitchen-studio`
+        url: `/menu-consultancy`
     },
 ]
 
