@@ -9,7 +9,7 @@ let Brand3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621452/Cook
 let Brand4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670308695/Cooking%20Academy%20Assets/2014_7_8-alto-shaam-logo-trans-650x248_bsxirp.png';
 let Brand5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670327326/Cooking%20Academy%20Assets/Qatar-Airways-Logo_df2uug.png';
 let Brand6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670309776/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.18_1_okxyeg.png';
-let Brand7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670302898/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.17_vqqecw.png';
+let Brand7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674301952/Cooking%20Academy%20Assets/logo_rojkrq.png';
 let Brand8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670309778/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.19c_1_tu42s7.png';
 
 export default function index() {
@@ -23,7 +23,7 @@ export default function index() {
                     <LazyLoadImage effect='blur' className='h-14' src={Brand4} />
                     <LazyLoadImage effect='blur' className='h-14' src={Brand5} />
                     <LazyLoadImage effect='blur' className='h-14' src={Brand6} />
-                    <LazyLoadImage effect='blur' className='h-14' src={Brand7} />
+                    <LazyLoadImage effect='blur' className='h-[4.5rem]' src={Brand7} />
                     <LazyLoadImage effect='blur' className='h-14' src={Brand8} />
                 </div>
             </section>
