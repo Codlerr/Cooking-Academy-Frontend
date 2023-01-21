@@ -26,6 +26,8 @@ let Item5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooki
 let Item6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/LOADED_SMASHED_POTATOES_uipncw.jpg';
 let Item7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674050617/Cooking%20Academy%20Assets/MINI_CHICKEN_QUESADILLAS_wparli.jpg';
 let Item8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/HOT_SPINACH_AND_ARTICHOKE_DIP_t95lsn.jpg';
+let google = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674319499/Cooking%20Academy%20Assets/WhatsApp_Image_2023-01-21_at_17.27.37_xuoe5t.jpg';
+
 
 function LandingPage() {
     useEffect(() => {
@@ -244,7 +246,10 @@ function LandingPage() {
     {/* ==================================Frequently questions================================ */}
       <FAQ/>
     {/* ==================================Frequently questions================================ */}
-
+    
+    <section className='w-11/12 mx-auto pt-20 pb-10 grid place-items-center'>
+        <img className='h-16' src={google} alt="google" />
+    </section>
 
     </>
   )
