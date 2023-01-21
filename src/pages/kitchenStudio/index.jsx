@@ -48,7 +48,7 @@ function KitchenStudio() {
                         <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="text" placeholder='Name' />
                         <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="text" placeholder='Company Name' />
                         <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="email" placeholder='Email' />
-                        <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="number" placeholder='Phone' />
+                        <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="number" placeholder='Telephone' />
                         <textarea className='rounded-lg outline-none p-2 text-base' placeholder='Nature of enquiry - Message' rows="3"></textarea>
                         <div className='flex gap-2 justify-start items-start'>
                             <input className='accent-primary-clr2' required type="checkbox" />
