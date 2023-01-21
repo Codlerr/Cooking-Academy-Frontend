@@ -246,27 +246,31 @@ export const ServiceImg=[
 
 
 export const KitchenImg=[
-    {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011767/Cooking%20Academy%20Assets/kitchen%20page/Monti_Studios_iique7.jpg`
-    },
-    {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2_2x_vt0tfc.webp`
-    },
-    {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011767/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_1_2x_tvipfa.webp`
-    },
-    {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Equipment_1_2x_nnyiwz.webp`
-    },
-    {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2x_ixucle.webp`
-    },
-    {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Equipment_2x_rblymk.webp`
-    },
-    {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011765/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_3_2x_hip4hc.webp`
-    },
+   {
+    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323316/Cooking%20Academy%20Assets/kitchen%20page/IMG_5247_yr2fyv.webp`
+   },
+   {
+    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323317/Cooking%20Academy%20Assets/kitchen%20page/IMG_5248_nskmnd.webp`
+   },
+   {
+    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323312/Cooking%20Academy%20Assets/kitchen%20page/IMG_5238_k9igte.webp`
+   },
+   {
+    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323311/Cooking%20Academy%20Assets/kitchen%20page/IMG_5246_t5cnht.webp`
+   },
+   {
+    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323287/Cooking%20Academy%20Assets/kitchen%20page/IMG_5240_xlwetk.webp`
+   },
+   {
+    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323281/Cooking%20Academy%20Assets/kitchen%20page/IMG_5242_k4sngk.webp`
+   },
+   {
+    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323259/Cooking%20Academy%20Assets/kitchen%20page/maxresdefault_sfnhck.jpg`
+   },
+   {
+    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323258/Cooking%20Academy%20Assets/kitchen%20page/Best_KitchenAid_Mixer_For_You_Desktop_IMG_9_xhnqfd.jpg`
+   },
+  
 ]
 
 export const KitchenFilter=[

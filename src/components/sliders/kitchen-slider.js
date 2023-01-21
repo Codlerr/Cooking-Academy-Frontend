@@ -54,12 +54,12 @@ function Kitchenslider() {
 
   return (
     <div className='kitchen pb-20'>
-        <Slider {...settings} className='md:w-[70%] mx-auto'>
+        <Slider {...settings} className='md:w-[75%] mx-auto'>
           {
             KitchenImg.map((img, index) => (
             <div className={index === slideIndex ? 'slide5 slide5-active': 'slide5'} key={index}>
 
-                <img alt='img' className=' lg:h-[600px] w-full'  src={img.image}/>
+                <img alt='img' className='xs:h-[250px] md:h-[300px] lg:h-[600px] w-full object-cover rounded-3xl'  src={img.image}/>
 
               </div>
 
