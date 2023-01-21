@@ -42,13 +42,14 @@ function KitchenStudio() {
                 {/* <a className='bg-primary-clr2 hover:bg-primary-clr1 w-fit text-xl font-medium rounded-3xl xs:px-10 md:px-16 py-3' href="#">Book Now</a> */}
             </div>
             <div className='flex justify-center items-center md:mt-28'>
-                <form className='xs:w-[90%] md:w-[80%] lg:w-[60%] rounded-3xl bg-gradient-to-b from-slate-300 to-zinc-700 text-black'>
+                <form className='xs:w-[95%] md:w-[80%] lg:w-[60%] rounded-3xl bg-gradient-to-b from-slate-300 to-zinc-700 text-black'>
                     <div className='p-3 lg:p-6 flex flex-col xs:gap-4 md:gap-2 lg:gap-4'>
                         <h1 className='w-[80%] mx-auto lg:text-xl text-center font-medium'>BOOK KITCHEN STUDIO</h1>
                         <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="text" placeholder='Name' />
+                        <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="text" placeholder='Company Name' />
                         <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="email" placeholder='Email' />
                         <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="number" placeholder='Phone' />
-                        <textarea className='rounded-lg outline-none px-2 text-base' placeholder='Message' rows="5"></textarea>
+                        <textarea className='rounded-lg outline-none p-2 text-base' placeholder='Nature of enquiry - Message' rows="3"></textarea>
                         <div className='flex gap-2 justify-start items-start'>
                             <input className='accent-primary-clr2' required type="checkbox" />
                             <p className='text-xs text-white'>I agree to be contacted in relation to this in line with Terms & conditions of The Cooking Academy.</p>
