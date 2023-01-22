@@ -62,7 +62,7 @@ function MenuConsultancy() {
       </div>
 
       {/* Process */}
-      <div className="bg-[#313030] xs:py-10  md:py-14">
+      <div className="bg-[#313030] border-b-2 border-[#5e5a5ac0] xs:py-10  md:py-14">
           <div className="text-center">
                 <h1 className="xs:text-2xl md:text-3xl  tracking-wider">OUR PROCESS</h1>          
           </div>
@@ -119,14 +119,7 @@ function MenuConsultancy() {
           </div>
       </div>
 
-      {/* WHAT IS A RESTAURANT CONSULTANT? */}
-      <div className="bg-primary-clr2 xs:py-10 md:py-14 ">
-        <div className="text-center xs:w-[90%] md:w-[80%] flex gap-5 flex-col justify-center items-center mx-auto">
-          <h1 className="xs:text-2xl md:text-3xl font-light tracking-wider">WHAT IS A RESTAURANT CONSULTANT?</h1>
-          <p className="leading-loose xs:text-base md:text-xl font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit minus exercitationem laborum sequi, nisi quia culpa quo accusamus distinctio ab. Deserunt, nemo eos? Aliquid tempore cumque quia minus at porro illo ut voluptates veniam beatae. Deserunt, nemo eos? Aliquid tempore cumque quia minus at porro illo ut voluptates veniam beatae.</p>
-          <p className="leading-loose xs:text-base md:text-xl font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit minus exercitationem laborum sequi, nisi quia culpa quo accusamus distinctio ab. Deserunt, nemo eos? Aliquid tempore cumque quia minus at porro illo ut voluptates veniam beatae. Deserunt, nemo eos? Aliquid tempore cumque quia minus at porro illo ut voluptates veniam beatae.</p>
-        </div>
-      </div>
+      
 
       {/* BOOK A CONSULTATION */}
       <div className="bg-[#313030] py-8 flex gap-5 flex-col justify-center items-center">
