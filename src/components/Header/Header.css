@@ -11,12 +11,12 @@
 .withOpacity{
     position: absolute;
     top: 0;
-    background: rgba(0, 0, 0, 0.24);
+    background: rgba(0, 0, 0, 0.747);
     width: 100%;
     z-index: 100;
 }
 @media (200px <= width <= 600px){
     .withOpacity{
-        background: rgba(0, 0, 0, 0.829);
+        background: rgba(0, 0, 0, 0.747);
     }
 }

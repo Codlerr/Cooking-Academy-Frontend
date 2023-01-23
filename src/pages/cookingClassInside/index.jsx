@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react';
+import { useLocation } from 'react-router';
+import instance from "../../API/api_instance";
 import './style.css';
 import Slide from '../../components/sliders/cooking-inner-slider'
 import ENQ from "../../components/Enquiry";
@@ -18,6 +20,22 @@ let P7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671270925/Cooking%
 let P8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671270926/Cooking%20Academy%20Assets/cooking%20class/Rectangle_168_vpo3nx.webp';
 
 function CookingclassInside() {
+
+    const location = useLocation();
+    const classInfo= location.state.classinfo;
+    const [course, setCourse] = useState([]);
+
+    const fetchItems = async () => {
+        await instance.get("/course", {}).then((response) => {
+        setCourse(response.data.data.courses);
+        console.log(response.data);
+
+        });
+    };
+    useEffect(() => {
+        fetchItems();
+    }, []);
+
   return (
     <>
 
@@ -28,11 +46,10 @@ function CookingclassInside() {
         </div>
 
         <div className='ban-video-content md:pt-40' >
-            <h4 className='font-bold text-3xl md:tracking-wider uppercase'>fundamentals of</h4>
-            <h1 className='font-bold text-7xl  uppercase'>cuisine</h1>
+            <h1 className='font-bold text-7xl  uppercase'>{classInfo.name}</h1>
             <p className='xs:w-[90%] md:w-[30%] mx-auto text-xl text-center py-5'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
             <div className='grid place-items-center'>
-                <a href='#' className='bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>Resume Class</a>
+                <a  className='bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>Resume Class</a>
             </div>
         </div>
     </section>
@@ -46,16 +63,16 @@ function CookingclassInside() {
         <div className='grid grid-cols-1 md:grid-cols-2 xs:gap-y-10 md:gap-x-10 py-20'>
             <div data-aos="fade-right">
                 <h1 className='xs:text-3xl md:text-4xl font-bold'>About class</h1>
-                <p className='text-xl py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus rerum nemo amet sunt officia sed excepturi maiores fugit aut, libero labore obcaecati minima, animi earum necessitatibus at aliquam tempora! Molestias?</p>
-                <p >Instructor(s) : Kelly Wearstler</p>
-                <p className='pt-2'>Class Lenght : 17 video lessons (2 hrs 13 min)</p>
+                <p className='text-xl py-5'>{classInfo.about}</p>
+                <p >Instructor(s) : {classInfo.instructorName}</p>
+                <p className='pt-2'>Class Lenght : {classInfo.duration}</p>
             </div>
             <div className='grid place-items-center' data-aos="fade-right">
                 <div className='border-[1px] border-primary-clr2 xs:w-[90%] lg:w-[70%] mx-auto grid place-items-center py-5'>
                     <p className='uppercase text-xl font-light'>14-day free cancellation</p>
-                    <h1 className='text-5xl py-3 text-primary-clr2 font-bold'>$299</h1>
+                    <h1 className='text-5xl py-3 text-primary-clr2 font-bold'>${classInfo.price}</h1>
                     <p className='text-xs pb-2'>Terms and Conditions apply</p>
-                    <a className='bg-primary-clr2 hover:bg-primary-clr1 w-full text-center py-3' href="#">Enroll Now</a>
+                    <a className='bg-primary-clr2 hover:bg-primary-clr1 w-full text-center py-3' href="/cart">Enroll Now</a>
                 </div>
             </div>
         </div>
@@ -63,7 +80,7 @@ function CookingclassInside() {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:w-10/12 mx-auto xs:py-5 md:py-10'>
             <div className='flex gap-10' data-aos="fade-right">
                 <i class="text-4xl text-primary-clr2 fa-solid fa-photo-film"></i>
-                <p className='grid place-items-center xs:text-base lg:text-xl'>6 units | 17 lessons | 54 tasks</p>
+                <p className='grid place-items-center xs:text-base lg:text-xl'>{classInfo.unit} units | {classInfo.lesson} lessons | {classInfo.task} tasks</p>
             </div>
             <div className='flex gap-10' data-aos="fade-right">
                  <i class="text-4xl text-primary-clr2 fa-solid fa-download"></i>

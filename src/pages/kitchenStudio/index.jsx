@@ -35,11 +35,34 @@ function KitchenStudio() {
     <>
     {/* =========================BANNER=============================== */}
     <section className='kitchen-banner'>
-            <div data-aos="fade-right" className='xs:px-5 md:px-0 md:pl-20 h-full flex justify-center flex-col xs:gap-5 md:gap-5'>
-                <h1 className='xs:text-5xl lg:text-7xl  font-bold md:w-[40%] '>The Modern Kitchen Studio</h1>
-                <p className='xs:text-xl md:text-2xl md:w-[40%]'>Cooking is not just about ingredients, it's a creative outlet for us.</p>
-                <a className='bg-primary-clr2 hover:bg-primary-clr1 w-fit text-xl font-medium rounded-3xl xs:px-10 md:px-16 py-3' href="#">Book Now</a>
+        <div className='h-full w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-5'>
+            <div data-aos="fade-right" className='md:w-[80%] flex justify-center flex-col xs:gap-5 md:gap-5 xs:pt-32'>
+                <h1 className='xs:text-5xl lg:text-7xl  font-bold'>The Modern Kitchen Studio</h1>
+                <p className='xs:text-xl md:text-2xl '>Cooking is not just about ingredients, it's a creative outlet for us.</p>
+                {/* <a className='bg-primary-clr2 hover:bg-primary-clr1 w-fit text-xl font-medium rounded-3xl xs:px-10 md:px-16 py-3' href="#">Book Now</a> */}
             </div>
+            <div className='flex justify-center items-center md:mt-28'>
+                <form className='xs:w-[95%] md:w-[80%] lg:w-[60%] rounded-3xl bg-gradient-to-b from-slate-300 to-zinc-700 text-black'>
+                    <div className='p-3 lg:p-6 flex flex-col xs:gap-4 md:gap-2 lg:gap-4'>
+                        <h1 className='w-[80%] mx-auto lg:text-xl text-center font-medium'>BOOK KITCHEN STUDIO</h1>
+                        <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="text" placeholder='Name' />
+                        <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="text" placeholder='Company Name' />
+                        <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="email" placeholder='Email' />
+                        <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="number" placeholder='Telephone' />
+                        <textarea className='rounded-lg outline-none p-2 text-base' placeholder='Nature of enquiry - Message' rows="3"></textarea>
+                        <div className='flex gap-2 justify-start items-start'>
+                            <input className='accent-primary-clr2' required type="checkbox" />
+                            <p className='text-xs text-white'>I agree to be contacted in relation to this in line with Terms & conditions of The Cooking Academy.</p>
+                        </div>
+                        <div className='flex gap-2 justify-start items-start'>
+                            <input className='accent-primary-clr2'  type="checkbox" />
+                            <p className='text-xs text-white'>I would like to receive email updates from The Cooking Academy.</p>
+                        </div>
+                    </div>
+                    <button className='w-[100%] rounded-br-3xl rounded-bl-3xl xs:py-2 lg:py-4 transition-all duration-300 hover:text-white bg-primary-clr1'>Submit</button>
+                </form>
+            </div>
+        </div> 
     </section>
     {/* ==========================BANNER============================== */}
 
@@ -54,7 +77,7 @@ function KitchenStudio() {
                     <p className='xs:w-[90%] md:w-[70%] text-xl mx-auto text-center text-text-dark pt-5 pb-10'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                     labore et dolore magna aliquyam erat. sed diam voluptua. At vero eos et accusam et justo duo dolores
                     et ea reburn. Stet clita kasd gubergren. no sea takimata sanctus est</p>
-                    <a className='bg-primary-dark hover:bg-primary-clr1 text-xl font-medium rounded-3xl xs:px-10 md:px-16 py-3' href="#">Book Now</a>
+                    {/* <a className='bg-primary-dark hover:bg-primary-clr1 text-xl font-medium rounded-3xl xs:px-10 md:px-16 py-3' href="#">Book Now</a> */}
             </div>
         </div>
         <div className='pt-28'>
@@ -66,7 +89,7 @@ function KitchenStudio() {
     {/* ==========================SKETCH============================== */}
     <section className='md:pt-10'>
         <div className='md:py-16 xs:w-[90%] md:w-9/12 mx-auto'>
-            <LazyLoadImage effect='blur' className='' src={graph} alt="graph" />
+            <LazyLoadImage effect='blur' className='object-cover' src={graph} alt="graph" />
         </div>
     </section>
     {/* =========================SKETCH=============================== */}

@@ -34,7 +34,7 @@ function Login() {
     const [loggingIn, setLogingIn] = useState(false);
     const navigate = useNavigate();
 
-
+	
 
     useEffect(() => {
         if(auth.data) {
@@ -43,6 +43,7 @@ function Login() {
             })
         }
     }, [auth.data, navigate]);
+	
 
 	const loginForm = useFormik({
 		initialValues: {

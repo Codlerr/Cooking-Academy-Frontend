@@ -12,7 +12,7 @@
 
 @media (200px <= width <= 600px){
   .kitchen-banner{
-    height: 80vh;
+    height: 100vh;
   }
 }
 @media (650px <= width <= 900px){

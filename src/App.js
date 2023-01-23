@@ -1,4 +1,5 @@
 import './App.css';
+import {ToastContainer, toast} from 'react-toastify'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,8 +16,10 @@ import Cookingclass from './pages/cookingClasses/index';
 import CookingclassInside from './pages/cookingClassInside/index';
 import Cookingclassone from './pages/cookingClass-1/index';
 import KitchenStudio from './pages/kitchenStudio/index';
+import Menuconsultancy from './pages/menu consultancy/index';
 import Profile from './pages/profile/index';
 import Cart from './pages/cart/index';
+import Success from './pages/success/success';
 
 
 import AdminLogin from './Admin/Pages/login';
@@ -25,6 +28,10 @@ import Email from './Admin/Pages/Email';
 import CourseDetail from './Admin/Pages/Course Details';
 import ClassDetail from './Admin/Pages/Class Details';
 import ClassDetailInner from './Admin/Pages/Class Detail Inner';
+import ClassInnerEdit from './Admin/Pages/Class Detail Inner Edit';
+import CourseEdit from './Admin/Pages/Course Details Edit';
+import WorkshopImage from './Admin/Pages/Workshop Images';
+
 import useInitializeApp from './hooks/useInitializeApp';
 
 const Layout = () => {
@@ -32,6 +39,7 @@ const Layout = () => {
     <div className='app'>
       <Header/>
       <Outlet/>
+      <ToastContainer/>
       <Footer/>
     </div>
   )
@@ -64,7 +72,7 @@ const router = createBrowserRouter([
         element:<Cookingclass/>
       },
       {
-        path:"/cooking-class-inside",
+        path:"/cooking-class/:name",
         element:<CookingclassInside/>
       },
       {
@@ -76,12 +84,20 @@ const router = createBrowserRouter([
         element:<KitchenStudio/>
       },
       {
+        path:"/menu-consultancy",
+        element:<Menuconsultancy/>
+      },
+      {
         path:"/profile",
         element:<Profile/>
       },
       {
         path:"/cart",
         element:<Cart/>
+      },
+      {
+        path:"/success",
+        element:<Success/>
       },
       {
         path:"*",
@@ -108,8 +124,20 @@ const router = createBrowserRouter([
         element:<CourseDetail/>
       },
       {
-        path:"/admin/course-details-Inner",
+        path:"/admin/course-edit/:id",
+        element:<CourseEdit/>
+      },
+      {
+        path:"/admin/class-edit/:id/:courseId",
+        element:<ClassInnerEdit/>
+      },
+      {
+        path:"/admin/class/:id",
         element:<ClassDetailInner/>
+      },
+      {
+        path:"/admin/workshop-images",
+        element:<WorkshopImage/>
       },
     ]
   }

@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import WorkSlider from '../../components/sliders/workshop-images';
 import InstaSlider from '../../components/sliders/insta-slider';
 import ServiceSlider from '../../components/sliders/service-slider';
+import WorkshopVideo from '../../components/sliders/workshopVideo';
 import LSA from "../../components/LatYearAchive"
 import MOC from "../../components/MeetOurChefs"
 import CL from "../../components/ClientList"
@@ -17,14 +18,16 @@ import EXPCLASS from "../../components/ExploreClasses"
 // Assets Links
 
 let Videotemp = 'https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4';
-let Item1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621459/Cooking%20Academy%20Assets/Chicken-Yakitori_EXPS_FT21_186160_F_0607_1-15_njhpqx.webp';
-let Item2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621458/Cooking%20Academy%20Assets/Downloader.la_-62d1127ecf2b9_z39o5c.webp';
-let Item3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621450/Cooking%20Academy%20Assets/exps128090_TH153340B10_01_7b-1_wgmm2v.webp';
-let Item4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621450/Cooking%20Academy%20Assets/exps187883_TH153343C04_14_2b-1_qulj3p.webp';
-let Item5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621458/Cooking%20Academy%20Assets/abhishek-hajare-6hr5YZDjyHc-unsplash_mvfec6.jpg';
-let Item6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621458/Cooking%20Academy%20Assets/alex-lvrs-aX_ljOOyWJY-unsplash_zl6jpa.webp';
-let Item7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621449/Cooking%20Academy%20Assets/Cuccidati_EXPS_HCBZ22_49902_P2_MD_04_15_16b-1_tvsxfq.webp';
-let Item8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621459/Cooking%20Academy%20Assets/amirali-mirhashemian-5tC2YOVXE9Y-unsplash_fjtjrv.webp';
+let Item1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039134/Cooking%20Academy%20Assets/POT_CHICKEN_TACOS_yxidyt.jpg';
+let Item2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039134/Cooking%20Academy%20Assets/BAKED_CHICKEN_NUGGETS_tgz1sr.jpg';
+let Item3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039134/Cooking%20Academy%20Assets/THE_BEST_EVER_CHEESEBERGUR_x38vf2.jpg';
+let Item4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/SLOW_COOKER_BEEF_BARBACOA_fu6cfb.jpg';
+let Item5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/SHEET_PAN_CHICKEN_AND_STUFFING_dnwjxp.jpg';
+let Item6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/LOADED_SMASHED_POTATOES_uipncw.jpg';
+let Item7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674050617/Cooking%20Academy%20Assets/MINI_CHICKEN_QUESADILLAS_wparli.jpg';
+let Item8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/HOT_SPINACH_AND_ARTICHOKE_DIP_t95lsn.jpg';
+let google = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674319499/Cooking%20Academy%20Assets/WhatsApp_Image_2023-01-21_at_17.27.37_xuoe5t.jpg';
+
 
 function LandingPage() {
     useEffect(() => {
@@ -82,22 +85,27 @@ function LandingPage() {
 
 
      {/* =================================Workshop================================= */}
-     <section className='workshop'>
-       <div className='xs:w-11/12 lg:w-10/12 mx-auto xs:pt-10 lg:pt-20'>
-          <div className='flex flex-col md:flex-row justify-between pt-5' data-aos="fade-right">
-          <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
-            <a href='#' className='bg-white hover:bg-[#f0eeee] text-black h-fit w-fit xs:mt-5 md:mt-0  py-2 px-5 rounded-lg lg:text-xl font-medium'>See all<i class="fa-solid fa-arrow-right pl-5"></i></a>
+     <section className='workshop overflow-hidden relative'>
+        <div className='xs:w-[90%] md:w-[85%] mx-auto xs:pt-10 lg:pt-10'>
+          <div className='' data-aos="fade-right">
+            <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
           </div>
-          <div className='workshop-video'>
-            <video className='w-full py-10' controls loop>
+          <WorkshopVideo/>
+        </div>
+       {/* <div className='xs:w-11/12 lg:w-10/12 mx-auto xs:pt-10 lg:pt-20'>
+          <div className='pt-5' data-aos="fade-right">
+          <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
+          </div>
+          <div className='workshop-video '>
+            <video className='w-full py-10 ' controls loop controlsList="nodownload">
               <source src={Videotemp} type="video/mp4"/>
             </video>
           </div>
 
           
-       {/* slider */}
+       
         <div><WorkSlider/></div>
-       </div>
+       </div> */}
 
      </section>
      {/* =================================Workshop================================= */}
@@ -112,7 +120,7 @@ function LandingPage() {
 
     {/* ==================================Other Service================================ */}
     <section className=''>
-      <div className='md:pl-5 lg:pl-32  xs:px-5 md:px-0 py-10' data-aos="fade-right">
+      <div className='md:pl-5 lg:pl-20  xs:px-5 md:px-0 py-10' data-aos="fade-right">
         <h3 className='text-3xl font-semibold'>Other Services.</h3>
       </div>
 
@@ -133,14 +141,14 @@ function LandingPage() {
         <div className='bg-[#000000a2] rounded-3xl'>
               <div className='flex xs:flex-col md:flex-row justify-between py-10 px-5' data-aos="fade-right">
                 <p className='text-[color:var(--thm-clr2)] text-3xl lg:w-[30%]'>Try these delicious recipe to make your day</p>
-                <p className='text-[#ffffffb0] md:text-right text-xl lg:w-[30%] xs:pt-5 md:pt-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, magnam.</p>
+                {/* <p className='text-[#ffffffb0] md:text-right text-xl lg:w-[30%] xs:pt-5 md:pt-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, magnam.</p> */}
               </div>
 
 
               <div className='dishes grid grid-cols-1 md:grid-cols-4 gap-5 gap-y-10 xs:p-5 md:p-10 '>
                     <div className='relative' data-aos="fade-right">
                       <img alt='img' className=' rounded-3xl' src={Item1}/>
-                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Chicken Yakitori</p>
+                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Pot Chicken Tacos</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
                         <p><i class="fa-solid fa-utensils pr-2"></i>Healthy</p>
@@ -148,57 +156,57 @@ function LandingPage() {
                     </div>
                     <div className='relative' data-aos="fade-right">
                       <img alt='img' className=' rounded-3xl' src={Item2}/>
-                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Cassoulet Today</p>
+                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Baked Chicken Nuggets</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
-                        <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
+                        <p><i class="fa-regular fa-clock pr-2"></i>50 minutes</p>
                         <p><i class="fa-solid fa-utensils pr-2"></i>Healthy</p>
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
                       <img alt='img' className=' rounded-3xl' src={Item3}/>
-                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Nana's Italian Roulade</p>
+                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>The Best Ever Cheeseburger</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
-                        <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
+                        <p><i class="fa-regular fa-clock pr-2"></i>60 minutes</p>
                         <p><i class="fa-solid fa-utensils pr-2"></i>Healthy</p>
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
                       <img alt='img' className=' rounded-3xl' src={Item4}/>
-                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Beef Paprikash with Fire-Roated Tomatoes</p>
+                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Slow Cooker Beef Barbacoa</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
-                        <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
+                        <p><i class="fa-regular fa-clock pr-2"></i>55 minutes</p>
                         <p><i class="fa-solid fa-utensils pr-2"></i>Healthy</p>
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
                       <img alt='img' className=' rounded-3xl' src={Item5}/>
-                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Vannila chololava icecream</p>
+                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Sheet Pan Chicken And Stuffing</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
-                        <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
+                        <p><i class="fa-regular fa-clock pr-2"></i>60 minutes</p>
                         <p><i class="fa-solid fa-utensils pr-2"></i>Healthy</p>
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
                       <img alt='img' className=' rounded-3xl' src={Item6}/>
-                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Oma's Apfelkuchen (Grandma's Apple cake)</p>
+                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Loaded Smashed Potatoes</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
-                        <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
+                        <p><i class="fa-regular fa-clock pr-2"></i>20 minutes</p>
                         <p><i class="fa-solid fa-utensils pr-2"></i>Healthy</p>
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
                       <img alt='img' className=' rounded-3xl' src={Item7}/>
-                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Cuccidati</p>
+                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Mini Chicken Quesadillas</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
-                        <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
+                        <p><i class="fa-regular fa-clock pr-2"></i>50 minutes</p>
                         <p><i class="fa-solid fa-utensils pr-2"></i>Healthy</p>
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
                       <img alt='img' className=' rounded-3xl' src={Item8}/>
-                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Irish Spiced Beef</p>
+                        <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>Hot Spinach & Artichoke Dip</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
-                        <p><i class="fa-regular fa-clock pr-2"></i>45 minutes</p>
+                        <p><i class="fa-regular fa-clock pr-2"></i>35 minutes</p>
                         <p><i class="fa-solid fa-utensils pr-2"></i>Healthy</p>
                       </span>
                     </div>
@@ -238,7 +246,10 @@ function LandingPage() {
     {/* ==================================Frequently questions================================ */}
       <FAQ/>
     {/* ==================================Frequently questions================================ */}
-
+    
+    <section className='w-11/12 mx-auto pt-20 pb-10 grid place-items-center'>
+        <img className='h-16' src={google} alt="google" />
+    </section>
 
     </>
   )
