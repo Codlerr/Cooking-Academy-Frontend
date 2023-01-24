@@ -43,7 +43,7 @@ function Navbar() {
             <i onClick={() => setOpen(!open)} class={`${open ? "fa-solid fa-xmark" : "fa-solid fa-bars"} xs:text-3xl md:text-4xl md:pt-5 xs:block lg:hidden grid place-items-center`}></i>
           </div>
           <div className=''>
-            <ul className={`${open ? "block " : "xs:hidden lg:flex"} flex xs:flex-col  lg:flex-row  xs:gap-10 xs:pt-5 lg:gap-10 text-[#ffffffcc] font-medium tracking-wide`}>
+            <ul className={`${open ? "block " : "xs:hidden lg:flex"} flex xs:flex-col  lg:flex-row lg:items-center  xs:gap-10 xs:pt-5 lg:gap-10 text-[#ffffffcc] font-medium tracking-wide`}>
               <li><NavLink exact to="/" >Home</NavLink></li>
               <li><NavLink to="/cooking-class" >Cooking Class</NavLink></li>
               <li><NavLink to="/kitchen-studio" >Kitchen Studio</NavLink></li>

@@ -149,7 +149,7 @@ body{
 /* slider 2 */
 
 .work-img .slick-slide > div{
-  margin: 0;
+  margin: 40px;
 }
 .work-img .slick-list{
 margin: 0;
@@ -159,27 +159,36 @@ margin: 0;
   cursor: pointer;
 }
 .work-img .slide3{
-  opacity: 1;
+  opacity: 0.8;
   transform: scale(0.9);
 
 }
+
 
 .work-img .slide3-active{
   opacity: 1;
   transform: scale(1);
 }
+.work-img .card-slide{
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  }
 
 .work-img .arrow3{
-  font-size: 30px;
+  /* font-size: 30px;
   padding: 8px 10px;
   border-radius: 50%;
-  background-color: white;
+  background-color: white; */
   color: var(--thm-clr1);
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
+  bottom: -10%;
   z-index: 300;
   cursor: pointer;
 }
@@ -187,29 +196,41 @@ margin: 0;
     color: var(--thm-clr2);
 }
 .work-img .arrow-right3{
-  right:-50px;
+  right:450px;
 }
 .work-img .arrow-left3{
-  left:-50px;
+  left:450px;
 }
 
 @media (200px <= width <= 850px){
+  .work-img .slick-slide > div{
+  margin:0 10px;
+}
   .work-img .slide3-active{
     transform: scale(0.9);
   }
+  .work-img .slide3{
+  opacity: 1;
+
+}
   .work-img .arrow3{
     font-size: 20px;
-    top: -40px;
+    bottom: -15%;
   }
   .work-img .arrow-right3{
-    right:100px;
+    right:150px;
   }
   .work-img .arrow-left3{
-    left:100px;
+    left:150px;
   }
 }
-@media (600px <= width <= 1000px){
-
+@media (1024px <= width <=1400px){
+  .work-img .arrow-right3{
+    right:400px;
+  }
+  .work-img .arrow-left3{
+    left:400px;
+  }
 }
 
 /*  */
@@ -673,3 +694,40 @@ margin: 0;
   opacity: 1;
 }
 
+/* workImage */
+
+.workimage-bg{
+  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1674539283/Cooking%20Academy%20Assets/blur-coffee-cafe-shop-restaurant-with-bokeh-background-xd_hsye0l.webp');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* Team building */
+
+.team-build{
+  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1674563346/Cooking%20Academy%20Assets/WhatsApp_Image_2023-01-2asd1_at_15.58.17_stsduv.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+@media (width >= 1300px){
+  .team-build{
+    height: 100vh;
+  }
+}
+@media (200px <= width <= 700px){
+  .team-build{
+    background-image: none;
+
+  }
+}
+@media (700px <= width <= 850px){
+  .team-build{
+    background-size: contain;
+    height:55vh;
+  }
+}

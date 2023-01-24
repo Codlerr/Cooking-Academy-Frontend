@@ -277,41 +277,37 @@ export const KitchenFilter=[
     {
         id:'1',
         title:`SHOOTING SPACE`,
-        point1:'High-speed Wifi',
-        point2:'Washroom with shower facilities',
-        point3:'Fully-functional kitchen (extra charge)',
+        para:`shooting space section: The kitchen is ideal for any commercial, editorial, family, or personal photoshoot & videography.`,
         img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2_2x_vt0tfc.webp'
     },
     {
         id:'2',
         title:`LIGHTING`,
-        point1:'High-speed Wifi',
-        point2:'Washroom with shower facilities',
-        point3:'Fully-functional kitchen (extra charge)',
+        para:`The Cooking Academy Kitchen has all your photo and video needs.  With a commercial-grade kitchen, client workspace, and natural light studio, we have everything you need!  All windows are equipped with ‘scrim-type’ shades that are easy to pull up and pull down for light control.`,
         img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011767/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_1_2x_tvipfa.webp'
     },
     {
         id:'3',
-        title:`LIGHTING ACCESSORIES`,
-        point1:'High-speed Wifi',
-        point2:'Washroom with shower facilities',
-        point3:'Fully-functional kitchen (extra charge)',
-        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Equipment_1_2x_nnyiwz.webp'
-    },
-    {
-        id:'4',
         title:`GENERAL`,
-        point1:'High-speed Wifi',
-        point2:'Washroom with shower facilities',
-        point3:'Fully-functional kitchen (extra charge)',
+        para:`The kitchen is equipped with a 6 burner commercial range, gas and electric ovens, ice maker, sink,  fridges, and freezers in the kitchen, as well as ample open space for props and foods that need to be brought in. Anything you’re shooting can be wirelessly transmitted to the television in the client area so everyone can see what you’re shooting live.  The couch is equipped with both USB ports and outlets for charging laptops and phones.`,
         img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2x_ixucle.webp'
     },
     {
-        id:'5',
+        id:'4',
         title:`OTHERS`,
-        point1:'High-speed Wifi',
-        point2:'Washroom with shower facilities',
-        point3:'Fully-functional kitchen (extra charge)',
+        para:`A top-of-the-line WiFi system makes wireless access easy for client uploads, video, and phone calls.  The studio is equipped with an amazing background.`,
+        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011765/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_3_2x_hip4hc.webp'
+    },
+    {
+        id:'5',
+        title:`Studio Access`,
+        para:`The studio is located on the 1st floor and is accessible via a staircase.`,
+        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011765/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_3_2x_hip4hc.webp'
+    },
+    {
+        id:'6',
+        title:`Loading / Unloading`,
+        para:`Vehicles are permitted to come into the premises of the building to load/unload equipment.`,
         img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011765/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_3_2x_hip4hc.webp'
     },
 ]

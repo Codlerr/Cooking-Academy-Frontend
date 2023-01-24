@@ -78,10 +78,11 @@ if (pathname === `/admin/class/${id}`) return null;
               <p className='grid place-items-center'>All Right Reserved.</p>
             </div>
         
-            <div className='flex md:grid grid-flow-col md:place-self-center gap-5'>
-                <a href='#'><i class="fa-brands fa-facebook text-xl"></i></a>
-                <a href='#'><i class="fa-brands fa-twitter text-xl"></i></a>
-                <a href='#'><i class="fa-brands fa-linkedin-in text-xl"></i></a>
+            <div className='flex md:grid grid-flow-col md:place-self-center gap-7 '>
+                {/* <a href='#' target='_blank'><i class="fa-brands fa-facebook text-xl text-white hover:text-primary-clr2 transition-all duration-300"></i></a> */}
+                <a href='https://twitter.com/cookingqatar/' target='_blank'><i class="fa-brands fa-twitter text-xl text-white hover:text-primary-clr2 transition-all duration-300"></i></a>
+                <a href='https://www.tiktok.com/@thecookingacademy/' target='_blank'><i class="fa-brands fa-tiktok md:mt-1.5 text-white hover:text-primary-clr2 transition-all duration-300"></i></a>
+                <a href='https://www.linkedin.com/company/thecookingacademy/' target='_blank'><i class="fa-brands fa-linkedin-in text-xl text-white hover:text-primary-clr2 transition-all duration-300"></i></a>
              </div>
            
         
