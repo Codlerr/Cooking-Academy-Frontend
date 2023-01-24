@@ -68,7 +68,7 @@ function KitchenStudio() {
 
     {/* ============================BOOK NOW============================ */}
     <section>
-        <div className='xs:pt-10 md:pt-20'>
+        <div className='xs:pt-28 md:pt-20'>
             <div data-aos="fade-right" className='xs:text-2xl md:text-4xl text-center font-semibold italic leading-snug'>
                 <h2 className=''>BRING YOUR <span className='text-primary-clr2'>VISION</span> TO LIFE.</h2>
                 <h2 className=''>LET US HANDLE THE REST.</h2>
@@ -86,7 +86,7 @@ function KitchenStudio() {
 
     {/* ==========================SKETCH============================== */}
     <section className='md:pt-10'>
-        <div className='md:py-16 xs:w-[90%] md:w-9/12 mx-auto'>
+        <div className='md:py-16 xs:w-[90%] md:w-7/12 mx-auto'>
             <LazyLoadImage effect='blur' className='object-cover w-screen h-fit' src={graph} alt="graph" />
         </div>
     </section>
