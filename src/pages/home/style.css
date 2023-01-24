@@ -218,10 +218,10 @@ margin: 0;
     bottom: -15%;
   }
   .work-img .arrow-right3{
-    right:150px;
+    right:140px;
   }
   .work-img .arrow-left3{
-    left:150px;
+    left:140px;
   }
 }
 @media (1024px <= width <=1400px){
