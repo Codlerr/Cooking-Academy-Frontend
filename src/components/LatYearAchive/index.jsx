@@ -12,19 +12,19 @@ export default function lsa(props) {
 
       <div data-aos="fade-right" className='md:w-10/12 mx-auto md:pt-5 grid grid-cols-1 md:grid-cols-4 xs:gap-5 md:gap-0 place-items-center text-[color:var(--thm-clr2)] py-2'>
         <div className='grid place-items-center'>
-          <h4 className='xs:text-4xl lg:text-7xl'>+<CountUp start={0} end={25} /></h4>
+          <h4 className='xs:text-5xl lg:text-7xl'>+<CountUp start={0} end={25} /></h4>
           <p className='capitalize'>Partners</p>
         </div>
         <div className='grid place-items-center'>
-          <h4 className='xs:text-4xl lg:text-7xl'>+<CountUp start={0} end={50}/></h4>
+          <h4 className='xs:text-5xl lg:text-7xl'>+<CountUp start={0} end={50}/></h4>
           <p className='capitalize'>Workshop</p>
         </div>
         <div className='grid place-items-center'>
-          <h4 className='xs:text-4xl lg:text-7xl'>+<CountUp start={0} end={3}/></h4>
+          <h4 className='xs:text-5xl lg:text-7xl'>+<CountUp start={0} end={3}/></h4>
           <p className='capitalize'>awards</p>
         </div>
         <div className='grid place-items-center'>
-          <h4 className='xs:text-4xl lg:text-7xl'>+<CountUp start={0} end={150}/></h4>
+          <h4 className='xs:text-5xl lg:text-7xl'>+<CountUp start={0} end={150}/></h4>
           <p className='capitalize'>cooking class</p>
         </div>
 
