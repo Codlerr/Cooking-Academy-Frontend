@@ -30,7 +30,6 @@ import ClassDetail from './Admin/Pages/Class Details';
 import ClassDetailInner from './Admin/Pages/Class Detail Inner';
 import ClassInnerEdit from './Admin/Pages/Class Detail Inner Edit';
 import CourseEdit from './Admin/Pages/Course Details Edit';
-import WorkshopImage from './Admin/Pages/Workshop Images';
 
 import useInitializeApp from './hooks/useInitializeApp';
 
@@ -134,10 +133,6 @@ const router = createBrowserRouter([
       {
         path:"/admin/class/:id",
         element:<ClassDetailInner/>
-      },
-      {
-        path:"/admin/workshop-images",
-        element:<WorkshopImage/>
       },
     ]
   }

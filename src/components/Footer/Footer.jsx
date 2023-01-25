@@ -52,7 +52,7 @@ if (pathname === `/admin/class/${id}`) return null;
                   </div>
                   <div className='lg:py-10 grid lg:place-items-center '>
                       <ul className='flex flex-col gap-5 '>
-                        <li className='hover:text-[#CBA135]'><Link to=''>Kitchen</Link></li>
+                        <li className='hover:text-[#CBA135]'><Link to='/kitchen-studio'>Kitchen</Link></li>
                         <li className='hover:text-[#CBA135]'><Link to=''>Contact us</Link></li>
                       </ul>
                   </div>
