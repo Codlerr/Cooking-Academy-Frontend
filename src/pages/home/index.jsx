@@ -122,7 +122,7 @@ function LandingPage() {
      {/* =================================Team building================================= */}
   
 
-    <section className='bg-gradient-to-r from-[#141414f5] to-[#FFBB00] flex flex-col justify-end'>
+    <section className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] flex flex-col justify-end'>
         <div className='grid grid-cols-1 md:grid-cols-2  place-items-end -mt-1'>
             <div className='bg-[#141414] xs:px-3 xs:py-5 md:py-0 h-full md:p-10 lg:p-14 w-full flex flex-col justify-center '>
               <h1 className='font-bold xs:text-3xl md:text-2xl lg:text-6xl'>CORPORATE<br/> TEAM BUILDING</h1>
@@ -132,7 +132,7 @@ function LandingPage() {
               <img className=' w-full object-cover lg:float-right hover:scale-105 duration-500' src={team2} alt="team" />
             </div>
         </div>
-        <div className='bg-gradient-to-r from-[#141414f5] to-[#FFBB00] overflow-hidden'>
+        <div className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] overflow-hidden'>
           <div className='w-11/12 mx-auto xs:py-5 md:py-8'>
               <p className='text-lg font-normal'>Escape the office by trading in your computer for an apron at The Cooking Academy
                 A cooking class is a great way to welcome new team members, reward your colleagues for a job well done, or entertain important clients with fabulous food and drinks.
