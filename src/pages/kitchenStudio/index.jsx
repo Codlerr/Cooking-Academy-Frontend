@@ -85,7 +85,7 @@ function KitchenStudio() {
     {/* ============================BOOK NOW============================ */}
 
     {/* ==========================SKETCH============================== */}
-    <section className='md:pt-10'>
+    <section className='md:pt-10 overflow-hidden'>
         <div className='md:py-16 xs:w-[90%] md:w-7/12 mx-auto'>
             <LazyLoadImage effect='blur' className='object-cover w-screen h-fit' src={graph} alt="graph" />
         </div>
@@ -93,11 +93,11 @@ function KitchenStudio() {
     {/* =========================SKETCH=============================== */}
 
     {/* ============================TABS============================ */}
-    <section className='xs:w-11/12 md:w-9/12 mx-auto xs:pt-10 md:pt-0'>
+    <section className='xs:w-11/12 md:w-10/12 mx-auto xs:pt-10 md:pt-0'>
         <div className='filter '>
             <ul className='flex justify-between flex-wrap list-none  gap-5'>
                 {
-                collection.map((item) => <li className=' border-primary-clr2 border-[2px] hover:bg-primary-clr1 rounded-3xl px-5 py-1.5 duration-500 xs:text-xs md:text-xs lg:text-lg'><button onClick={() => {ImageFilter(item)}}>{item}</button></li>)
+                collection.map((item) => <li className=' border-primary-clr2 border-[2px] hover:bg-primary-clr1 rounded-3xl px-5 py-1 duration-500 xs:text-xs md:text-xs lg:text-lg'><button  onClick={() => {ImageFilter(item)}} >{item}</button></li>)
                 }
             </ul>
         </div>

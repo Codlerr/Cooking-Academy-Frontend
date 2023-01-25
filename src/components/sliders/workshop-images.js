@@ -77,7 +77,7 @@ function Instaslider() {
         ]
       };
   return (
-    <div className='work-img relative sm:py-14 md:py-24'>
+    <div className='work-img relative sm:pb-14 sm:pt-10 md:pt-5 md:pb-24'>
         <Slider {...settings} className='xs:w-full md:w-[70%] mx-auto'>
             {
                 WorkshopImg.map((item,index) => (

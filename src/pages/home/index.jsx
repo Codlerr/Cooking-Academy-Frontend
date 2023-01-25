@@ -48,7 +48,7 @@ function LandingPage() {
     <>
     {/* =================================Banner================================= */}
     <section className='banner bg-[#080808] text-white'>
-            <div className='xs:px-5 md:px-0 md:pl-10 lg:pl-20 xs:h-[90vh] md:h-[40vh] lg:h-[90vh]  flex flex-col xs:gap-5 lg:gap-8 xs:justify-end lg:justify-center'  data-aos="fade-right">
+            <div className='xs:px-5 md:px-0 md:pl-10 lg:pl-20 xs:h-[90vh] md:h-[40vh] lg:h-[90vh]  flex flex-col xs:gap-5 lg:gap-8 xs:justify-center lg:justify-center'  data-aos="fade-right">
               <p className='xs:text-4xl md:text-3xl lg:text-5xl font-bold md:w-[50%] lg:w-[40%]'>Flavours surrounds you in The Cooking Academy</p>
               <p className='xs:text-base lg:text-xl lg:w-[35%] text-[color:var(--text-clr)]'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
               <a href='#' className='bg-[color:var(--thm-clr2)] hover:bg-[#FFBB00] transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>Resume Class</a>
@@ -95,19 +95,21 @@ function LandingPage() {
      <section className='workshop overflow-hidden relative'>
         <div className='xs:w-[90%] md:w-[85%] mx-auto xs:pt-10 lg:pt-10'>
           <div className='' data-aos="fade-right">
-            <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
+            <h2 className='font-bold xs:text-4xl lg:text-5xl xs:text-center md:text-left' data-aos="fade-right">Workshop</h2>
           </div>
           <WorkshopVideo/>
         </div>
 
+        {/* ===========WorkshopImages============ */}
+        <div className='xs:pt-5 md:pt-20'>
+          <h2 className='font-bold xs:text-4xl lg:text-5xl text-center' data-aos="fade-right">Photo Gallery</h2>
+          <WorkImageSlider/>
+        </div>
+        {/* ===========WorkshopImages============ */}
      </section>
      {/* =================================Workshop================================= */}
      
-     {/* =================================WorkshopImages================================= */}
-     <section className='workimage-bg'>
-      <WorkImageSlider/>
-     </section>
-     {/* =================================WorkshopImages================================= */}
+
 
 
 
@@ -118,29 +120,31 @@ function LandingPage() {
      {/* =================================Meet Our Chefs================================= */}
 
      {/* =================================Team building================================= */}
-     <section className='team-build flex flex-col justify-end'>
-      <img className='w-screen object-cover xs:block md:hidden' src={team1} alt="team1" />
-        <div className='md:w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2  md:gap-20 place-items-end z-20 md:-mb-5'>
-            <div className='md:bg-[#141414] xs:p-3 md:h-fit md:p-10 rounded-tr-[5rem] w-full'>
+  
+
+    <section className='bg-gradient-to-r from-[#141414f5] to-[#FFBB00] flex flex-col justify-end'>
+        <div className='grid grid-cols-1 md:grid-cols-2  place-items-end -mt-1'>
+            <div className='bg-[#141414] xs:px-3 xs:py-5 md:py-0 h-full md:p-10 lg:p-14 w-full flex flex-col justify-center '>
               <h1 className='font-bold xs:text-3xl md:text-2xl lg:text-6xl'>CORPORATE<br/> TEAM BUILDING</h1>
-              <h3 className='font-normal xs:text-2xl md:text-xl lg:text-4xl'>ACTIVITIES</h3>
+              <h3 className='font-normal xs:text-xl md:text-xl lg:text-3xl'>COOKING ACTIVITIES</h3>
             </div>
             <div className='w-full overflow-hidden'>
-              <img className='md:rounded-2xl hover:md:rounded-none  md:h-40 lg:h-60 object-cover lg:float-right hover:scale-105 duration-500' src={team2} alt="team" />
+              <img className=' w-full object-cover lg:float-right hover:scale-105 duration-500' src={team2} alt="team" />
             </div>
         </div>
-        <div className='bg-gradient-to-r from-[#141414f5] to-[#FFBB00] z-10'>
-          <div className='w-11/12 mx-auto py-10'>
-              <p className='text-base lg:text-lg font-normal'>Escape the office by trading in your computer for an apron at The Cooking Academy
+        <div className='bg-gradient-to-r from-[#141414f5] to-[#FFBB00] overflow-hidden'>
+          <div className='w-11/12 mx-auto xs:py-5 md:py-8'>
+              <p className='text-lg font-normal'>Escape the office by trading in your computer for an apron at The Cooking Academy
                 A cooking class is a great way to welcome new team members, reward your colleagues for a job well done, or entertain important clients with fabulous food and drinks.
                 We provide classes that will bring out the best in your team. Team Building and Corporate Events include a customized three or four-course menu either a demonstration or
                 participation class style.</p>
-              <div className='flex flex-wrap gap-3 justify-center md:justify-end pt-3'>
-                  <img className='rounded-md object-cover xs:h-fit md:h-10 lg:h-fit' src={Tb1} alt="team brand" />
-                  <img className='rounded-md object-cover xs:h-fit md:h-10 lg:h-fit' src={Tb2} alt="team brand" />
-                  <img className='rounded-md object-cover xs:h-fit md:h-10 lg:h-fit' src={Tb3} alt="team brand" />
-                  <img className='rounded-md object-cover xs:h-fit md:h-10 lg:h-fit' src={Tb4} alt="team brand" />
-                  <img className='rounded-md object-cover xs:h-fit md:h-10 lg:h-fit' src={Tb5} alt="team brand" />
+              <p className=' pt-8 text-base lg:text-base font-light tracking-wide'>Just a few wonderful organizations we've handled team building events before.</p>
+              <div className='flex flex-wrap gap-3 justify-center md:justify-start pt-3'>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb1} alt="team brand" />
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb2} alt="team brand" />
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb3} alt="team brand" />
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb4} alt="team brand" />
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb5} alt="team brand" />
               </div>
           </div>
         </div>

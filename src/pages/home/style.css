@@ -694,40 +694,8 @@ margin: 0;
   opacity: 1;
 }
 
-/* workImage */
-
-.workimage-bg{
-  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1674539283/Cooking%20Academy%20Assets/blur-coffee-cafe-shop-restaurant-with-bokeh-background-xd_hsye0l.webp');
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 
 
-/* Team building */
 
-.team-build{
-  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1674563346/Cooking%20Academy%20Assets/WhatsApp_Image_2023-01-2asd1_at_15.58.17_stsduv.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
 
-}
-@media (width >= 1300px){
-  .team-build{
-    height: 100vh;
-  }
-}
-@media (200px <= width <= 700px){
-  .team-build{
-    background-image: none;
-
-  }
-}
-@media (700px <= width <= 850px){
-  .team-build{
-    background-size: contain;
-    height:55vh;
-  }
-}
