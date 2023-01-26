@@ -278,7 +278,7 @@ export const KitchenFilter=[
         id:'1',
         bgcolor:`#b2ff00`,
         title:`SHOOTING SPACE`,
-        para:`shooting space section: The kitchen is ideal for any commercial, editorial, family, or personal photoshoot & videography.`,
+        para:`The kitchen is ideal for any commercial, editorial, family, or personal photoshoot & videography.`,
         img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2_2x_vt0tfc.webp'
     },
     {
