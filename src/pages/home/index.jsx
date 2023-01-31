@@ -128,8 +128,8 @@ function LandingPage() {
               <h1 className='font-bold xs:text-3xl md:text-2xl lg:text-6xl' data-aos="fade-right">CORPORATE<br/> TEAM BUILDING</h1>
               <h3 className='font-normal xs:text-xl md:text-xl lg:text-3xl' data-aos="fade-right">COOKING ACTIVITIES</h3>
             </div>
-            <div className='w-full overflow-hidden'>
-              <img className=' w-full object-cover lg:float-right hover:scale-105 duration-500' src={team2} alt="team" />
+            <div className='w-full h-full overflow-hidden'>
+              <img className=' w-full h-full object-cover  hover:scale-105 duration-500' src={team2} alt="team" />
             </div>
         </div>
         <div className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] overflow-hidden'>
