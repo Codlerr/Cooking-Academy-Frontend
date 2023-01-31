@@ -124,9 +124,9 @@ function LandingPage() {
 
     <section className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] flex flex-col justify-end'>
         <div className='grid grid-cols-1 md:grid-cols-2  place-items-end -mt-1'>
-            <div className='bg-[#141414] xs:px-3 xs:py-5 md:py-0 h-full md:p-10 lg:p-14 w-full flex flex-col justify-center '>
-              <h1 className='font-bold xs:text-3xl md:text-2xl lg:text-6xl'>CORPORATE<br/> TEAM BUILDING</h1>
-              <h3 className='font-normal xs:text-xl md:text-xl lg:text-3xl'>COOKING ACTIVITIES</h3>
+            <div className='bg-[#141414] xs:px-3 xs:py-5 md:py-0 h-full md:p-10 lg:p-14 w-full flex flex-col justify-center ' >
+              <h1 className='font-bold xs:text-3xl md:text-2xl lg:text-6xl' data-aos="fade-right">CORPORATE<br/> TEAM BUILDING</h1>
+              <h3 className='font-normal xs:text-xl md:text-xl lg:text-3xl' data-aos="fade-right">COOKING ACTIVITIES</h3>
             </div>
             <div className='w-full overflow-hidden'>
               <img className=' w-full object-cover lg:float-right hover:scale-105 duration-500' src={team2} alt="team" />
@@ -140,11 +140,11 @@ function LandingPage() {
                 participation class style.</p>
               <p className=' pt-8 text-base lg:text-base font-light tracking-wide'>Just a few wonderful organizations we've handled team building events before.</p>
               <div className='flex flex-wrap gap-3 justify-center md:justify-start pt-3'>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb1} alt="team brand" />
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb2} alt="team brand" />
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb3} alt="team brand" />
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb4} alt="team brand" />
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb5} alt="team brand" />
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb1} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb2} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb3} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb4} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb5} alt="team brand" data-aos="fade-right"/>
               </div>
           </div>
         </div>
