@@ -33,6 +33,7 @@ import CourseEdit from './Admin/Pages/Course Details Edit';
 import WorkshopImage from './Admin/Pages/Workshop Images';
 
 import useInitializeApp from './hooks/useInitializeApp';
+import PaymentSuccess from './pages/PaymentSuccess';
 
 const Layout = () => {
   return(
@@ -49,11 +50,15 @@ const Layout = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>,
+    element: <Layout />,
     children:[
       {
         path:"/",
         element:<Home/>
+      },
+      {
+        path:"/payment-success",
+        element:<PaymentSuccess />
       },
       {
         path:"/login",
