@@ -2,22 +2,22 @@
 /* banner */
 .kitchen-banner{
     background-image:linear-gradient(to bottom, rgba(2, 2, 2, 0.205), rgba(0, 0, 0, 0.897)), url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786722/Cooking%20Academy%20Assets/Component_19_1_wrk493.jpg');
-    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
 }
-
-@media (200px <= width <= 600px){
+@media (width >= 1300px){
   .kitchen-banner{
     height: 100vh;
   }
 }
+
+
 @media (650px <= width <= 900px){
   .kitchen-banner{
-    height: 50vh;
+    height: 60vh;
   }
 }
 

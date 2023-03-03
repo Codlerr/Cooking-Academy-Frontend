@@ -63,7 +63,7 @@ function AboutUs() {
       {/*================================= Chef Video =================================*/}
       <section className="py-10 px-50 ownerBackground">
         <div className="w-11/12 mx-auto py-10">
-          <video controls loop className='w-full rounded-2 ' controlsList="nodownload">
+          <video controls loop className='w-full rounded-[2rem]' controlsList="nodownload">
             <source src={ownerVideo} type="video/mp4" />
           </video>
         </div>

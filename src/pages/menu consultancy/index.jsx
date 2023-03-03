@@ -126,7 +126,7 @@ function MenuConsultancy() {
         <h1 className="xs:text-2xl md:text-3xl font-light tracking-wider">BOOK A CONSULTATION</h1>
         <h3 className="xs:text-base md:text-2xl xs:w-[95%] lg:w-[40%] text-center font-light">We offer all new clients a FREE consultation to discuss any new or existing projects.</h3>
         <div className="flex gap-4">
-          <a className="border-2 cursor-pointer xs:text-sm md:text-xl bg-transparent hover:bg-primary-clr2 transition-all duration-300 border-primary-clr2 p-1 text-center xs:w-40 md:w-60">CALL US</a>
+          <a href="tel:+97433242999" className="border-2 cursor-pointer xs:text-sm md:text-xl bg-transparent hover:bg-primary-clr2 transition-all duration-300 border-primary-clr2 p-1 text-center xs:w-40 md:w-60">CALL US</a>
           <a className="border-2 cursor-pointer xs:text-sm md:text-xl bg-transparent hover:bg-primary-clr2 transition-all duration-300 border-primary-clr2 p-1 text-center xs:w-40 md:w-60">BOOK CONSULTATION</a>
         </div>
       </div>

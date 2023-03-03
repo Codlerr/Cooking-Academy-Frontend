@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 import './style.css';
 import Aos from 'aos';
 import "aos/dist/aos.css";
-import WorkSlider from '../../components/sliders/workshop-images';
+import WorkImageSlider from '../../components/sliders/workshop-images';
 import InstaSlider from '../../components/sliders/insta-slider';
 import ServiceSlider from '../../components/sliders/service-slider';
 import WorkshopVideo from '../../components/sliders/workshopVideo';
@@ -27,6 +27,13 @@ let Item6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooki
 let Item7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674050617/Cooking%20Academy%20Assets/MINI_CHICKEN_QUESADILLAS_wparli.jpg';
 let Item8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/HOT_SPINACH_AND_ARTICHOKE_DIP_t95lsn.jpg';
 let google = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674319499/Cooking%20Academy%20Assets/WhatsApp_Image_2023-01-21_at_17.27.37_xuoe5t.jpg';
+let team1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674563346/Cooking%20Academy%20Assets/WhatsApp_Image_2023-01-2asd1_at_15.58.17_stsduv.webp';
+let team2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674561431/Cooking%20Academy%20Assets/WhatsApp_Image_2023-01-21_at_15.58.17_beylyc.webp';
+let Tb1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674566308/Cooking%20Academy%20Assets/Screenshot_2023-01-24_18sad4408_elcmhg.png';
+let Tb2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674566308/Cooking%20Academy%20Assets/Screenshot_2023-01-24sdfsdf_184408_zgngtv.png';
+let Tb3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674566308/Cooking%20Academy%20Assets/Screenshot_2023-01-24_18asd4408_nhkrud.png';
+let Tb4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674566307/Cooking%20Academy%20Assets/Screenshot_2023-01-24_asd184408_nb7j5s.png';
+let Tb5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674566307/Cooking%20Academy%20Assets/Screenshot_2023-01-24_dsfdsf_wlaicw.png';
 
 
 function LandingPage() {
@@ -41,7 +48,7 @@ function LandingPage() {
     <>
     {/* =================================Banner================================= */}
     <section className='banner bg-[#080808] text-white'>
-            <div className='xs:px-5 md:px-0 md:pl-10 lg:pl-20 xs:h-[90vh] md:h-[40vh] lg:h-[90vh]  flex flex-col xs:gap-5 lg:gap-8 xs:justify-end lg:justify-center'  data-aos="fade-right">
+            <div className='xs:px-5 md:px-0 md:pl-10 lg:pl-20 xs:h-[90vh] md:h-[40vh] lg:h-[90vh]  flex flex-col xs:gap-5 lg:gap-8 xs:justify-center lg:justify-center'  data-aos="fade-right">
               <p className='xs:text-4xl md:text-3xl lg:text-5xl font-bold md:w-[50%] lg:w-[40%]'>Flavours surrounds you in The Cooking Academy</p>
               <p className='xs:text-base lg:text-xl lg:w-[35%] text-[color:var(--text-clr)]'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
               <a href='#' className='bg-[color:var(--thm-clr2)] hover:bg-[#FFBB00] transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>Resume Class</a>
@@ -88,27 +95,23 @@ function LandingPage() {
      <section className='workshop overflow-hidden relative'>
         <div className='xs:w-[90%] md:w-[85%] mx-auto xs:pt-10 lg:pt-10'>
           <div className='' data-aos="fade-right">
-            <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
+            <h2 className='font-bold xs:text-4xl lg:text-5xl xs:text-center md:text-left' data-aos="fade-right">Workshop</h2>
           </div>
           <WorkshopVideo/>
         </div>
-       {/* <div className='xs:w-11/12 lg:w-10/12 mx-auto xs:pt-10 lg:pt-20'>
-          <div className='pt-5' data-aos="fade-right">
-          <h2 className='font-bold xs:text-4xl lg:text-5xl' data-aos="fade-right">Workshop</h2>
-          </div>
-          <div className='workshop-video '>
-            <video className='w-full py-10 ' controls loop controlsList="nodownload">
-              <source src={Videotemp} type="video/mp4"/>
-            </video>
-          </div>
 
-          
-       
-        <div><WorkSlider/></div>
-       </div> */}
-
+        {/* ===========WorkshopImages============ */}
+        <div className='xs:pt-5 md:pt-20'>
+          <h2 className='font-bold xs:text-4xl lg:text-5xl text-center' data-aos="fade-right">Photo Gallery</h2>
+          <WorkImageSlider/>
+        </div>
+        {/* ===========WorkshopImages============ */}
      </section>
      {/* =================================Workshop================================= */}
+     
+
+
+
 
      {/* =================================Meet Our Chefs================================= */}
       <section>
@@ -116,7 +119,37 @@ function LandingPage() {
       </section>
      {/* =================================Meet Our Chefs================================= */}
 
-          
+     {/* =================================Team building================================= */}
+  
+
+    <section className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] flex flex-col justify-end'>
+        <div className='grid grid-cols-1 md:grid-cols-2  place-items-end -mt-1'>
+            <div className='bg-[#141414] xs:px-3 xs:py-5 md:py-0 h-full md:p-10 lg:p-14 w-full flex flex-col justify-center ' >
+              <h1 className='font-bold xs:text-3xl md:text-2xl lg:text-6xl' data-aos="fade-right">CORPORATE<br/> TEAM BUILDING</h1>
+              <h3 className='font-normal xs:text-xl md:text-xl lg:text-3xl' data-aos="fade-right">COOKING ACTIVITIES</h3>
+            </div>
+            <div className='w-full h-full overflow-hidden'>
+              <img className=' w-full h-full object-cover  hover:scale-105 duration-500' src={team2} alt="team" />
+            </div>
+        </div>
+        <div className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] overflow-hidden'>
+          <div className='w-11/12 mx-auto xs:py-5 md:py-8'>
+              <p className='text-lg font-normal'>Escape the office by trading in your computer for an apron at The Cooking Academy
+                A cooking class is a great way to welcome new team members, reward your colleagues for a job well done, or entertain important clients with fabulous food and drinks.
+                We provide classes that will bring out the best in your team. Team Building and Corporate Events include a customized three or four-course menu either a demonstration or
+                participation class style.</p>
+              <p className=' pt-8 text-base lg:text-base font-light tracking-wide'>Just a few wonderful organizations we've handled team building events before.</p>
+              <div className='flex flex-wrap gap-3 justify-center md:justify-start pt-3'>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb1} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb2} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb3} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb4} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb5} alt="team brand" data-aos="fade-right"/>
+              </div>
+          </div>
+        </div>
+      </section>
+      {/* =================================Team building================================= */}
 
     {/* ==================================Other Service================================ */}
     <section className=''>
@@ -228,8 +261,8 @@ function LandingPage() {
     {/* ==================================Instagram================================ */}
     <section className='xs:py-10  insta-bg'>
          <div className='xs:w-11/12 md:w-full mx-auto text-center text-[#ffffffcb]' data-aos="fade-right">
-            <h2 className='xs:text-xl md:text-3xl '>Check out@cookingacademy on instagram</h2>
-            <p className='xs:text-sm md:text-base py-3 lg:w-[30%] mx-auto'>Follow us on instagram to get more tips & updates on cooking</p>
+            <h2 className='xs:text-xl md:text-3xl '>Check @thecookingacademyqtr on instagram</h2>
+            <p className='xs:text-sm md:text-base py-3 lg:w-[30%] mx-auto'>Follow us on our social media channels.</p>
           </div>
 
           {/* scroll */}
