@@ -38,7 +38,6 @@ function Cart() {
 				<h1 className="text-xl font-bold py-5">
 					{itemsInCart} {itemsInCart.length > 1 ? "Courses" : "Cource"} in Cart
 				</h1>
-				
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10">
 					<div className="lg:col-span-2 grid gap-10 rounded-xl overflow-hidden bg-white xs:p-5 lg:p-10">
 						{cart?.itemId?.map((item, idx, arr) => (
@@ -47,14 +46,13 @@ function Cart() {
 								{arr.length - 1 > idx && <hr />}
 							</React.Fragment>
 						))}
-
 						{/* CheckOut Btn */}
 						<div className="flex justify-end">
 							<button
 								onClick={HandleCart}
 								// href="#"
 								disabled={checkingOut}
-								className="bg-primary-clr2 hover:bg-primary-clr1 disabled:bg-slate-300 h-fit transition-all cursor-pointer duration-300 rounded-md px-16 lg:px-24 py-2 lg:py-5"
+								className="bg-primary-clr2 hover:bg-primary-clr1 disabled:bg-slate-300 transition-all cursor-pointer duration-300 rounded-md px-16 lg:px-24 py-2 lg:py-5"
 							>
 								{checkingOut ? "Please Wait..." : "Checkout"}
 							</button>

@@ -10,129 +10,129 @@ import instance from "../../API/api_instance";
 import useAddCourseToCart from "../../hooks/useAddCourseToCart";
 
 function SampleNextArrow({ onClick }) {
-  return (
-    <div className="arroww2 arroww-right2" onClick={onClick}>
-      <i class="fa-solid fa-arrow-right"></i>
-    </div>
-  );
+	return (
+		<div className="arroww2 arroww-right2" onClick={onClick}>
+			<i class="fa-solid fa-arrow-right"></i>
+		</div>
+	);
 }
 
 function SamplePrevArrow({ onClick }) {
-  return <div className="" onClick={onClick}></div>;
+	return <div className="" onClick={onClick}></div>;
 }
 
 function Exploreslider() {
-  // -------------------API CALL-----------------------//
-  const [course, setCourse] = useState([]);
-  const navigate = useNavigate("");
+	// -------------------API CALL-----------------------//
+	const [course, setCourse] = useState([]);
+	const navigate = useNavigate("");
 
-  useEffect(() => {
-    const fetchItems = async () => {
-      await instance.get("/gust/course", {}).then((response) => {
-        setCourse(response.data.data.courses);
-        console.log(response.data);
-      });
-    };
-    fetchItems();
-  }, []);
+	useEffect(() => {
+		const fetchItems = async () => {
+			await instance.get("/gust/course", {}).then((response) => {
+				setCourse(response.data.data.courses);
+				console.log(response.data);
+			});
+		};
+		fetchItems();
+	}, []);
 
-  // -------------------API CALL-----------------------//
+	// -------------------API CALL-----------------------//
 
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 2000,
-    autoplay: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
-  const { adding, handleAddCourseToCart } = useAddCourseToCart();
-  const onEnroll = (item) => {
+	var settings = {
+		dots: false,
+		infinite: true,
+		speed: 2000,
+		autoplay: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		initialSlide: 0,
+		nextArrow: <SampleNextArrow />,
+		prevArrow: <SamplePrevArrow />,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					initialSlide: 2,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	};
+  
+  const {adding, handleAddCourseToCart} = useAddCourseToCart();
+	const onEnroll = (item) => {
     handleAddCourseToCart(item._id);
-  };
+	};
 
-  return (
-    <>
-      <section className="text-white lg:pl-14 overflow-hidden">
-        <Slider {...settings} className="w-full py-5 bg-[#131212]">
-          {course &&
-            course.length > 0 &&
-            course
-              ?.slice(0)
-              .reverse()
-              .map((item, index) => {
-                return (
-                  <div className="relative ui-card" key={index}>
-                    <LazyLoadImage
-                      className="rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full md:w-[411px]"
-                      src={item.image}
-                    />
-                    <div className="centered">
-                      <p className="text-xl font-bold text-center uppercase">
-                        {item.name}
-                      </p>
+	return (
+		<>
+			<section className="text-white lg:pl-14 overflow-hidden">
+				<Slider {...settings} className="w-full py-5 bg-[#131212]">
+					{course &&
+						course.length > 0 &&
+						course
+							?.slice(0)
+							.reverse()
+							.map((item, index) => {
+								return (
+									<div className="relative ui-card" key={index}>
+										<LazyLoadImage
+											className="rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full md:w-[411px]"
+											src={item.image}
+										/>
+										<div className="centered">
+											<p className="text-xl font-bold text-center uppercase">
+												{item.name}
+											</p>
 
-                      <div className="flex flex-col  gap-5 w-64 md:w-52 lg:w-64 mx-auto pb-3 mt-8">
-                        <a
-                          href="#item"
-                          className="bg-white rounded-lg text-black py-2.5 text-center font-semibold cursor-pointer"
+											<div className="flex flex-col  gap-5 w-64 md:w-52 lg:w-64 mx-auto pb-3 mt-8">
+												<a
+													href="#item"
+													className="bg-white rounded-lg text-black py-2.5 text-center font-semibold cursor-pointer"
                           disabled={adding === item._id}
                           onClick={(e) => {
                             e.preventDefault();
-                            onEnroll(item);
-                          }}
-                        >
-                          {adding == item._id ? 'Loading...' : 'ENROLL NOW'}
-                        </a>
-                        <a
-                          onClick={() =>
-                            navigate(`/cooking-class/${item.name}`, {
-                              state: { classinfo: item },
-                            })
-                          }
-                          className="bg-white rounded-lg text-black py-2.5 text-center font-medium cursor-pointer"
-                        >
-                          <i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS
-                          INFO
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-        </Slider>
-      </section>
-    </>
-  );
+														onEnroll(item);
+													}}
+												>
+													ENROLL NOW
+												</a>
+												<a
+													onClick={() =>
+														navigate(`/cooking-class/${item.name}`, {
+															state: { classinfo: item },
+														})
+													}
+													className="bg-white rounded-lg text-black py-2.5 text-center font-medium cursor-pointer"
+												>
+													<i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS
+													INFO
+												</a>
+											</div>
+										</div>
+									</div>
+								);
+							})}
+				</Slider>
+			</section>
+		</>
+	);
 }
 
 export default Exploreslider;

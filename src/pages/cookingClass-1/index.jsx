@@ -1,14 +1,23 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./style.css";
 import Progress from './progress';
 import Activeclass from './activeClass';
 import Moreclass from './moreClass';
 import Mainvideo from './mainVideo';
 import ClassInfo from './classinfo';
+import useCourseDetails from "./useCourseDetails";
 
 
 function Cookingclass() {
 
+  const [toggleState, setToggleState] = useState(1);
+  const location = useLocation();
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
+  const courseId = location.search?.split('?')?.[1]?.split('=')?.[1] || '';
+  const course = useCourseDetails(courseId);
 
   return (
     <>
