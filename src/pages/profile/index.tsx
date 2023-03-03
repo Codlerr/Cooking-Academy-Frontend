@@ -136,7 +136,7 @@ function Profile() {
                               className="bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl"
                             >
                               <i className="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>
-                              Resume Class
+                              Go To Class
                             </button>
                           </div>
                         </div>
