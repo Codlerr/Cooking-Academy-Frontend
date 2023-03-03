@@ -86,10 +86,16 @@ export const authSlice = createSlice({
     },
     removeUser(state) {
       state.data = null;
+    },
+    logout(state) {
+      localStorage.clear();
+      state.accessToken = null;
+      state.refreshToken = null;
+      state.data = null;
     }
   },
 })
 
-export const { updateUser, removeUser, syncTokens, upadateAccessToken, upadateRefreshToken } = authSlice.actions
+export const { logout, updateUser, removeUser, syncTokens, upadateAccessToken, upadateRefreshToken } = authSlice.actions
 
 export default authSlice.reducer

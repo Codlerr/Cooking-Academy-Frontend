@@ -5,11 +5,13 @@ import loginWithCredentials, {
 } from "../../API/services/login";
 import { setAccessToken, setRefreshToken } from "../../helpers/localStorage";
 import { syncTokens } from "../slices/authSlice";
+import { fetchCart } from "./cartThunk";
 
 export const fetchUser = createAsyncThunk("fetch/user", async (_, ThunkApi) => {
     ThunkApi.dispatch(syncTokens());
     try {
         const res = await fetchUserData();
+        ThunkApi.dispatch(fetchCart());
         return res.data;
     } catch (error) {
         throw error;
