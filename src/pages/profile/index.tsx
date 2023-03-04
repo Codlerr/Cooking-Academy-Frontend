@@ -32,8 +32,9 @@ function Profile() {
   const { courses, fetching } = useListCourse();
 
   const resumeClass = useCallback((course: Course) => {
-    console.log(course);
-  }, []);
+    // console.log(course);
+    navigate("/cooking-class-1?courseId=" + course._id);
+  }, [navigate]);
 
   return (
     <>
