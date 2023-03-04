@@ -1,5 +1,5 @@
 import React, { FC, memo, useState } from 'react'
-import { ClassInfo, Lesson } from './useCourseDetails';
+import { ClassInfo, Lesson } from './useClassDetails';
 
 
 interface ClassinfoProps {

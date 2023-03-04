@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { ClassInfo } from "./useCourseDetails";
+import { ClassInfo } from "./useClassDetails";
 
 interface ActiveClassProps {
 	classInfo: ClassInfo;

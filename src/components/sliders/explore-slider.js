@@ -1,5 +1,5 @@
 import React, { memo, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "../../pages/home/style.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -126,18 +126,13 @@ function Exploreslider() {
 														? "ADDING ITEM"
 														: "ENROLL NOW"}
 												</a>
-												<a
-													href="#item"
-													onClick={() =>
-														navigate(`/cooking-class/${item.name}`, {
-															state: { classinfo: item },
-														})
-													}
+												<NavLink
+													to={`/cooking-class/${item._id}`}
 													className="bg-white rounded-lg text-black py-2.5 text-center font-medium cursor-pointer"
 												>
 													<i class="pr-2 fa-solid fa-circle-info"></i>VIEW CLASS
 													INFO
-												</a>
+												</NavLink>
 											</div>
 										</div>
 									</div>
