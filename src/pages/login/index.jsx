@@ -66,20 +66,20 @@ function Login() {
 	return (
 		<>
 			<section className="h-screen w-full grid place-items-center">
-				<div className="h-[80vh] w-full overflow-hidden grid grid-cols-1 lg:grid-cols-6 place-items-center">
+				<div className="lg:h-[80vh] w-full overflow-hidden grid grid-cols-1 lg:grid-cols-6 place-items-center">
 					<img
 						className="xs:hidden lg:block w-full h-full"
 						src={p1}
 						alt="img"
 					/>
 					<img
-						className="xs:hidden lg:block w-full h-full"
+						className="xs:hidden lg:block w-full h-full "
 						src={p2}
 						alt="img"
 					/>
-					<div className="col-span-2 xs:w-[80%] md:w-[60%] l:w-[70%] mx-auto">
+					<div className="col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col mt-10 xl:mt-20 2xl:mt-44  h-full">
 						<div className="grid place-items-center">
-							<img className="" src={logo} alt="logo" />
+							<img className="xs:h-fit md:h-14 xl:h-16  " src={logo} alt="logo" />
 						</div>
 						<p className="text-primary-clr2 py-5">
 							New user?
@@ -87,9 +87,9 @@ function Login() {
 								Create an account
 							</a>
 						</p>
-						<form className="flex flex-col gap-4" onSubmit={loginForm.handleSubmit}>
+						<form className="flex flex-col xs:gap-2 xl:gap-2 justify-center" onSubmit={loginForm.handleSubmit}>
 							<input
-								className="bg-transparent w-full outline-none border-2 border-primary-clr2 px-3 py-2 rounded-lg"
+								className="bg-transparent w-full outline-none border-2 border-primary-clr2 md:px-1 xl:px-3 md:py-1 xl:py-1.5 rounded-lg"
 								type="text"
 								placeholder="Email*"
 								required
@@ -98,14 +98,14 @@ function Login() {
 							/>
 							<div className="relative">
 								<input
-									className="bg-transparent w-full outline-none border-2 border-primary-clr2 px-3 py-2 rounded-lg"
+									className="bg-transparent w-full outline-none border-2 border-primary-clr2 md:px-1 xl:px-3 md:py-1 xl:py-1.5 rounded-lg"
 									type={open1 === false ? "password" : "text"}
 									placeholder="Password*"
 									required
                                     name="password"
                                     onChange={loginForm.handleChange}
 								/>
-								<div className="absolute top-3 right-5">
+								<div className="absolute md:top-2 xl:top-3 right-5">
 									{open1 === false ? (
 										<i class="fa-solid fa-eye" onClick={toggle1}></i>
 									) : (
@@ -113,14 +113,14 @@ function Login() {
 									)}
 								</div>
 							</div>
-							<p className="text-text-dark text-xs text-center md:w-[80%] mx-auto py-2">
+							<p className="text-text-dark xs:text-xs md:text-[10px] xl:text-xs text-center md:w-[80%] mx-auto py-2">
 								By creating an account you agrre to our Terms of Service and
 								Privacy Policy
 							</p>
 							<button
 								type="submit"
                                 disabled={loggingIn}
-								className="bg-primary-dark hover:bg-primary-clr1 py-2 transition-all duration-200 rounded-md"
+								className="bg-primary-dark hover:bg-primary-clr1 md:py-0 xl:py-1.5 transition-all duration-200 rounded-md"
 							>
 								{loggingIn ? "Please Wait..." :"Sign In"}
 							</button>
