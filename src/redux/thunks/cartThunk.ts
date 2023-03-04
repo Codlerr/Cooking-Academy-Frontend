@@ -9,7 +9,6 @@ interface ResponseData<T = null> {
 }
 
 const addCourseToCartService = async (itemId: string) => {
-    console.log(itemId);
     const res = instance.post('student/cart', {
         itemId,
     })

@@ -7,6 +7,7 @@ import { getAccessToken } from "../../helpers/localStorage";
 import "./style.css";
 import useListCourse from "../../hooks/useListCourse";
 import { Course } from "../../redux/slices/courseSlice";
+import { logoutAction } from "../../redux/thunks/authThunk";
 
 let profile =
   "https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg";
@@ -21,7 +22,7 @@ function Profile() {
     setToggleState(index);
   };
   const handleLogout = useCallback(() => {
-    dispatch(logout());
+    dispatch(logoutAction());
   }, [dispatch]);
 
   useEffect(() => {

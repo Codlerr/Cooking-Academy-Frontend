@@ -62,6 +62,11 @@ export const courseSlice = createSlice({
         clearMyCourseError: (state) => {
             state.myCourse.error = null;
             state.myCourse.status = 'idle';
+        },
+        clearMyCourse: (state) => {
+            state.myCourse.data = null;
+            state.myCourse.error = null;
+            state.myCourse.status = 'idle';
         }
     },
     extraReducers(builder) {
@@ -79,6 +84,6 @@ export const courseSlice = createSlice({
     },
 });
 
-export const {clearMyCourseError} = courseSlice.actions;
+export const {clearMyCourseError, clearMyCourse} = courseSlice.actions;
 
 export default courseSlice.reducer;

@@ -4,8 +4,8 @@ import loginWithCredentials, {
 	LoginCredentials,
 } from "../../API/services/login";
 import { setAccessToken, setRefreshToken } from "../../helpers/localStorage";
-import { syncTokens } from "../slices/authSlice";
-import { fetchMyCourse } from "../slices/courseSlice";
+import { logout, syncTokens } from "../slices/authSlice";
+import { clearMyCourse, fetchMyCourse } from "../slices/courseSlice";
 import { fetchCart } from "./cartThunk";
 
 export const fetchUser = createAsyncThunk("fetch/user", async (_, ThunkApi) => {
@@ -42,3 +42,9 @@ export const loginAction = createAsyncThunk(
 		}
 	}
 );
+
+export const logoutAction = createAsyncThunk(
+	"logout/action",
+	async (_, ThunkApi) => {
+        ThunkApi.dispatch(clearMyCourse());
+});

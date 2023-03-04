@@ -3,8 +3,8 @@
 import axios, { AxiosRequestHeaders } from "axios";
 import { BASE_URL } from "../Constants";
 import { getAccessToken } from "../helpers/localStorage";
-import { logout } from "../redux/slices/authSlice";
 import store from "../redux/store";
+import { logoutAction } from "../redux/thunks/authThunk";
 
 const instance = axios.create({
     baseURL: BASE_URL,
@@ -33,7 +33,7 @@ instance.interceptors.response.use(
     },
     error => {
       if (error?.response?.status === 403) {
-        store.dispatch(logout());
+        store.dispatch(logoutAction());
       }
       return Promise.reject(error);
     },
