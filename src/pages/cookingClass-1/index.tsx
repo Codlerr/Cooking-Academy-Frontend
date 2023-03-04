@@ -83,7 +83,7 @@ function Cookingclass() {
 
 	return (
 		<section className="w-11/12 mx-auto xs:flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-3 gap-16 relative mt-32">
-			<div className="bg-zinc-800 px-10 md:my-5 rounded-[2rem] relative h-fit">
+			<div className="bg-zinc-800 p-10 md:my-5 rounded-[2rem] relative h-fit">
 				<span className="xs:hidden md:block absolute top-10 xs:-left-5 lg:-left-10">
 					<i className="text-primary-clr2 text-3xl fa-solid fa-trophy"></i>
 				</span>

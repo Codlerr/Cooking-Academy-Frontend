@@ -15,7 +15,7 @@ function ActiveClass({ classInfo, selectedLesson }: ActiveClassProps) {
 		<>
 			<div className="flex flex-col gap-3">
 				<p className="text-xl font-semibold">Content Navigator</p>
-				<div className="flex justify-between items-center bg-black p-4 rounded-2xl">
+				<div className="flex xs:flex-col xl:flex-row justify-between lg:items-center bg-black p-4 rounded-2xl">
 					<div className="flex flex-col gap-2">
 						<p>Chapter</p>
 						<p className="text-base font-medium">{classInfo.chapterTitle}</p>
