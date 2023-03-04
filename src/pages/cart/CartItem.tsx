@@ -82,7 +82,7 @@ const CartItem: FC<CartItemProps> = ({ item }) => {
 						onClick={handleDeleteFromCart}
 						className="cursor-pointer text-blue-800"
 					>
-						{deleting ? "Removing" : "Remove"}
+						{deleting ? "Removing..." : "Remove"}
 					</button>
 					<p className="cursor-pointer">Save for Later</p>
 				</div>

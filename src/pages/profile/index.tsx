@@ -108,11 +108,11 @@ function Profile() {
                     <div className="flex items-center justify-center">
                       <div
                         className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-                        role="status">
-                        <span
-                          className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                        >Loading...</span
-                        >
+                        role="status"
+                      >
+                        <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+                          Loading...
+                        </span>
                       </div>
                     </div>
                   )}
@@ -124,11 +124,7 @@ function Profile() {
                         </h1>
                         <div className="grid grid-cols-1 md:grid-cols-3">
                           <p className="md:text-base py-2 col-span-2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nostrum, ipsa? Delectus porro, accusamus illo
-                            saepe distinctio dolore architecto inventore nulla
-                            pariatur itaque quis eum animi unde, corrupti
-                            doloremque minima doloribus.
+                            {course.about}
                           </p>
                           <div className="grid xs:place-items-start md:place-items-center">
                             <button
@@ -136,7 +132,7 @@ function Profile() {
                               className="bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl"
                             >
                               <i className="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>
-                              Go To Class
+                              Go to Class
                             </button>
                           </div>
                         </div>

@@ -63,7 +63,7 @@ function Navbar() {
 						<ul
 							className={`${
 								open ? "block " : "xs:hidden lg:flex"
-							} flex xs:flex-col  lg:flex-row  xs:gap-10 xs:pt-5 lg:gap-10 text-[#ffffffcc] font-medium tracking-wide`}
+							} flex xs:flex-col  lg:flex-row lg:items-center xs:gap-10 xs:pt-5 lg:gap-10 text-[#ffffffcc] font-medium tracking-wide`}
 						>
 							<li>
 								<NavLink exact to="/">
