@@ -1,6 +1,7 @@
 import { FC, memo, useCallback, useEffect, useState } from "react";
 import instance from "../../API/api_instance";
 import { Response } from "../../API/services/types";
+import { Course } from "../../hooks/useListCourse";
 import useToggle from "../../hooks/useToggle";
 import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import { deleteFromCart } from "../../redux/thunks/cartThunk";
@@ -35,26 +36,10 @@ const fetchItemDetailsService = async (itemId: string) => {
 };
 
 interface CartItemProps {
-	itemId: string;
+	item: Course;
 }
 
-const CartItem: FC<CartItemProps> = ({ itemId }) => {
-	const [itemData, setItemData] = useState<CourseData | null>(null);
-	const [fetching, setFetching] = useToggle(false);
-	useEffect(() => {
-		setFetching();
-		fetchItemDetailsService(itemId)
-			.then((res) => {
-				console.log(res.data.data);
-				setItemData(res.data.data.course);
-			})
-			.catch((err) => {
-				console.log(err);
-			})
-			.finally(() => {
-				setFetching();
-			});
-	}, [itemId, setFetching]);
+const CartItem: FC<CartItemProps> = ({ item }) => {
 
 	const dispatch = useAppDispatch();
 
@@ -62,29 +47,21 @@ const CartItem: FC<CartItemProps> = ({ itemId }) => {
 
 	const handleDeleteFromCart = useCallback(() => {
 		setDeleting();
-		dispatch(deleteFromCart(itemId)).finally(() => {
+		dispatch(deleteFromCart(item._id)).finally(() => {
 			setDeleting();
 		});
-	}, [dispatch, itemId, setDeleting]);
-
-	if (fetching) {
-		// Show loading indicator
-	}
-
-	if (!itemData) {
-		return null;
-	}
+	}, [dispatch, item._id, setDeleting]);
 
 	return (
 		<div className="grid gap-3 lg:gap-0 grid-cols-1 md:grid-cols-1 lg:grid-cols-4 text-black">
 			<img
 				className="lg:h-28 lg:w-44 object-cover rounded-md"
-				src={itemData?.image}
-				alt={itemData.name}
+				src={item?.image}
+				alt={item.name}
 			/>
 			<div className="lg:col-span-2 flex justify-center flex-col">
-				<h4 className="font-semibold lg:text-xl">{itemData.name}</h4>
-				<p>By {itemData.instructorName}</p>
+				<h4 className="font-semibold lg:text-xl">{item.name}</h4>
+				<p>By {item.instructorName}</p>
 				<span className="flex gap-2">
 					<p>4.9</p>
 					<div className="text-primary-clr2 grid grid-flow-col place-items-center gap-1">
@@ -96,7 +73,7 @@ const CartItem: FC<CartItemProps> = ({ itemId }) => {
 					</div>
 					<p>(239 ratings)</p>
 				</span>
-				<p> total hours | {itemData.lesson} lessons</p>
+				<p> total hours | {item.lesson} lessons</p>
 			</div>
 			<div className="flex justify-between">
 				<div className="flex gap-1 flex-col justify-center align-middle text-blue-800 font-medium">
@@ -110,7 +87,7 @@ const CartItem: FC<CartItemProps> = ({ itemId }) => {
 					<p className="cursor-pointer">Save for Later</p>
 				</div>
 				<div className="flex flex-col justify-center align-middle">
-					<h2 className="font-bold text-3xl">${itemData.price}</h2>
+					<h2 className="font-bold text-3xl">${item.price}</h2>
 				</div>
 			</div>
 		</div>
