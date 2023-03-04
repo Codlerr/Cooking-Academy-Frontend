@@ -52,7 +52,7 @@ function Cart() {
 								onClick={HandleCart}
 								// href="#"
 								disabled={checkingOut}
-								className="bg-primary-clr2 hover:bg-primary-clr1 disabled:bg-slate-300 transition-all cursor-pointer duration-300 rounded-md px-16 lg:px-24 py-2 lg:py-5"
+								className="bg-primary-clr2 hover:bg-primary-clr1 h-fit disabled:bg-slate-300 transition-all cursor-pointer duration-300 rounded-md px-16 lg:px-24 py-2 lg:py-5"
 							>
 								{checkingOut ? "Please Wait..." : "Checkout"}
 							</button>
