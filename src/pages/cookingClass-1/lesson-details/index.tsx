@@ -1,7 +1,7 @@
 import { FC, memo } from "react";
 import Classinfo from "../classinfo";
 import MainVideo, { VideoControlls } from "../mainVideo";
-import { ClassInfo, Lesson } from "../useCourseDetails";
+import { ClassInfo, Lesson } from "../useClassDetails";
 
 interface LessonDetailsProps {
 	lesson: Lesson | null;

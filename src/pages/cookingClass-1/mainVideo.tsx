@@ -1,5 +1,5 @@
 import React, { FC, memo } from "react";
-import { Lesson } from "./useCourseDetails";
+import { Lesson } from "./useClassDetails";
 
 let Videotemp =
   "https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4";

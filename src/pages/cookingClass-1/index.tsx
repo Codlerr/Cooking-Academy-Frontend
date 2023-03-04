@@ -4,7 +4,7 @@ import "./style.css";
 import Progress from "./progress";
 import Activeclass from "./activeClass";
 import Moreclass from "./moreClass";
-import useCourseDetails from "./useCourseDetails";
+import useCourseDetails from "./useClassDetails";
 import LessonDetails from "./lesson-details";
 import { VideoControlls } from "./mainVideo";
 

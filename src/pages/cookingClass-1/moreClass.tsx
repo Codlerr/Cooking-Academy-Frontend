@@ -1,5 +1,5 @@
 import React from "react";
-import { ClassInfo } from "./useCourseDetails";
+import { ClassInfo } from "./useClassDetails";
 
 interface MoreClassProps {
 	classInfo: ClassInfo;

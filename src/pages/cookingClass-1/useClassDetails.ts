@@ -35,7 +35,7 @@ const fetchClassService = async (courseId: string) => {
 	return res.data;
 };
 
-const useCourseDetails = (courseId?: string | null) => {
+const useClassDetails = (courseId?: string | null) => {
 	const [fetching, setFetching] = useState(false);
 	const [data, setData] = useState<ClassData | null>(null);
 	const fetchClass = useCallback(() => {
@@ -61,4 +61,4 @@ const useCourseDetails = (courseId?: string | null) => {
 	return { fetching, classData: data };
 };
 
-export default useCourseDetails;
+export default useClassDetails;
