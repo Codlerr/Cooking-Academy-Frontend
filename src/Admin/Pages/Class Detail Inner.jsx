@@ -14,7 +14,7 @@ import "react-confirm-alert/src/react-confirm-alert.css"; // Import css
 const CreateCourseSchema = Yup.object().shape({
   chapterTitle: Yup.string().required("chapterTitle Name is required"),
   classInfo: Yup.string().required("classInfo is required"),
-  instructorName: Yup.string().required("Course intrector name is required"),
+  instrecterName: Yup.string().required("Course intrector name is required"),
 
 
 });
@@ -44,11 +44,11 @@ function ClassInnerDetails() {
   // ===========API POST========//
 
   const onSubmit = async (values, { setSubmitting, resetForm }) => {
-    const { chapterTitle, classInfo, instructorName } = values;
+    const { chapterTitle, classInfo, instrecterName } = values;
     const data = {
       chapterTitle,
       classInfo,
-      instructorName,
+      instrecterName,
       lessons:inputList,
       courseId:id,
     };
@@ -95,7 +95,7 @@ function ClassInnerDetails() {
     initialValues: {
       chapterTitle: "",
       classInfo: "",
-      instructorName: "",
+      instrecterName: "",
       inputList: "",
 
     },
@@ -212,8 +212,8 @@ function ClassInnerDetails() {
                 className="bg-bg-darks border-none  p-3 rounded-lg w-full"
                 type="text"
                 placeholder="Instructor name"
-                name="instructorName"
-                value={values.instructorName}
+                name="instrecterName"
+                value={values.instrecterName}
                 onChange={handleChange}
                 required
               />
@@ -295,7 +295,7 @@ function ClassInnerDetails() {
                     {/* contents */}
                     <div className="w-[90%] flex flex-col py-5 gap-5">
                       <p className="font-medium text-xl">{item.chapterTitle}</p>
-                      <p>Instructor: {item.instructorName}</p>
+                      <p>Instructor: {item.instrecterName}</p>
                     </div>
                     {/* Edit/Delete Buttons */}
                     <div className="absolute top-10 right-5 flex gap-8">

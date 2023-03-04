@@ -15,7 +15,7 @@ import "react-confirm-alert/src/react-confirm-alert.css"; // Import css
 const CreateCourseSchema = Yup.object().shape({
   chapterTitle: Yup.string().required("chapterTitle Name is required"),
   classInfo: Yup.string().required("classInfo is required"),
-  instructorName: Yup.string().required("Course intrector name is required"),
+  instrecterName: Yup.string().required("Course intrector name is required"),
 
 
 });
@@ -38,11 +38,11 @@ function ClassDetailEdit() {
    // ===========API POST========//
 
   const onSubmit = async (values, { setSubmitting, resetForm }) => {
-    const { chapterTitle, classInfo, instructorName } = values;
+    const { chapterTitle, classInfo, instrecterName } = values;
     const data = {
       chapterTitle,
       classInfo,
-      instructorName,
+      instrecterName,
       lessons:inputList,
       courseId
     };
@@ -98,7 +98,7 @@ function ClassDetailEdit() {
       initialValues: {
         chapterTitle: '',
         classInfo: '',
-        instructorName: '',
+        instrecterName: '',
 
       },
       validationSchema: CreateCourseSchema,
@@ -114,7 +114,7 @@ function ClassDetailEdit() {
           
           chapterTitle: response.data.data.chapterTitle,
           classInfo: response.data.data.classInfo,
-          instructorName: response.data.data.instructorName,
+          instrecterName: response.data.data.instrecterName,
         
 
   
@@ -200,8 +200,8 @@ function ClassDetailEdit() {
                 className="bg-bg-darks border-none  p-3 rounded-lg w-full"
                 type="text"
                 placeholder="Instructor name"
-                name="instructorName"
-                value={values.instructorName}
+                name="instrecterName"
+                value={values.instrecterName}
                 onChange={handleChange}
                 required
               />
