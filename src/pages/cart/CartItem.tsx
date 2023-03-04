@@ -1,14 +1,8 @@
-import { FC, memo, useCallback, useEffect, useState } from "react";
-import instance from "../../API/api_instance";
-import { Response } from "../../API/services/types";
-import { Course } from "../../hooks/useListCourse";
+import { FC, memo, useCallback } from "react";
 import useToggle from "../../hooks/useToggle";
 import useAppDispatch from "../../redux/hooks/useAppDispatch";
+import { Course } from "../../redux/slices/courseSlice";
 import { deleteFromCart } from "../../redux/thunks/cartThunk";
-
-let Pic =
-	"https://res.cloudinary.com/dvbplh4z9/image/upload/v1671270925/Cooking%20Academy%20Assets/cooking%20class/Rectangle_167_qkjplb.webp";
-
 export interface CourseData {
 	image: string;
 	instructorName: string;
@@ -27,13 +21,6 @@ export interface CourseData {
 	__v: number;
 	isSubscribed: boolean;
 }
-
-const fetchItemDetailsService = async (itemId: string) => {
-	const res = instance.get<Response<{ course: CourseData }>>(
-		`student/course/${itemId}`
-	);
-	return res;
-};
 
 interface CartItemProps {
 	item: Course;

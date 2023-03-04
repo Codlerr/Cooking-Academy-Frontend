@@ -2,7 +2,7 @@ import { AxiosError } from "axios";
 import { useCallback, useEffect, useState } from "react";
 import instance from "../../API/api_instance";
 import { Response } from "../../API/services/types";
-import { Course } from "../../hooks/useListCourse";
+import { Course } from "../../redux/slices/courseSlice";
 
 export interface ClassData {
 	classes: ClassInfo[];

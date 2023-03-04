@@ -1,6 +1,6 @@
 import { createSlice, SerializedError } from "@reduxjs/toolkit";
-import { Course } from "../../../hooks/useListCourse";
 import { fetchCart } from "../../thunks/cartThunk";
+import { Course } from "../courseSlice";
 
 export interface CartData {
 	itemId: Course[];

@@ -5,7 +5,8 @@ import useAppSelector from "../../redux/hooks/useAppSelector";
 import { logout } from "../../redux/slices/authSlice";
 import { getAccessToken } from "../../helpers/localStorage";
 import "./style.css";
-import useListCourse, { Course } from "../../hooks/useListCourse";
+import useListCourse from "../../hooks/useListCourse";
+import { Course } from "../../redux/slices/courseSlice";
 
 let profile =
   "https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg";
