@@ -96,7 +96,7 @@ const CartItem: FC<CartItemProps> = ({ itemId }) => {
 					</div>
 					<p>(239 ratings)</p>
 				</span>
-				<p> total hours | {itemData.lesson} lessons</p>
+				<p>{itemData.duration} total duration | {itemData.lesson} lessons</p>
 			</div>
 			<div className="flex justify-between">
 				<div className="flex gap-1 flex-col justify-center align-middle text-blue-800 font-medium">
@@ -105,7 +105,7 @@ const CartItem: FC<CartItemProps> = ({ itemId }) => {
 						onClick={handleDeleteFromCart}
 						className="cursor-pointer text-blue-800"
 					>
-						{deleting ? "Removing" : "Remove"}
+						{deleting ? "Removing..." : "Remove"}
 					</button>
 					<p className="cursor-pointer">Save for Later</p>
 				</div>
