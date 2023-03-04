@@ -66,7 +66,7 @@ function Login() {
 	return (
 		<>
 			<section className="h-screen w-full grid place-items-center">
-				<div className="h-[80vh] w-full overflow-hidden grid grid-cols-1 lg:grid-cols-6 place-items-center">
+				<div className="lg:h-[80vh] w-full overflow-hidden grid grid-cols-1 lg:grid-cols-6 place-items-center">
 					<img
 						className="xs:hidden lg:block w-full h-full"
 						src={p1}
@@ -77,7 +77,7 @@ function Login() {
 						src={p2}
 						alt="img"
 					/>
-					<div className="col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col xl:justify-center   h-full">
+					<div className="col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col mt-10 xl:mt-20 2xl:mt-44  h-full">
 						<div className="grid place-items-center">
 							<img className="xs:h-fit md:h-14 xl:h-16  " src={logo} alt="logo" />
 						</div>
@@ -87,9 +87,9 @@ function Login() {
 								Create an account
 							</a>
 						</p>
-						<form className="flex flex-col gap-4" onSubmit={loginForm.handleSubmit}>
+						<form className="flex flex-col xs:gap-2 xl:gap-2 justify-center" onSubmit={loginForm.handleSubmit}>
 							<input
-								className="bg-transparent w-full outline-none border-2 border-primary-clr2 md:px-1 xl:px-3 md:py-1 xl:py-2 rounded-lg"
+								className="bg-transparent w-full outline-none border-2 border-primary-clr2 md:px-1 xl:px-3 md:py-1 xl:py-1.5 rounded-lg"
 								type="text"
 								placeholder="Email*"
 								required
@@ -98,7 +98,7 @@ function Login() {
 							/>
 							<div className="relative">
 								<input
-									className="bg-transparent w-full outline-none border-2 border-primary-clr2 md:px-1 xl:px-3 md:py-1 xl:py-2 rounded-lg"
+									className="bg-transparent w-full outline-none border-2 border-primary-clr2 md:px-1 xl:px-3 md:py-1 xl:py-1.5 rounded-lg"
 									type={open1 === false ? "password" : "text"}
 									placeholder="Password*"
 									required
@@ -120,7 +120,7 @@ function Login() {
 							<button
 								type="submit"
                                 disabled={loggingIn}
-								className="bg-primary-dark hover:bg-primary-clr1 md:py-0 xl:py-2 transition-all duration-200 rounded-md"
+								className="bg-primary-dark hover:bg-primary-clr1 md:py-0 xl:py-1.5 transition-all duration-200 rounded-md"
 							>
 								Sign In
 							</button>
