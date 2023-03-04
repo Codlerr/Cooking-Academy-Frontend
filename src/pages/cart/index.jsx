@@ -41,8 +41,8 @@ function Cart() {
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10">
 					<div className="lg:col-span-2 grid gap-10 rounded-xl overflow-hidden bg-white xs:p-5 lg:p-10">
 						{cart?.itemId?.map((item, idx, arr) => (
-							<React.Fragment key={item}>
-								<CartItem itemId={item} />
+							<React.Fragment key={item._id}>
+								<CartItem item={item} />
 								{arr.length - 1 > idx && <hr />}
 							</React.Fragment>
 						))}

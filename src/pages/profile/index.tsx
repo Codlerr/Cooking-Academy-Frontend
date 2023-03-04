@@ -5,7 +5,9 @@ import useAppSelector from "../../redux/hooks/useAppSelector";
 import { logout } from "../../redux/slices/authSlice";
 import { getAccessToken } from "../../helpers/localStorage";
 import "./style.css";
-import useListCourse, { Course } from "../../hooks/useListCourse";
+import useListCourse from "../../hooks/useListCourse";
+import { Course } from "../../redux/slices/courseSlice";
+import { logoutAction } from "../../redux/thunks/authThunk";
 
 let profile =
   "https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg";
@@ -20,7 +22,7 @@ function Profile() {
     setToggleState(index);
   };
   const handleLogout = useCallback(() => {
-    dispatch(logout());
+    dispatch(logoutAction());
   }, [dispatch]);
 
   useEffect(() => {
@@ -32,8 +34,9 @@ function Profile() {
   const { courses, fetching } = useListCourse();
 
   const resumeClass = useCallback((course: Course) => {
-    console.log(course);
-  }, []);
+    // console.log(course);
+    navigate("/cooking-class-1?courseId=" + course._id);
+  }, [navigate]);
 
   return (
     <>

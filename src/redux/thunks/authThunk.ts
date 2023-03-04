@@ -4,7 +4,8 @@ import loginWithCredentials, {
 	LoginCredentials,
 } from "../../API/services/login";
 import { setAccessToken, setRefreshToken } from "../../helpers/localStorage";
-import { syncTokens } from "../slices/authSlice";
+import { logout, syncTokens } from "../slices/authSlice";
+import { clearMyCourse, fetchMyCourse } from "../slices/courseSlice";
 import { fetchCart } from "./cartThunk";
 
 export const fetchUser = createAsyncThunk("fetch/user", async (_, ThunkApi) => {
@@ -12,6 +13,7 @@ export const fetchUser = createAsyncThunk("fetch/user", async (_, ThunkApi) => {
     try {
         const res = await fetchUserData();
         ThunkApi.dispatch(fetchCart());
+        ThunkApi.dispatch(fetchMyCourse());
         return res.data;
     } catch (error) {
         throw error;
@@ -40,3 +42,9 @@ export const loginAction = createAsyncThunk(
 		}
 	}
 );
+
+export const logoutAction = createAsyncThunk(
+	"logout/action",
+	async (_, ThunkApi) => {
+        ThunkApi.dispatch(clearMyCourse());
+});

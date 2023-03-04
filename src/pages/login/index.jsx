@@ -122,7 +122,7 @@ function Login() {
                                 disabled={loggingIn}
 								className="bg-primary-dark hover:bg-primary-clr1 py-2 transition-all duration-200 rounded-md"
 							>
-								Sign In
+								{loggingIn ? "Please Wait..." :"Sign In"}
 							</button>
 						</form>
 						<p className="text-xs text-text-dark text-center py-5">

@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../pages/home/style.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { ExploreData } from "../constant/data";
 import instance from "../../API/api_instance";
 import useAddCourseToCart from "../../hooks/useAddCourseToCart";
+import useAppSelector from "../../redux/hooks/useAppSelector";
 
 function SampleNextArrow({ onClick }) {
 	return (
@@ -22,7 +22,6 @@ function SamplePrevArrow({ onClick }) {
 }
 
 function Exploreslider() {
-	// -------------------API CALL-----------------------//
 	const [course, setCourse] = useState([]);
 	const navigate = useNavigate("");
 
@@ -30,7 +29,6 @@ function Exploreslider() {
 		const fetchItems = async () => {
 			await instance.get("/gust/course", {}).then((response) => {
 				setCourse(response.data.data.courses);
-				console.log(response.data);
 			});
 		};
 		fetchItems();
@@ -74,10 +72,13 @@ function Exploreslider() {
 			},
 		],
 	};
-  
-  const {adding, handleAddCourseToCart} = useAddCourseToCart();
+
+	const { adding, handleAddCourseToCart } = useAddCourseToCart();
+	const mycourses = useAppSelector(
+		(state) => state?.course?.myCourse?.data?.courses || []
+	);
 	const onEnroll = (item) => {
-    handleAddCourseToCart(item._id);
+		handleAddCourseToCart(item._id);
 	};
 
 	return (
@@ -90,6 +91,10 @@ function Exploreslider() {
 							?.slice(0)
 							.reverse()
 							.map((item, index) => {
+								const alreadyPurchased = mycourses.some(
+									(cs) => cs._id === item._id
+								);
+								const addingItem = adding === item._id;
 								return (
 									<div className="relative ui-card" key={index}>
 										<LazyLoadImage
@@ -105,15 +110,24 @@ function Exploreslider() {
 												<a
 													href="#item"
 													className="bg-white rounded-lg text-black py-2.5 text-center font-semibold cursor-pointer"
-                          disabled={adding === item._id}
-                          onClick={(e) => {
-                            e.preventDefault();
-														onEnroll(item);
+													disabled={addingItem}
+													onClick={(e) => {
+														e.preventDefault();
+														if (!alreadyPurchased) {
+															onEnroll(item);
+														} else {
+															navigate("/cooking-class-1?courseId=" + item._id);
+														}
 													}}
 												>
-													ENROLL NOW
+													{alreadyPurchased
+														? "View Classes"
+														: addingItem
+														? "ADDING ITEM"
+														: "ENROLL NOW"}
 												</a>
 												<a
+													href="#item"
 													onClick={() =>
 														navigate(`/cooking-class/${item.name}`, {
 															state: { classinfo: item },
@@ -135,4 +149,4 @@ function Exploreslider() {
 	);
 }
 
-export default Exploreslider;
+export default memo(Exploreslider);
