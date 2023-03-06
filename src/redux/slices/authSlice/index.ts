@@ -1,6 +1,6 @@
 import { createSlice, SerializedError } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { fetchUser, loginAction, logoutAction } from "../../thunks/authThunk";
+import { fetchUser, loginAction, logoutAction, signupAction } from "../../thunks/authThunk";
 import { getAccessToken, getRefreshToken } from "../../../helpers/localStorage";
 
 export interface UserData {
@@ -67,6 +67,20 @@ export const authSlice = createSlice({
 				state.refreshToken = action.payload.refreshToken;
 			})
 			.addCase(loginAction.rejected, function (state, action) {
+				state.error = action.error;
+				state.status = "idle";
+			})
+
+			.addCase(signupAction.pending, function (state) {
+				state.status = "loading";
+				state.error = null;
+			})
+			.addCase(signupAction.fulfilled, function (state, action) {
+				state.status = "idle";
+				state.accessToken = action.payload.accessToken;
+				state.refreshToken = action.payload.refreshToken;
+			})
+			.addCase(signupAction.rejected, function (state, action) {
 				state.error = action.error;
 				state.status = "idle";
 			})
