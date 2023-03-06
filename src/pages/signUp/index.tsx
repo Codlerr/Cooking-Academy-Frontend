@@ -183,7 +183,7 @@ function SignUp() {
                             <button
                                 type="submit"
                                 disabled={signingUp}
-                                className="bg-primary-dark hover:bg-primary-clr1 md:py-0 xl:py-1 transition-all duration-200 rounded-md"
+                                className="bg-primary-dark hover:bg-primary-clr1 xs:py-1 md:py-0 xl:py-1 transition-all duration-200 rounded-md"
                             >
                                 {signingUp ? "Please Wait..." : "Sign Up"}
                             </button>

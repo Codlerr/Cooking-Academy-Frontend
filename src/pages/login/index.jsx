@@ -89,7 +89,7 @@ function Login() {
 						</p>
 						<form className="flex flex-col xs:gap-5 md:gap-5 xl:gap-2 justify-center" onSubmit={loginForm.handleSubmit}>
 							<input
-								className="bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 py-1 xl:py-1.5 rounded-lg"
+								className="bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 xs:py-1.5 md:py-1 xl:py-1.5 rounded-lg"
 								type="text"
 								placeholder="Username*"
 								required
@@ -98,7 +98,7 @@ function Login() {
 							/>
 							<div className="relative">
 								<input
-									className="bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 py-1 xl:py-1.5 rounded-lg"
+									className="bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 xs:py-1.5 md:py-1 xl:py-1.5 rounded-lg"
 									type={open1 === false ? "password" : "text"}
 									placeholder="Password*"
 									required
@@ -120,7 +120,7 @@ function Login() {
 							<button
 								type="submit"
                                 disabled={loggingIn}
-								className="bg-primary-dark hover:bg-primary-clr1 md:py-0 xl:py-1.5 transition-all duration-200 rounded-md"
+								className="bg-primary-dark hover:bg-primary-clr1 xs:py-1 md:py-0 xl:py-1.5 transition-all duration-200 rounded-md"
 							>
 								{loggingIn ? "Please Wait..." :"Sign In"}
 							</button>
