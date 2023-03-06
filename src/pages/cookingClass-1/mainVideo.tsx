@@ -38,7 +38,7 @@ const MainVideo: FC<MainVideoProps> = ({
         {selectedLesson + 1}. {lesson?.title}
       </h1>
 
-      <video className=" rounded-2xl" controls loop src={lesson?.videoLink}>
+      <video className=" rounded-2xl" controls loop controlsList="nodownload" src={lesson?.videoLink}>
         {/* <source src={lesson?.videoLink} type="video/mp4" /> */}
       </video>
       <div>

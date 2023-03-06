@@ -91,7 +91,7 @@ function Login() {
 							<input
 								className="bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 py-1 xl:py-1.5 rounded-lg"
 								type="text"
-								placeholder="Email*"
+								placeholder="Username*"
 								required
                                 name="username"
                                 onChange={loginForm.handleChange}
