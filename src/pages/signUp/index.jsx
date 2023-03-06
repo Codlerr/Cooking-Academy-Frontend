@@ -21,31 +21,31 @@ function SignUp() {
   return (
     <>
     <section className='h-screen w-full grid place-items-center'>
-        <div className='h-[80vh] w-full overflow-hidden grid grid-cols-1 lg:grid-cols-6'>
+        <div className='lg:h-[80vh] w-full overflow-hidden grid grid-cols-1 lg:grid-cols-6'>
             <img className='xs:hidden lg:block w-full h-full' src={p1} alt="img" />
             <img className='xs:hidden lg:block w-full h-full' src={p2} alt="img" />
-            <div className='col-span-2 xs:w-[80%] md:w-[60%] lg:w-[70%] mx-auto'>
+            <div className='col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col justify-center  md:justify-start md:mt-5 2xl:mt-20 h-full'>
                 <div className='grid place-items-center'>
-                    <img className='' src={logo} alt="logo" />
+                    <img className='xs:h-fit md:h-14 xl:h-20 ' src={logo} alt="logo" />
                 </div>
                 <p className='text-primary-clr2 py-5'>Alrady an user?<a className='pl-5 text-text-dark' href="/login">Sign In</a></p>
-                <form className='flex flex-col gap-4' action="">
-                    <input className='bg-transparent w-full outline-none border-2 border-primary-clr2 px-3 py-2 rounded-lg' type="text" placeholder='Full Name*' required/>
-                    <input className='bg-transparent w-full outline-none border-2 border-primary-clr2 px-3 py-2 rounded-lg' type="email" placeholder='Email*' required/>
+                <form className='flex flex-col xs:gap-4 md:gap-3 xl:gap-2 justify-center' action="">
+                    <input className='bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 py-1 xl:py-1 rounded-lg' type="text" placeholder='Full Name*' required/>
+                    <input className='bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 py-1 xl:py-1 rounded-lg' type="email" placeholder='Email*' required/>
                     <div className='relative'>
-                        <input className='bg-transparent w-full outline-none border-2 border-primary-clr2 px-3 py-2 rounded-lg' type={(open1 === false)? 'password' :'text'} placeholder='Password*' required/>
-                            <div className='absolute top-3 right-5'>
+                        <input className='bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 py-1 xl:py-1 rounded-lg' type={(open1 === false)? 'password' :'text'} placeholder='Password*' required/>
+                            <div className='absolute xs:top-2 md:top-2 xl:top-2 right-5'>
                                 { (open1 === false)? <i class="fa-solid fa-eye" onClick={toggle1}></i> : <i class="fa-solid fa-eye-slash" onClick={toggle1}></i> }
                             </div>
                     </div>
                     <div className='relative'>
-                        <input className='bg-transparent w-full outline-none border-2 border-primary-clr2 px-3 py-2 rounded-lg' type={(open2 === false)? 'password' :'text'} placeholder='Confirm password*' required/>
-                            <div className='absolute top-3 right-5'>
+                        <input className='bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 py-1 xl:py-1 rounded-lg' type={(open2 === false)? 'password' :'text'} placeholder='Confirm password*' required/>
+                            <div className='absolute xs:top-2 md:top-2 xl:top-2 right-5'>
                             { (open2 === false)? <i class="fa-solid fa-eye" onClick={toggle2}></i> : <i class="fa-solid fa-eye-slash" onClick={toggle2}></i> }
                             </div>
                     </div>
-                    <p className='text-text-dark text-xs text-center md:w-[80%] mx-auto py-2'>By creating an account you agrre to our Terms of Service and Privacy Policy</p>
-                    <button type='submit' className='bg-primary-dark hover:bg-primary-clr1 py-2 transition-all duration-200 rounded-md'>Sign Up</button>
+                    <p className='text-text-dark xs:text-xs md:text-[10px] xl:text-xs text-center md:w-[80%] mx-auto py-2'>By creating an account you agrre to our Terms of Service and Privacy Policy</p>
+                    <button type='submit' className='bg-primary-dark hover:bg-primary-clr1 md:py-0 xl:py-1 transition-all duration-200 rounded-md'>Sign Up</button>
                 </form>
                 <p className='text-xs text-text-dark text-center py-5'>or sign up using</p>
                 <div className='flex gap-4 justify-center'>

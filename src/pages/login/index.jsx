@@ -79,7 +79,7 @@ function Login() {
 					/>
 					<div className="col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col mt-10 xl:mt-20 2xl:mt-44  h-full">
 						<div className="grid place-items-center">
-							<img className="xs:h-fit md:h-14 xl:h-16  " src={logo} alt="logo" />
+							<img className="xs:h-fit md:h-14 xl:h-20  " src={logo} alt="logo" />
 						</div>
 						<p className="text-primary-clr2 py-5">
 							New user?
@@ -87,9 +87,9 @@ function Login() {
 								Create an account
 							</a>
 						</p>
-						<form className="flex flex-col xs:gap-2 xl:gap-2 justify-center" onSubmit={loginForm.handleSubmit}>
+						<form className="flex flex-col xs:gap-5 md:gap-5 xl:gap-2 justify-center" onSubmit={loginForm.handleSubmit}>
 							<input
-								className="bg-transparent w-full outline-none border-2 border-primary-clr2 md:px-1 xl:px-3 md:py-1 xl:py-1.5 rounded-lg"
+								className="bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 py-1 xl:py-1.5 rounded-lg"
 								type="text"
 								placeholder="Email*"
 								required
@@ -98,14 +98,14 @@ function Login() {
 							/>
 							<div className="relative">
 								<input
-									className="bg-transparent w-full outline-none border-2 border-primary-clr2 md:px-1 xl:px-3 md:py-1 xl:py-1.5 rounded-lg"
+									className="bg-transparent w-full outline-none border-2 border-primary-clr2 px-1 xl:px-3 py-1 xl:py-1.5 rounded-lg"
 									type={open1 === false ? "password" : "text"}
 									placeholder="Password*"
 									required
                                     name="password"
                                     onChange={loginForm.handleChange}
 								/>
-								<div className="absolute md:top-2 xl:top-3 right-5">
+								<div className="absolute xs:top-2 md:top-2 xl:top-2 right-5">
 									{open1 === false ? (
 										<i class="fa-solid fa-eye" onClick={toggle1}></i>
 									) : (
