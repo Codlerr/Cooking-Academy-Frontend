@@ -149,7 +149,7 @@ function SignUp() {
                         src={p2}
                         alt="img"
                     />
-                    <div className="col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col justify-center  md:justify-start md:mt-5 2xl:mt-20 h-full">
+                    <div className="col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col justify-center  md:justify-start md:mt-5 2xl:mt-14 h-full">
                         <div className="grid place-items-center">
                             <img
                                 className="xs:h-fit md:h-14 xl:h-20 "
