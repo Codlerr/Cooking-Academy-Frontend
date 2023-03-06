@@ -79,8 +79,8 @@ function Navbar() {
 							<li>
 								<NavLink to="/about-us">About Us</NavLink>
 							</li>
-							<li className="xs:hidden lg:block">
-								<i class="fa-solid fa-magnifying-glass text-xl"></i>
+							<li>
+								<NavLink to='/cart'><i class="text-xl fa-solid fa-cart-shopping"></i></NavLink>
 							</li>
 							<li className="">
 								<NavLink to={loggedIn ? "/profile" : '/login'}>
