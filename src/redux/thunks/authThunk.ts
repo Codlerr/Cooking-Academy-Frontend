@@ -3,8 +3,9 @@ import fetchUserData from "../../API/services/fetchUserData";
 import loginWithCredentials, {
 	LoginCredentials,
 } from "../../API/services/login";
+import signupWithCredentials, { SignupCredentials } from "../../API/services/signup";
 import { setAccessToken, setRefreshToken } from "../../helpers/localStorage";
-import { logout, syncTokens } from "../slices/authSlice";
+import { syncTokens } from "../slices/authSlice";
 import { clearMyCourse, fetchMyCourse } from "../slices/courseSlice";
 import { fetchCart } from "./cartThunk";
 
@@ -24,6 +25,30 @@ export const loginAction = createAsyncThunk(
 	"login/action",
 	async (credentials: LoginCredentials, ThunkApi) => {
 		try {
+			const res = await loginWithCredentials(credentials);
+            const accessToken = res.headers['auth-access-token'];
+            const refreshToken = res.headers['auth-refresh-token'];
+            if(!accessToken || !refreshToken) {
+                throw new Error("No access token obtained");
+            }
+            setAccessToken(accessToken);
+            setRefreshToken(refreshToken);
+            ThunkApi.dispatch(fetchUser());
+			return {
+                accessToken,
+                refreshToken,
+            }
+		} catch (error) {
+			throw error;
+		}
+	}
+);
+
+export const signupAction = createAsyncThunk(
+	"signup/action",
+	async (credentials: SignupCredentials, ThunkApi) => {
+		try {
+			await signupWithCredentials(credentials);
 			const res = await loginWithCredentials(credentials);
             const accessToken = res.headers['auth-access-token'];
             const refreshToken = res.headers['auth-refresh-token'];

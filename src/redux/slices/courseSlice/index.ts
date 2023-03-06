@@ -79,7 +79,10 @@ export const courseSlice = createSlice({
         })
         .addCase(fetchMyCourse.fulfilled, (state, action) => {
             state.myCourse.status = 'idle';
-            state.myCourse.data = action.payload;
+            state.myCourse.data = {
+                ...action.payload,
+                courses: action.payload.courses.filter(c => c !== null),
+            }
         })
     },
 });
