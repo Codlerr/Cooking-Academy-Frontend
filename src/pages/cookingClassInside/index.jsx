@@ -10,6 +10,7 @@ import useCourseDetails from "../../hooks/useCourseDetails";
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import { useCallback } from "react";
 import useAddCourseToCart from "../../hooks/useAddCourseToCart";
+import { NavLink } from "react-router-dom";
 
 let bgVideo =
     "https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4";
@@ -73,10 +74,10 @@ function CookingclassInside() {
                         us.
                     </p>
                     <div className="grid place-items-center">
-                        <a className="bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl">
+                        <NavLink to='/profile'><a className="bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl">
                             <i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>
-                            Resume Class
-                        </a>
+                            Go to Courses
+                        </a></NavLink>
                     </div>
                 </div>
             </section>

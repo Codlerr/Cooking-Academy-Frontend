@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import './style.css';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import { NavLink } from "react-router-dom";
 import WorkImageSlider from '../../components/sliders/workshop-images';
 import InstaSlider from '../../components/sliders/insta-slider';
 import ServiceSlider from '../../components/sliders/service-slider';
@@ -51,7 +52,7 @@ function LandingPage() {
             <div className='xs:px-5 md:px-0 md:pl-10 lg:pl-20 xs:h-[90vh] md:h-[40vh] lg:h-[90vh]  flex flex-col xs:gap-5 lg:gap-8 xs:justify-center lg:justify-center'  data-aos="fade-right">
               <p className='xs:text-4xl md:text-3xl lg:text-5xl font-bold md:w-[50%] lg:w-[40%]'>Flavours surrounds you in The Cooking Academy</p>
               <p className='xs:text-base lg:text-xl lg:w-[35%] text-[color:var(--text-clr)]'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
-              <a href='#' className='bg-[color:var(--thm-clr2)] hover:bg-[#FFBB00] transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>Resume Class</a>
+              <NavLink to='/profile'><a className='bg-[color:var(--thm-clr2)] hover:bg-[#FFBB00] transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>Go to Courses</a></NavLink>
               <p className='md:w-[60%] lg:w-[40%] xs:mt-2 lg:mt-5 text-[color:var(--text-clr)]'>The Cooking Academy is a Digital Platform where you can learn various cooking styles and techniques from professional chefs.</p>
             </div>
        

@@ -1,6 +1,5 @@
-import React from 'react';
 import './style.css';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { NavLink } from "react-router-dom";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import MOC from "../../components/MeetOurChefs"
 import LSA from "../../components/LatYearAchive"
@@ -23,7 +22,7 @@ function cookingClass() {
         <h1 className='xs:text-5xl md:text-6xl font-bold text-center'>Flavours surrounds you in<br></br> The Cooking Academy</h1>
         <p className='text-2xl text-center xs:w-[80%] md:w-[35%] mx-auto'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
         <div className='grid place-items-center'>
-          <a href='#' className='bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>Resume Class</a>
+        <NavLink to='/profile'><a className='bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>Go to Courses</a></NavLink>
         </div>
       </div>
     </section>
@@ -39,9 +38,9 @@ function cookingClass() {
         <CLASSES/>
       </div>
       {/* =========================CLASS======================== */}
-      <div className='pt-10 lg:pr-14'>
+      {/* <div className='pt-10 lg:pr-14'>
         <CLASSES/>
-      </div>
+      </div> */}
       
     {/* =========================ENQUIRY======================== */}
     <ENQ/>

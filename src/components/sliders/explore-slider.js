@@ -123,7 +123,7 @@ function Exploreslider() {
 													{alreadyPurchased
 														? "View Classes"
 														: addingItem
-														? "ADDING ITEM"
+														? "ADDING ITEM..."
 														: "ENROLL NOW"}
 												</a>
 												<NavLink

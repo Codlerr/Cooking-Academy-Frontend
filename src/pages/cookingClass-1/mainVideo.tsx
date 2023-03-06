@@ -38,15 +38,15 @@ const MainVideo: FC<MainVideoProps> = ({
         {selectedLesson + 1}. {lesson?.title}
       </h1>
 
-      <video className=" rounded-2xl" controls loop controlsList="nodownload" src={lesson?.videoLink}>
+      <video className="xs:w-full lg:w-[80%] rounded-2xl" controls loop controlsList="nodownload" src={lesson?.videoLink}>
         {/* <source src={lesson?.videoLink} type="video/mp4" /> */}
       </video>
-      <div>
+      <div className="flex gap-5">
         {videoControls.hasPrevVideo && (
-          <button onClick={videoControls.onPrevVideo}>Prev</button>
+          <button className="hover:text-white bg-[#a09a9a54] px-3 py-1 rounded-full" onClick={videoControls.onPrevVideo}><i className="fa-solid fa-backward-step"></i></button>
         )}
         {videoControls.hasNextVideo && (
-          <button onClick={videoControls.onNextVideo}>Next</button>
+          <button className="hover:text-white bg-[#a09a9a54] px-3 py-1 rounded-full" onClick={videoControls.onNextVideo}><i className="fa-solid fa-forward-step"></i></button>
         )}
       </div>
     </>

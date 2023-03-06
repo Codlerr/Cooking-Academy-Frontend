@@ -16,7 +16,7 @@ const Classinfo: FC<ClassinfoProps> = ({ lesson, classDetails }) => {
   };
 
   return (
-    <div className="container pt-10">
+    <div className="container pt-5">
       <div className="block-tabs">
         <button
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
@@ -56,7 +56,7 @@ const Classinfo: FC<ClassinfoProps> = ({ lesson, classDetails }) => {
         >
 
           <p>
-            {classDetails?.instructorName}
+            {classDetails?.instrecterName}
           </p>
         </div>
 
