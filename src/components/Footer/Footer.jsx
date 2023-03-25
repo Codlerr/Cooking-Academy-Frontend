@@ -10,6 +10,8 @@ let ISO1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670316067/Cookin
 
 function Footer() {
 
+
+
   let { id,courseId } = useParams();
 
 
@@ -55,6 +57,7 @@ if (pathname === `/admin/class/${id}`) return null;
                         <li className='hover:text-[#CBA135]'><Link to='/kitchen-studio'>Kitchen</Link></li>
                         <li className='hover:text-[#CBA135]'><Link to=''>Contact us</Link></li>
                       </ul>
+                      
                   </div>
           </div>
           <div className='lg:py-10 text-base font-semibold flex flex-col justify-center gap-10' data-aos="fade-right">

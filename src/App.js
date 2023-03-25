@@ -1,5 +1,5 @@
 import './App.css';
-import {ToastContainer, toast} from 'react-toastify'
+import {ToastContainer} from 'react-toastify'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -33,6 +33,8 @@ import CourseEdit from './Admin/Pages/Course Details Edit';
 
 import useInitializeApp from './hooks/useInitializeApp';
 import PaymentSuccess from './pages/PaymentSuccess';
+
+
 
 const Layout = () => {
   return(

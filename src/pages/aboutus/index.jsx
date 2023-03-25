@@ -1,4 +1,5 @@
 import React from 'react';
+import {useTranslation} from 'react-i18next'
 import './style.css';
 import LSA from "../../components/LatYearAchive"
 import MOC from "../../components/MeetOurChefs"
@@ -20,6 +21,9 @@ let valueDevelopment = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v16705
 let valueQuality = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670564954/Cooking%20Academy%20Assets/AboutPage/Group_264_ch9ltr.svg';
 
 function AboutUs() {
+    // ========================//
+	  const {t} = useTranslation();
+	// ========================//
   return (
     <>
       <section className="relative">
@@ -32,24 +36,18 @@ function AboutUs() {
       {/*================================= About US content =================================*/}
       <section className="w-11/12 mx-auto xs:py-10 md:py-20">
         <div data-aos="fade-right">
-          <h2 className='text-center font-bold xs:text-4xl lg:text-5xl'>About Us</h2>
+          <h2 className='text-center font-bold xs:text-4xl lg:text-5xl'>{t('abthead')}</h2>
           <p className='xs:w-[90%] md:w-[80%] mx-auto text-center text-[#ffffffcb] xs:text-lg md:text-xl py-5'>
-            The Cooking Academy (TCA) is culinary startup in Qatar with the aim of bringing people together, to learn and enjoy the art of cooking.
-            The academy does this through various engagements and events for culinary professionals and food lovers to interact and do what they love.
-            The academy aims at ensuring that people prepare meals that are as pleasing to the eye as they are to the palate.
-            The newly established academy has been organising food-tasting events for professionals and foodies.</p>
+            {t('abtpara')}</p>
         </div>
       </section>
 
       {/*================================= who are we? =================================*/}
       <section className='w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 md:py-10'>
         <div data-aos="fade-right" className='relative md:col-span-2 flex flex-col justify-center'>
-            <h2 className='text-center  md:w-[80%] md:text-left font-bold xs:text-4xl lg:text-5xl'>who are we?</h2>
+            <h2 className='text-center  md:w-[80%] md:text-left font-bold xs:text-4xl lg:text-5xl'>{t('aboutwhoarewehead')}?</h2>
             <p className='md::w-[80%]  lg:w-[70%] md:tracking-wider xs:text-center md:text-left xs:text-lg md:text-xl py-5 '>
-              We are a f&b company based in Qatar with the aim of bringing people together to learn and enjoy the art of cooking.
-              We link culinary professionals and food lovers through innovative concepts, high quality products and special events.
-              The Cooking Academy is a hub for food creation, experimenting, learning and events.
-              We offer a wide range of courses, techniques, and expertise of local and international chefs</p>
+              {t('aboutwhoarewepara')}</p>
         </div>
         
 
@@ -82,17 +80,17 @@ function AboutUs() {
           <div className=' lg:w-[80%] max-w-lg z-20 lg:ml-8 '>
                 <img className='' src={ownerImg} alt="image of the company owner" width='100%' />
                 <hr className='h-px md:w-3/4 md:ml-42 hrThemeBg' />
-                <h1 className='font-bold text-satin-gold lg:ml-16 text-2xl xs:text-center md:text-left'>Mohamed Abdulmalik</h1>
-                <h1 className='lg:ml-16 text-base xs:text-center md:text-left'>Founder of The Cooking Academy</h1>
+                <h1 className='font-bold text-satin-gold lg:ml-16 text-2xl xs:text-center md:text-left'>{t('mohammed')}</h1>
+                <h1 className='lg:ml-16 text-base xs:text-center md:text-left'>{t('founder')}</h1>
           </div>
           <div className='flex flex-col xs:gap-5 md:gap-0 justify-between z-20 '>
               <div className='xs:mt-28  lg:mt-36 '>
-                <h1 className='font-bold xs:text-4xl  xs:text-center md:text-left lg:text-5xl  '>Our Vision</h1>
-                <p className='text-lg pt-2 xs:text-center md:text-left'>Create a culture of cooking excellence.</p>
+                <h1 className='font-bold xs:text-4xl  xs:text-center md:text-left lg:text-5xl  '>{t('ourvisionh')}</h1>
+                <p className='text-lg pt-2 xs:text-center md:text-left'>{t('ourvisionp')}</p>
               </div>
               <div className=' lg:mb-20'>
-                <h1 className='font-bold xs:text-4xl  xs:text-center md:text-left lg:text-5xl'>Our Mission</h1>
-                <p className='text-lg pt-2 xs:text-center md:text-left'>By connecting to nature, exchanging experiences and bridging cultures through innovative products and solutions.</p>
+                <h1 className='font-bold xs:text-4xl  xs:text-center md:text-left lg:text-5xl'>{t('ourmissionh')}</h1>
+                <p className='text-lg pt-2 xs:text-center md:text-left'>{t('ourmissionp')}</p>
               </div>
           </div>
        </div>
@@ -111,29 +109,25 @@ function AboutUs() {
       <section className='ourValues w-full overflow-hidden'>
           <div className='grid grid-cols-1 md:grid-cols-2 w-10/12 mx-auto'>
                 <div data-aos="fade-right" className='flex justify-center flex-col xs:py-10 md:py-24 '>
-                    <h2 className='font-bold xs:text-4xl lg:text-5xl'>Our values</h2>
-                    <p className='text-xl lg:w-[70%] pt-3'>These values are the operating philosophies
-                       and principles within TCA; they are
-                      the guide of TCA’s internal conduct and the
-                      definition of the relationship with customers,
-                      partners and stakeholders.</p>
+                    <h2 className='font-bold xs:text-4xl lg:text-5xl'>{t('valuehead')}</h2>
+                    <p className='text-xl lg:w-[70%] pt-3'>{t('valuepara')}</p>
                 </div>
                 <div className='grid grid-cols-2 grid-rows-2 gap-5 xs:py-10 md:py-24 place-items-center'>
                     <div className='grid place-items-center'>
                       <img src={valueTrust} alt='Trust' width='120px' height='120px inline-block' />
-                      <h1 className='pt-3 text-xl' >Trust</h1>
+                      <h1 className='pt-3 text-xl' >{t('valuep1')}</h1>
                     </div>
                     <div className='grid place-items-center'>
                         <img src={valueInnovation} alt='Innovation' width='80px' height='80px' />
-                        <h1 className='pt-3 text-xl'>Innovation</h1>
+                        <h1 className='pt-3 text-xl'>{t('valuep2')}</h1>
                     </div>
                     <div className='grid place-items-center'>
                       <img src={valueDevelopment} alt='Development' width='80px' height='80px' />
-                      <h1 className='pt-3 text-xl'>Development</h1>
+                      <h1 className='pt-3 text-xl'>{t('valuep3')}</h1>
                     </div>
                     <div className='grid place-items-center'>
                         <img src={valueQuality} alt='Quality' width='80px' height='80px' />
-                        <h1 className='pt-3 text-xl'>Quality</h1>
+                        <h1 className='pt-3 text-xl'>{t('valuep4')}</h1>
                     </div>
                 </div>
           </div>

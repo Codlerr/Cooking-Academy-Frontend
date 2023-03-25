@@ -1,7 +1,9 @@
 import React,{useState} from 'react';
+import {useTranslation} from 'react-i18next'
 import {General,Price} from '../../components/constant/data';
 
 function FAQ() {
+  const {t} = useTranslation();
     // ---accordion--//
     const [accordion, setActiveAccordion] = useState(0);
     const [accordion2, setActiveAccordion2] = useState(0);

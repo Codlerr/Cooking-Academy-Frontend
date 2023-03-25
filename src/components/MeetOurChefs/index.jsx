@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import {useTranslation} from 'react-i18next'
 import { NavLink, useLocation } from 'react-router-dom';
 import './styles.css';
 
@@ -15,7 +16,10 @@ let Chef8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669886573/Cooki
 let Chef9 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669886572/Cooking%20Academy%20Assets/6_bthe0s.webp';
 
 
-export default function index() {
+export default function Index() {
+  // ========================//
+	  const {t} = useTranslation();
+	// ========================//
     return (
         <>
             <section className='w-11/12 mx-auto grid place-items-center my-20 overflow-hidden'>
@@ -117,8 +121,8 @@ export default function index() {
 
 
           <div className='text-center pt-5' data-aos="fade-right">
-            <h2 className='text-4xl font-bold'>Meet our chefs</h2>
-            <p className='text-xl pt-3 md:w-[90%] lg:w-[70%] mx-auto text-[#ffffffcb]'>Our passionate culinary team is made up of innovative and experienced professionals with years of experience in foodservice. Their work combines food science, technology and the culinary arts to imagine the future of food. They draw on current trends and culinary insights from across our global network to create customized solutions for all of our clients. Using proprietary flavor research, our team of forward-thinking chefs aims to guide the next phase of foodservice. Individually, they've earned accolades across the industry, but together they're crafting the future of flavor!</p>
+            <h2 className='text-4xl font-bold'>{t('meethead')}</h2>
+            <p className='text-xl pt-3 md:w-[90%] lg:w-[70%] mx-auto text-[#ffffffcb]'>{t('meetpara')}</p>
           </div>
       </section>
             </>

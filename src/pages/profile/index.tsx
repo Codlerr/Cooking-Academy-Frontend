@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import {useTranslation} from 'react-i18next';
 import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import { logout } from "../../redux/slices/authSlice";
@@ -13,6 +14,11 @@ let profile =
   "https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg";
 
 function Profile() {
+
+    // ========================//
+    const {t} = useTranslation();
+    // ========================//
+
   const navigate = useNavigate();
   const [toggleState, setToggleState] = useState(1);
   const { accessToken, data: user } = useAppSelector((state) => state.auth);
@@ -71,7 +77,7 @@ function Profile() {
                   }
                   onClick={() => toggleTab(1)}
                 >
-                  MY COURSES
+                  {t('MYCOURSE')}
                 </button>
                 <button
                   className={
@@ -79,7 +85,7 @@ function Profile() {
                   }
                   onClick={() => toggleTab(2)}
                 >
-                  MY LESSONS
+                  {t('MYLESSONS')}
                 </button>
                 <button
                   className={
@@ -87,7 +93,7 @@ function Profile() {
                   }
                   onClick={() => toggleTab(3)}
                 >
-                  BOOKMARKS
+                  {t('BOOKMARKS')}
                 </button>
                 <button
                   className={
@@ -95,7 +101,7 @@ function Profile() {
                   }
                   onClick={() => toggleTab(4)}
                 >
-                  PHOTOS
+                  {t('PHOTOS')}
                 </button>
               </div>
 
@@ -220,7 +226,7 @@ function Profile() {
 
       {/* ==================Settings====================== */}
       <section className="w-11/12 mx-auto">
-        <h1 className="font-bold text-3xl pb-5">Settings</h1>
+        <h1 className="font-bold text-3xl pb-5">{t('Settings')}</h1>
         <div className="bg-white rounded-2xl overflow-hidden">
           <div className="w-11/12 mx-auto flex justify-between py-10 align-middle text-black">
             <div className="flex flex-col gap-5 justify-center w-[50%]">

@@ -1,4 +1,5 @@
 import { useNavigate, useParams } from "react-router";
+import {useTranslation} from 'react-i18next';
 import "./style.css";
 import Slide from "../../components/sliders/cooking-inner-slider";
 import ENQ from "../../components/Enquiry";
@@ -32,6 +33,12 @@ let P8 =
     "https://res.cloudinary.com/dvbplh4z9/image/upload/v1671270926/Cooking%20Academy%20Assets/cooking%20class/Rectangle_168_vpo3nx.webp";
 
 function CookingclassInside() {
+
+
+        // ========================//
+	  const {t} = useTranslation();
+      // ========================//
+
     const { name: courseId } = useParams();
     const navigate = useNavigate();
     const mycourses = useAppSelector(
@@ -70,13 +77,12 @@ function CookingclassInside() {
                 <div className="ban-video-content md:pt-40">
                     <h1 className="font-bold text-7xl  uppercase">{course?.name}</h1>
                     <p className="xs:w-[90%] md:w-[30%] mx-auto text-xl text-center py-5">
-                        Cooking is not just about ingredients; it's a creative outlet for
-                        us.
+                        {t('clsinnerpara')}
                     </p>
                     <div className="grid place-items-center">
                         <NavLink to='/profile'><a className="bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl">
                             <i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>
-                            Go to Courses
+                            {t('gotobtn')}
                         </a></NavLink>
                     </div>
                 </div>
@@ -87,10 +93,10 @@ function CookingclassInside() {
             <section className="relative w-11/12 mx-auto ">
                 <div className="grid grid-cols-1 md:grid-cols-2 xs:gap-y-10 md:gap-x-10 py-20">
                     <div data-aos="fade-right">
-                        <h1 className="xs:text-3xl md:text-4xl font-bold">About class</h1>
+                        <h1 className="xs:text-3xl md:text-4xl font-bold">{t('abpoutcls')}</h1>
                         <p className="text-xl py-5">{course?.about}</p>
-                        <p>Instructor(s) : {course?.instructorName}</p>
-                        <p className="pt-2">Class Lenght : {course?.duration}</p>
+                        <p>{t('instructor')} : {course?.instructorName}</p>
+                        <p className="pt-2">{t('clslenght')} : {course?.duration}</p>
                     </div>
                     <div className="grid place-items-center" data-aos="fade-right">
                         <div className="border-[1px] border-primary-clr2 xs:w-[90%] lg:w-[70%] mx-auto grid place-items-center py-5">
@@ -124,27 +130,27 @@ function CookingclassInside() {
                     <div className="flex gap-10" data-aos="fade-right">
                         <i class="text-4xl text-primary-clr2 fa-solid fa-photo-film"></i>
                         <p className="grid place-items-center xs:text-base lg:text-xl">
-                            {course?.unit} units | {course?.lesson} lessons | {course?.task}{" "}
-                            tasks
+                            {course?.unit} {t('units')} | {course?.lesson} {t('lessons')} | {course?.task}{" "}
+                            {t('tasks')}
                         </p>
                     </div>
                     <div className="flex gap-10" data-aos="fade-right">
                         <i class="text-4xl text-primary-clr2 fa-solid fa-download"></i>
                         <p className="grid place-items-center xs:text-base lg:text-xl">
-                            Download and watch offline
+                            {t('download')}
                         </p>
                     </div>
                     <div className="flex gap-10" data-aos="fade-right">
                         <i class="text-4xl text-primary-clr2 fa-solid fa-volume-high"></i>
                         <p className="grid place-items-center xs:text-base lg:text-xl">
                             {" "}
-                            Audio-only lessons
+                            {t('audio')}
                         </p>
                     </div>
                     <div className="flex gap-10" data-aos="fade-right">
                         <i class="text-4xl text-primary-clr2 fa-solid fa-file-pdf"></i>
                         <p className="grid place-items-center xs:text-base lg:text-xl">
-                            Downloadable instructor guides for every class
+                            {t('guides')}
                         </p>
                     </div>
                 </div>
@@ -155,11 +161,10 @@ function CookingclassInside() {
             <section className="quotes-bg mt-20">
                 <div className="lg:w-[40%] float-right flex justify-center flex-col h-full lg:pr-32">
                     <h3 className="xs:w-[90%] lg:w-full mx-auto xs:text-3xl md:text-4xl xs:text-center md:text-left font-bold italic tracking-wider xs:leading-relaxed md:leading-relaxed">
-                        KITCHENS ARE HARD ENVIRONMENTS AND THEY FORM INCREDIBLY STRONG
-                        CHARACTERS.
+                        {t('quotehead')}
                     </h3>
                     <p className="flex justify-center xs:text-xl md:text-2xl pt-4">
-                        - Chef Gordon Ramsay
+                        - {t('quotepara')}
                     </p>
                 </div>
             </section>
@@ -172,7 +177,7 @@ function CookingclassInside() {
             {/* ================Gallery=================== */}
             <section className="w-11/12 mx-auto py-10">
                 <h1 className="xs:text-3xl md:text-4xl font-bold text-center">
-                    Gallery
+                    {t('gallery')}
                 </h1>
 
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-4 xs:pt-8 md:pt-16">
@@ -233,7 +238,7 @@ function CookingclassInside() {
             {/* ================Classes=================== */}
             <section>
                 <h3 className="w-11/12 mx-auto xs:text-2xl md:text-3xl font-semibold pb-5">
-                    Other classes.
+                    {t('otherclasses')}.
                 </h3>
                 <CLASSES />
             </section>

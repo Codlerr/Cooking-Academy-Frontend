@@ -1,14 +1,33 @@
 import { useState } from "react";
 import { useParams } from "react-router";
+import i18next from 'i18next'
+import {useTranslation} from 'react-i18next'
+import LanguageOpt from '../../components/languageSelector'
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import { NavLink, useLocation } from "react-router-dom";
 import "../Header/Header.css";
+
+
+
+
+
+
 let Logo =
 	"https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/Layer_2_vmobmf.svg";
 let Logo2 = 'https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg';
 let Menu =
 	"https://res.cloudinary.com/dvbplh4z9/image/upload/v1669970200/Cooking%20Academy%20Assets/menu-100_fphqfd.png";
 function Navbar() {
+
+	  // ============Translator============//
+	  const {t} = useTranslation();
+
+	  const handleClick=(e)=>{
+		i18next.changeLanguage(e.target.value)
+	  }
+		// ==========Translator==============//
+
+
 	let { id, courseId } = useParams();
 
 	const location = useLocation();
@@ -37,9 +56,12 @@ function Navbar() {
 		location.pathname !== "/menu-consultancy" ? "withOpacity" : "";
 
 	return (
+
+		
+
 		<>
 			<nav
-				className={`bg-black border-b-2 border-[#383838] ${
+				className={`bg-black border-b-2 border-[#383838] relative ${
 					navWithOpacity &&
 					navWithOpacity2 &&
 					navWithOpacity3 &&
@@ -87,10 +109,17 @@ function Navbar() {
 									<img src={Logo2} className="h-14 rounded-full"></img>
 								</NavLink>
 							</li>
+							<li>
+								<LanguageOpt onChange={(e)=> handleClick(e)}/>
+							</li>
 						</ul>
 					</div>
 				</div>
+				{/*  */}
+
+				{/*  */}
 			</nav>
+			
 		</>
 	);
 }

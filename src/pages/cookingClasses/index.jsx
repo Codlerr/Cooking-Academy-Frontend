@@ -1,5 +1,6 @@
 import './style.css';
 import { NavLink } from "react-router-dom";
+import {useTranslation} from 'react-i18next'
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import MOC from "../../components/MeetOurChefs"
 import LSA from "../../components/LatYearAchive"
@@ -8,21 +9,20 @@ import FAQ from "../../components/Faq"
 import CLASSES from "../../components/sliders/explore-slider"
 
 
-let expo1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671086874/Cooking%20Academy%20Assets/cooking%20class/funtamental_jqkey4.jpg';
-let expo2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671086874/Cooking%20Academy%20Assets/cooking%20class/worldwide_cuisine_bku80s.jpg';
-let expo3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671086874/Cooking%20Academy%20Assets/cooking%20class/pastry_dwrqqo.jpg';
-let expo4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671084211/Cooking%20Academy%20Assets/cooking%20class/services1_details_2_rgr4hd.jpg';
 
-function cookingClass() {
+function CookingClass() {
+    // ========================//
+	  const {t} = useTranslation();
+	// ========================//
   return (
     <>
     {/* =========================BANNER======================== */}
     <section className='cook-banner'>
       <div className='h-full flex flex-col justify-end md:pb-40 align-bottom xs:gap-5 md:gap-6' data-aos="fade-right">
-        <h1 className='xs:text-5xl md:text-6xl font-bold text-center'>Flavours surrounds you in<br></br> The Cooking Academy</h1>
-        <p className='text-2xl text-center xs:w-[80%] md:w-[35%] mx-auto'>Cooking is not just about ingredients; it's a creative outlet for us.</p>
+        <h1 className='xs:text-5xl md:text-6xl font-bold text-center'>{t('cookinclsbnhead1')}<br></br> {t('cookinclsbnhead2')}</h1>
+        <p className='text-2xl text-center xs:w-[80%] md:w-[35%] mx-auto'>{t('cookinclsbnpara')}</p>
         <div className='grid place-items-center'>
-        <NavLink to='/profile'><a className='bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>Go to Courses</a></NavLink>
+        <NavLink to='/profile'><a className='bg-primary-clr2 hover:bg-primary-clr1 transition-all duration-500 w-fit py-1 pl-2 xs:pr-4 md:pr-8 rounded-full grid place-items-center grid-flow-col xs:text-base lg:text-xl' ><i class="fa-solid fa-circle-play xs:text-2xl md:text-4xl pr-2"></i>{t('explorehead')}</a></NavLink>
         </div>
       </div>
     </section>
@@ -31,7 +31,7 @@ function cookingClass() {
     {/* =========================Classes======================== */}
     <section className=''>
       <div className='w-11/12 mx-auto py-10'>
-        <h3 className='text-4xl font-bold'>Explore our classes.</h3>
+        <h3 className='text-4xl font-bold'>{t('explorehead')}.</h3>
       </div>
        {/* =========================CLASS======================== */}
       <div className='lg:pr-14'>
@@ -143,4 +143,4 @@ function cookingClass() {
   )
 }
 
-export default cookingClass;
+export default CookingClass;

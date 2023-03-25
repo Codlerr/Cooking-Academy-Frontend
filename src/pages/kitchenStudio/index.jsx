@@ -1,4 +1,5 @@
 import react,{useEffect, useState} from 'react';
+import {useTranslation} from 'react-i18next'
 import './style.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -13,6 +14,11 @@ import FAQ from "../../components/Faq"
 let graph = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674559583/Cooking%20Academy%20Assets/image_2500_j4tcke.png';
 
 function KitchenStudio() {
+
+        // ========================//
+	  const {t} = useTranslation();
+      // ========================//
+
     // filter tabs
     const [data,setData] = useState([]);
     const [collection,setCollection] = useState([]);
@@ -37,14 +43,14 @@ function KitchenStudio() {
     <section className='kitchen-banner'>
         <div className='h-full w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-5'>
             <div data-aos="fade-right" className='md:w-[80%] flex justify-center flex-col xs:gap-5 md:gap-5 xs:pt-32'>
-                <h1 className='xs:text-5xl lg:text-7xl  font-bold'>The Modern Kitchen Studio</h1>
-                <p className='xs:text-lg md:text-xl '>The perfect commercial kitchen to rent in Doha, Qatar. The ideal location to produce high-end commercials, presenter-led TV shows, social media live streams, and Cooking Shows links to global locations.</p>
+                <h1 className='xs:text-5xl lg:text-7xl  font-bold'>{t('modernhead')}</h1>
+                <p className='xs:text-lg md:text-xl '>{t('modernpara')}</p>
                 {/* <a className='bg-primary-clr2 hover:bg-primary-clr1 w-fit text-xl font-medium rounded-3xl xs:px-10 md:px-16 py-3' href="#">Book Now</a> */}
             </div>
             <div className='flex justify-center items-center md:mt-28'>
                 <form className='xs:w-[95%] md:w-[80%] lg:w-[60%] rounded-3xl bg-gradient-to-b from-slate-300 to-zinc-700 text-black'>
                     <div className='p-3 lg:p-6 flex flex-col xs:gap-4 md:gap-2 lg:gap-4'>
-                        <h1 className='w-[80%] mx-auto lg:text-xl text-center font-medium'>BOOK KITCHEN STUDIO</h1>
+                        <h1 className='w-[80%] mx-auto lg:text-xl text-center font-medium'>{t('booka')}</h1>
                         <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="text" placeholder='Name' />
                         <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="text" placeholder='Company Name' />
                         <input className='rounded-lg outline-none p-2 xs:text-sm lg:text-base' type="email" placeholder='Email' />
@@ -52,11 +58,11 @@ function KitchenStudio() {
                         <textarea className='rounded-lg outline-none p-2 text-base' placeholder='Nature of enquiry - Message' rows="3"></textarea>
                         <div className='flex gap-2 justify-start items-start'>
                             <input className='accent-primary-clr2' required type="checkbox" />
-                            <p className='text-xs text-white'>I agree to be contacted in relation to this in line with Terms & conditions of The Cooking Academy.</p>
+                            <p className='text-xs text-white'>{t('agree1')}</p>
                         </div>
                         <div className='flex gap-2 justify-start items-start'>
                             <input className='accent-primary-clr2'  type="checkbox" />
-                            <p className='text-xs text-white'>I would like to receive email updates from The Cooking Academy.</p>
+                            <p className='text-xs text-white'>{t('agree2')}</p>
                         </div>
                     </div>
                     <button className='w-[100%] rounded-br-3xl rounded-bl-3xl xs:py-2 lg:py-4 transition-all duration-300 hover:text-white bg-primary-clr1'>Submit</button>
@@ -70,11 +76,11 @@ function KitchenStudio() {
     <section>
         <div className='xs:pt-28 md:pt-20'>
             <div data-aos="fade-right" className='xs:text-2xl md:text-4xl text-center font-semibold italic leading-snug'>
-                <h2 className=''>BRING YOUR <span className='text-primary-clr2'>VISION</span> TO LIFE.</h2>
-                <h2 className=''>LET US HANDLE THE REST.</h2>
+                <h2 className=''>{t('bring')} <span className='text-primary-clr2'>{t('vision')}</span> {t('life')}.</h2>
+                <h2 className=''>{t('mhandle')}.</h2>
             </div>
             <div data-aos="fade-right" className='grid place-items-center'>
-                    <p className='xs:w-[90%] md:w-[70%] text-xl mx-auto text-center text-text-dark pt-5 pb-10'>Our fully equipped kitchen studio is available for all of your shootings, productions, events & culinary training.</p>
+                    <p className='xs:w-[90%] md:w-[70%] text-xl mx-auto text-center text-text-dark pt-5 pb-10'>{t('modpara')}.</p>
                     {/* <a className='bg-primary-dark hover:bg-primary-clr1 text-xl font-medium rounded-3xl xs:px-10 md:px-16 py-3' href="#">Book Now</a> */}
             </div>
         </div>
