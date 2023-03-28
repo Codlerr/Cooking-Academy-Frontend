@@ -158,7 +158,7 @@ function SignUp() {
                             />
                         </div>
                         <p className="text-primary-clr2 py-5">
-                            Alrady an user?
+                            Already an user?
                             <a className="pl-5 text-text-dark" href="/login">
                                 Sign In
                             </a>
