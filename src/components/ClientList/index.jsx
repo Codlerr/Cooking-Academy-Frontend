@@ -17,16 +17,15 @@ export default function index() {
     return (
         <>
             <section className='w-11/12 mx-auto'>
-                <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-9 gap-10 place-items-center py-20' data-aos="fade-right">
+                <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 gap-10 place-items-center py-20' data-aos="fade-right">
                     <LazyLoadImage effect='blur' className='object-contain h-10' src={Brand1} />
+                    <LazyLoadImage effect='blur' className='object-contain h-20' src={Brand9} />
                     <LazyLoadImage effect='blur' className='object-contain h-10' src={Brand2} />
                     <LazyLoadImage effect='blur' className='object-contain h-14' src={Brand3} />
-                    <LazyLoadImage effect='blur' className='object-contain h-14' src={Brand4} />
                     <LazyLoadImage effect='blur' className='object-contain h-16' src={Brand5} />
                     <LazyLoadImage effect='blur' className='object-contain h-16' src={Brand6} />
                     <LazyLoadImage effect='blur' className='object-contain h-20' src={Brand7} />
                     <LazyLoadImage effect='blur' className='object-contain h-16' src={Brand8} />
-                    <LazyLoadImage effect='blur' className='object-contain h-20' src={Brand9} />
                 </div>
             </section>
         </>
