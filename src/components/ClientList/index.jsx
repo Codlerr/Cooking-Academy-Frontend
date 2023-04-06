@@ -11,20 +11,22 @@ let Brand5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670327326/Cook
 let Brand6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670309776/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.18_1_okxyeg.png';
 let Brand7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674301952/Cooking%20Academy%20Assets/logo_rojkrq.png';
 let Brand8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670309778/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.19c_1_tu42s7.png';
+let Brand9 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1680758517/Cooking%20Academy%20Assets/unox_hf2ovj.png';
 
 export default function index() {
     return (
         <>
             <section className='w-11/12 mx-auto'>
-                <div className='grid grid-cols-1 md:grid-cols-8 gap-10 place-items-center py-20' data-aos="fade-right">
-                    <LazyLoadImage effect='blur' className='h-10' src={Brand1} />
-                    <LazyLoadImage effect='blur' className='h-10' src={Brand2} />
-                    <LazyLoadImage effect='blur' className='h-14' src={Brand3} />
-                    <LazyLoadImage effect='blur' className='h-14' src={Brand4} />
-                    <LazyLoadImage effect='blur' className='h-14' src={Brand5} />
-                    <LazyLoadImage effect='blur' className='h-14' src={Brand6} />
-                    <LazyLoadImage effect='blur' className='h-[4.5rem]' src={Brand7} />
-                    <LazyLoadImage effect='blur' className='h-14' src={Brand8} />
+                <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-9 gap-10 place-items-center py-20' data-aos="fade-right">
+                    <LazyLoadImage effect='blur' className='object-contain h-10' src={Brand1} />
+                    <LazyLoadImage effect='blur' className='object-contain h-10' src={Brand2} />
+                    <LazyLoadImage effect='blur' className='object-contain h-14' src={Brand3} />
+                    <LazyLoadImage effect='blur' className='object-contain h-14' src={Brand4} />
+                    <LazyLoadImage effect='blur' className='object-contain h-16' src={Brand5} />
+                    <LazyLoadImage effect='blur' className='object-contain h-16' src={Brand6} />
+                    <LazyLoadImage effect='blur' className='object-contain h-20' src={Brand7} />
+                    <LazyLoadImage effect='blur' className='object-contain h-16' src={Brand8} />
+                    <LazyLoadImage effect='blur' className='object-contain h-20' src={Brand9} />
                 </div>
             </section>
         </>

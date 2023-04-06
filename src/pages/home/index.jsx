@@ -113,10 +113,10 @@ function LandingPage() {
         </div>
 
         {/* ===========WorkshopImages============ */}
-        <div className='xs:pt-5 md:pt-20'>
+        {/* <div className='xs:pt-5 md:pt-20'>
           <h2 className='font-bold xs:text-4xl lg:text-5xl text-center' data-aos="fade-right">{t('photogallery')}</h2>
           <WorkImageSlider/>
-        </div>
+        </div> */}
         {/* ===========WorkshopImages============ */}
      </section>
      {/* =================================Workshop================================= */}
