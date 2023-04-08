@@ -75,7 +75,7 @@ function CookingclassInside() {
                 </div>
 
                 <div className="ban-video-content md:pt-40">
-                    <h1 className="font-bold text-7xl  uppercase">{course?.name}</h1>
+                    <h1 className="font-bold text-center xs:text-4xl md:text-7xl  uppercase">{course?.name}</h1>
                     <p className="xs:w-[90%] md:w-[30%] mx-auto text-xl text-center py-5">
                         {t('clsinnerpara')}
                     </p>
