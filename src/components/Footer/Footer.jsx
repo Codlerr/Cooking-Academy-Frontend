@@ -56,6 +56,8 @@ if (pathname === `/admin/class/${id}`) return null;
                       <ul className='flex flex-col gap-5 '>
                         <li className='hover:text-[#CBA135]'><Link to='/kitchen-studio'>Kitchen</Link></li>
                         <li className='hover:text-[#CBA135]'><Link to=''>Contact us</Link></li>
+                        <li className='hover:text-[#CBA135]'><Link to='/termsAndConditions'>Terms & Conditions</Link></li>
+                        <li className='hover:text-[#CBA135]'><Link to='/CancellationPolicy'>Cancellation Policy</Link></li>
                       </ul>
                       
                   </div>

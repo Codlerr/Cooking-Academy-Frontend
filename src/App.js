@@ -1,5 +1,6 @@
 import './App.css';
 import {ToastContainer} from 'react-toastify'
+import {ScrollToTop} from 'react-router-scroll-to-top';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -20,7 +21,8 @@ import Menuconsultancy from './pages/menu consultancy/index';
 import Profile from './pages/profile/index';
 import Cart from './pages/cart/index';
 import Success from './pages/success/success';
-
+import TermsAndConditions from './pages/termsAndConditions/termsAndConditions';
+import CancellationPolicy from './pages/cancellation/cancellationPolicy';
 
 import AdminLogin from './Admin/Pages/login';
 import FAQ from './Admin/Pages/Faq';
@@ -39,6 +41,7 @@ import PaymentSuccess from './pages/PaymentSuccess';
 const Layout = () => {
   return(
     <div className='app'>
+     <ScrollToTop/>
       <Header/>
       <Outlet/>
       <ToastContainer/>
@@ -141,6 +144,14 @@ const router = createBrowserRouter([
         path:"/admin/class/:id",
         element:<ClassDetailInner/>
       },
+      {
+        path:"/termsAndConditions",
+        element:<TermsAndConditions/>
+      },
+      {
+        path:"/CancellationPolicy",
+        element:<CancellationPolicy/>
+      }
     ]
   }
 ]);

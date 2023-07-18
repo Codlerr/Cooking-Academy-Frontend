@@ -52,8 +52,9 @@ function Navbar() {
 	const navWithOpacity = location.pathname !== "/" ? "withOpacity" : "";
 	const navWithOpacity2 = location.pathname !== "/profile" ? "withOpacity" : "";
 	const navWithOpacity3 = location.pathname !== "/cart" ? "withOpacity" : "";
-	const navWithOpacity4 =
-		location.pathname !== "/menu-consultancy" ? "withOpacity" : "";
+	const navWithOpacity4 = location.pathname !== "/menu-consultancy" ? "withOpacity" : "";
+	const navWithOpacity5 = location.pathname !== "/termsAndConditions" ?  "withOpacity" : "";
+	const navWithOpacity6 = location.pathname !== "/CancellationPolicy" ?  "withOpacity" : "";
 
 	return (
 
@@ -65,7 +66,9 @@ function Navbar() {
 					navWithOpacity &&
 					navWithOpacity2 &&
 					navWithOpacity3 &&
-					navWithOpacity4
+					navWithOpacity4 &&
+					navWithOpacity5 &&
+					navWithOpacity6
 				}`}
 			>
 				<div className="w-11/12 mx-auto lg:flex justify-between pt-8 pb-3">
