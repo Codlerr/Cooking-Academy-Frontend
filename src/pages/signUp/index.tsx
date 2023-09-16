@@ -6,6 +6,7 @@ import { signupAction } from "../../redux/thunks/authThunk";
 import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 let p1 =
     "https://res.cloudinary.com/dvbplh4z9/image/upload/v1671099281/Cooking%20Academy%20Assets/Login-Signup/vadim-markin-Dn82UF7qsso-unsplash_u9zgzm.jpg";
@@ -151,11 +152,13 @@ function SignUp() {
                     />
                     <div className="col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col justify-center  md:justify-start md:mt-5 2xl:mt-14 h-full">
                         <div className="grid place-items-center">
+                        <NavLink to='/'>
                             <img
                                 className="xs:h-fit md:h-14 xl:h-20 "
                                 src={logo}
                                 alt="logo"
                             />
+                            </NavLink>
                         </div>
                         <p className="text-primary-clr2 py-5">
                             Already an user?
@@ -188,14 +191,14 @@ function SignUp() {
                                 {signingUp ? "Please Wait..." : "Sign Up"}
                             </button>
                         </form>
-                        <p className="text-xs text-text-dark text-center py-5">
+                       {/* <p className="text-xs text-text-dark text-center py-5">
                             or sign up using
                         </p>
                         <div className="flex gap-4 justify-center">
                             <i className="text-primary-clr1 hover:text-white transition-all duration-200 text-2xl fa-brands fa-google"></i>
                             <i className="text-primary-clr1 hover:text-white transition-all duration-200 text-2xl fa-brands fa-facebook"></i>
                             <i className="text-primary-clr1 hover:text-white transition-all duration-200 text-3xl fa-brands fa-apple"></i>
-                        </div>
+                        </div>*/}
                     </div>
                     <img
                         className="xs:hidden lg:block w-full h-full"

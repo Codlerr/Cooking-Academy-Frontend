@@ -3,6 +3,7 @@ import instance from "../../API/api_instance";
 import CLASS from "../../components/sliders/explore-slider";
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import CartItem from "./CartItem";
+import { NavLink } from "react-router-dom";
 
 function Cart() {
 	const cart = useAppSelector((state) => state.cart.data);
@@ -48,6 +49,7 @@ function Cart() {
 						))}
 						{/* CheckOut Btn */}
 						<div className="flex justify-end">
+						{itemsInCart > 0 && (
 							<button
 								onClick={HandleCart}
 								// href="#"
@@ -56,6 +58,19 @@ function Cart() {
 							>
 								{checkingOut ? "Please Wait..." : "Checkout"}
 							</button>
+						)}
+						{itemsInCart == 0 && (
+							<NavLink to='/cooking-class'>
+							<button
+								onClick={HandleCart}
+								// href="#"
+								disabled={checkingOut}
+								className="bg-primary-clr2 hover:bg-primary-clr1 h-fit disabled:bg-slate-300 transition-all cursor-pointer duration-300 rounded-md px-16 lg:px-24 py-2 lg:py-5"
+							>
+								Add Classes
+							</button>
+							</NavLink>
+						)}
 						</div>
 					</div>
 

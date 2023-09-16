@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import { loginAction } from "../../redux/thunks/authThunk";
 import useAppSelector from "../../redux/hooks/useAppSelector";
+import { NavLink } from "react-router-dom";
 
 let p1 =
 	"https://res.cloudinary.com/dvbplh4z9/image/upload/v1671099281/Cooking%20Academy%20Assets/Login-Signup/vadim-markin-Dn82UF7qsso-unsplash_u9zgzm.jpg";
@@ -30,20 +31,20 @@ function Login() {
 	};
 
 	const dispatch = useAppDispatch();
-    const auth = useAppSelector(state => state.auth);
-    const [loggingIn, setLogingIn] = useState(false);
-    const navigate = useNavigate();
+	const auth = useAppSelector(state => state.auth);
+	const [loggingIn, setLogingIn] = useState(false);
+	const navigate = useNavigate();
 
-	
 
-    useEffect(() => {
-        if(auth.data) {
-            navigate('/', {
-                replace: true,
-            })
-        }
-    }, [auth.data, navigate]);
-	
+
+	useEffect(() => {
+		if (auth.data) {
+			navigate('/', {
+				replace: true,
+			})
+		}
+	}, [auth.data, navigate]);
+
 
 	const loginForm = useFormik({
 		initialValues: {
@@ -52,14 +53,14 @@ function Login() {
 		},
 		validationSchema,
 		onSubmit: (values) => {
-            setLogingIn(true);
+			setLogingIn(true);
 			dispatch(loginAction(values))
-            .catch(err => {
-                console.log(err);
-            })
-            .finally(() => {
-                setLogingIn(false);
-            })
+				.catch(err => {
+					console.log(err);
+				})
+				.finally(() => {
+					setLogingIn(false);
+				})
 		},
 	});
 
@@ -78,9 +79,11 @@ function Login() {
 						alt="img"
 					/>
 					<div className="col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col mt-10 xl:mt-20 2xl:mt-44  h-full">
-						<div className="grid place-items-center">
-							<img className="xs:h-fit md:h-14 xl:h-20  " src={logo} alt="logo" />
-						</div>
+						<NavLink to='/'>
+							<div className="grid place-items-center">
+								<img className="xs:h-fit md:h-14 xl:h-20  " src={logo} alt="logo" />
+							</div>
+						</NavLink>
 						<p className="text-primary-clr2 py-5">
 							New user?
 							<a className="pl-5 text-text-dark" href="/signup">
@@ -93,8 +96,8 @@ function Login() {
 								type="text"
 								placeholder="Username*"
 								required
-                                name="username"
-                                onChange={loginForm.handleChange}
+								name="username"
+								onChange={loginForm.handleChange}
 							/>
 							<div className="relative">
 								<input
@@ -102,8 +105,8 @@ function Login() {
 									type={open1 === false ? "password" : "text"}
 									placeholder="Password*"
 									required
-                                    name="password"
-                                    onChange={loginForm.handleChange}
+									name="password"
+									onChange={loginForm.handleChange}
 								/>
 								<div className="absolute xs:top-2 md:top-2 xl:top-2 right-5">
 									{open1 === false ? (
@@ -119,20 +122,20 @@ function Login() {
 							</p>
 							<button
 								type="submit"
-                                disabled={loggingIn}
+								disabled={loggingIn}
 								className="bg-primary-dark hover:bg-primary-clr1 xs:py-1 md:py-0 xl:py-1.5 transition-all duration-200 rounded-md"
 							>
-								{loggingIn ? "Please Wait..." :"Sign In"}
+								{loggingIn ? "Please Wait..." : "Sign In"}
 							</button>
 						</form>
-						<p className="text-xs text-text-dark text-center py-5">
+						{/*<p className="text-xs text-text-dark text-center py-5">
 							or sign up using
 						</p>
 						<div className="flex gap-4 justify-center">
 							<i class="text-primary-clr1 hover:text-white transition-all duration-200 text-2xl fa-brands fa-google"></i>
 							<i class="text-primary-clr1 hover:text-white transition-all duration-200 text-2xl fa-brands fa-facebook"></i>
 							<i class="text-primary-clr1 hover:text-white transition-all duration-200 text-3xl fa-brands fa-apple"></i>
-						</div>
+									</div>*/}
 					</div>
 					<img
 						className="xs:hidden lg:block w-full h-full"
